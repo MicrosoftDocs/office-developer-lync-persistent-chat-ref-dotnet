@@ -33,16 +33,16 @@
         ]
       },
       "ECMA2Yaml": {
-        "SourceXmlFolder": "dotnet/xml",
-        "OutputYamlFolder": "dotnet/api",
+        "SourceXmlFolder": "officedocs-dev-lync-persistent/xml",
+        "OutputYamlFolder": "officedocs-dev-lync-persistent/api",
         "Flatten": true,
-        "id": "dotnet-template"
+        "id": "officedocs-dev-lync-persistent"
       },
       "SplitTOC": [
-        "dotnet/api/dotnet-template/toc.yml"
+        "officedocs-dev-lync-persistent/api/officedocs-dev-lync-persistent/toc.yml"
       ],
       "DiffFolder": [
-        "dotnet/api"
+        "officedocs-dev-lync-persistent/api"
       ]
     }
   ],
