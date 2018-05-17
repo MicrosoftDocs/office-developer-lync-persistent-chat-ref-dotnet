@@ -1,0 +1,293 @@
+﻿<Type Name="FormattedOutboundChatMessage" FullName="Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage">
+  <TypeSignature Language="C#" Value="public class FormattedOutboundChatMessage" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FormattedOutboundChatMessage extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage" />
+  <TypeSignature Language="VB.NET" Value="Public Class FormattedOutboundChatMessage" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FormattedOutboundChatMessage" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Used to construct a chat message which contains formatted parts,
+            such as emoticons, hyperlinks, and chat room links.
+            Once constructed, you must invoke one or more of the Append methods
+            before sending this message (see <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.BeginSendChatMessage(Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage,System.AsyncCallback,System.Object)" />).
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FormattedOutboundChatMessage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FormattedOutboundChatMessage();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:System.Object" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FormattedOutboundChatMessage (bool isAlert);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool isAlert) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (isAlert As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FormattedOutboundChatMessage(bool isAlert);" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="isAlert" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="isAlert">if set to <see cref="true" /> this will be an alert message."/&gt;.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage" /> class, optionally marking the message as an alert.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FormattedOutboundChatMessage (bool isAlert, string storyTitle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool isAlert, string storyTitle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.#ctor(System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (isAlert As Boolean, storyTitle As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FormattedOutboundChatMessage(bool isAlert, System::String ^ storyTitle);" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="isAlert" Type="System.Boolean" />
+        <Parameter Name="storyTitle" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="isAlert">if set to <see cref="true" /> this is an alert story message.</param>
+        <param name="storyTitle">The story title.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage" /> class.
+            This constructor is used to create a story message.  Story messages have a title
+            which appears in the chat as a clickable link.  When clicked, a dialog appears which
+            shows the remaining message content.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendChatRoomLink">
+      <MemberSignature Language="C#" Value="public void AppendChatRoomLink (Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary chatRoom);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AppendChatRoomLink(class Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary chatRoom) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.AppendChatRoomLink(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AppendChatRoomLink (chatRoom As ChatRoomSummary)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AppendChatRoomLink(Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomSummary ^ chatRoom);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="chatRoom" Type="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary" />
+      </Parameters>
+      <Docs>
+        <param name="chatRoom">The chat room.</param>
+        <summary>
+            Appends the chat room link.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="chatRoom" /> is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendEmoticon">
+      <MemberSignature Language="C#" Value="public void AppendEmoticon (Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon emoticon);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AppendEmoticon(valuetype Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon emoticon) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.AppendEmoticon(Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AppendEmoticon (emoticon As ChatEmoticon)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AppendEmoticon(Microsoft::Rtc::Collaboration::PersistentChat::ChatEmoticon emoticon);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="emoticon" Type="Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon" />
+      </Parameters>
+      <Docs>
+        <param name="emoticon">The emoticon.</param>
+        <summary>
+            Appends the emoticon.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendHyperLink">
+      <MemberSignature Language="C#" Value="public void AppendHyperLink (string displayText, Uri hyperLink);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AppendHyperLink(string displayText, class System.Uri hyperLink) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.AppendHyperLink(System.String,System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AppendHyperLink (displayText As String, hyperLink As Uri)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AppendHyperLink(System::String ^ displayText, Uri ^ hyperLink);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="displayText" Type="System.String" />
+        <Parameter Name="hyperLink" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="displayText">The display text.</param>
+        <param name="hyperLink">The hyper link.</param>
+        <summary>
+            Appends the hyper link.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="displayText" /> is null or empty.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="hyperLink" /> is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendPlainText">
+      <MemberSignature Language="C#" Value="public void AppendPlainText (string plainText);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AppendPlainText(string plainText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.AppendPlainText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AppendPlainText (plainText As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AppendPlainText(System::String ^ plainText);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="plainText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="plainText">The plain text.</param>
+        <summary>
+            Appends a plain text message part.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">Thrown when invalid arguments are passed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FormattedMessageParts">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.MessagePart&gt; FormattedMessageParts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Microsoft.Rtc.Collaboration.PersistentChat.MessagePart&gt; FormattedMessageParts" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.FormattedMessageParts" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FormattedMessageParts As ReadOnlyCollection(Of MessagePart)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::MessagePart ^&gt; ^ FormattedMessageParts { System::Collections::ObjectModel::ReadOnlyCollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::MessagePart ^&gt; ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.MessagePart&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Parses the chat message into <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.MessagePart" /> segments, and returns a collection
+            of the parts found.
+            </summary>
+        <value>The message parts.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAlert">
+      <MemberSignature Language="C#" Value="public bool IsAlert { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsAlert" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.IsAlert" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAlert As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAlert { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether this instance is alert.
+            </summary>
+        <value>
+          <see cref="true" /> if this instance is alert; otherwise, <see cref="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageContent">
+      <MemberSignature Language="C#" Value="public string MessageContent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MessageContent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.MessageContent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MessageContent As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MessageContent { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the raw content of the chat message, after all message parts have been formatted.
+            </summary>
+        <value>The message body.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StoryTitle">
+      <MemberSignature Language="C#" Value="public string StoryTitle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StoryTitle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.StoryTitle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StoryTitle As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StoryTitle { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the story title, or null if this is not a story message.
+            </summary>
+        <value>The story title.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

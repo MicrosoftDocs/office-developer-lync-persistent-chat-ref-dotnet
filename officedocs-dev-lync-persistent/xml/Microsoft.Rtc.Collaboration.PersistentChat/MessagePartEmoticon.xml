@@ -1,0 +1,146 @@
+﻿<Type Name="MessagePartEmoticon" FullName="Microsoft.Rtc.Collaboration.PersistentChat.MessagePartEmoticon">
+  <TypeSignature Language="C#" Value="public sealed class MessagePartEmoticon : Microsoft.Rtc.Collaboration.PersistentChat.MessagePart" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MessagePartEmoticon extends Microsoft.Rtc.Collaboration.PersistentChat.MessagePart" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartEmoticon" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MessagePartEmoticon&#xA;Inherits MessagePart" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MessagePartEmoticon sealed : Microsoft::Rtc::Collaboration::PersistentChat::MessagePart" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Rtc.Collaboration.PersistentChat.MessagePart</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            A portion of a message which represents an emoticon
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Emoticon">
+      <MemberSignature Language="C#" Value="public Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon Emoticon { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon Emoticon" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartEmoticon.Emoticon" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Emoticon As ChatEmoticon" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::ChatEmoticon Emoticon { Microsoft::Rtc::Collaboration::PersistentChat::ChatEmoticon get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the emoticon.
+            </summary>
+        <value>The emoticon.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (Microsoft.Rtc.Collaboration.PersistentChat.MessagePartEmoticon other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(class Microsoft.Rtc.Collaboration.PersistentChat.MessagePartEmoticon other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartEmoticon.Equals(Microsoft.Rtc.Collaboration.PersistentChat.MessagePartEmoticon)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As MessagePartEmoticon) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(Microsoft::Rtc::Collaboration::PersistentChat::MessagePartEmoticon ^ other);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="Microsoft.Rtc.Collaboration.PersistentChat.MessagePartEmoticon" />
+      </Parameters>
+      <Docs>
+        <param name="other">To be added.</param>
+        <summary>
+            Returns true if the given <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartEmoticon" /> is equal to this
+            </summary>
+        <returns>Returns true if <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartEmoticon" /> is equal to this</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartEmoticon.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>
+            Returns true if the given object is equal to this
+            </summary>
+        <returns>True if the given object is equal to this</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEmoticonString">
+      <MemberSignature Language="C#" Value="public static string GetEmoticonString (Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon emoticon);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetEmoticonString(valuetype Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon emoticon) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartEmoticon.GetEmoticonString(Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetEmoticonString (emoticon As ChatEmoticon) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetEmoticonString(Microsoft::Rtc::Collaboration::PersistentChat::ChatEmoticon emoticon);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="emoticon" Type="Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon" />
+      </Parameters>
+      <Docs>
+        <param name="emoticon">The emoticon.</param>
+        <summary>
+            Gets the emoticon string for the given emoticon.
+            </summary>
+        <returns>The raw text which is used to construct the emoticon. For example: <see cref=":-)" /> represents a <see cref="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Smile" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartEmoticon.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Returns a hash code for this object
+            </summary>
+        <returns>A hash code for this object</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

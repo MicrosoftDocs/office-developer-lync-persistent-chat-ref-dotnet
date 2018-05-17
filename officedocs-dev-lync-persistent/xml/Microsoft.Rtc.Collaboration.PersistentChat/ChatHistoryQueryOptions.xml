@@ -1,0 +1,314 @@
+﻿<Type Name="ChatHistoryQueryOptions" FullName="Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions">
+  <TypeSignature Language="C#" Value="public class ChatHistoryQueryOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChatHistoryQueryOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChatHistoryQueryOptions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChatHistoryQueryOptions" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Parameters which specify a chat history query.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ChatHistoryQueryOptions (string searchString);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string searchString) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (searchString As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChatHistoryQueryOptions(System::String ^ searchString);" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="searchString" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="searchString">The search string.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ChatHistoryQueryOptions (string searchString, bool exactPhrase, bool caseSensitive);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string searchString, bool exactPhrase, bool caseSensitive) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.#ctor(System.String,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (searchString As String, exactPhrase As Boolean, caseSensitive As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChatHistoryQueryOptions(System::String ^ searchString, bool exactPhrase, bool caseSensitive);" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="searchString" Type="System.String" />
+        <Parameter Name="exactPhrase" Type="System.Boolean" />
+        <Parameter Name="caseSensitive" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="searchString">The search string.</param>
+        <param name="exactPhrase">if set to <see cref="true" /> the search string is treated as an exact phrase.</param>
+        <param name="caseSensitive">if set to <see cref="true" /> the search is case sensitive.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Authors">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;Uri&gt; Authors { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.Uri&gt; Authors" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.Authors" />
+      <MemberSignature Language="VB.NET" Value="Public Property Authors As ICollection(Of Uri)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;Uri ^&gt; ^ Authors { System::Collections::Generic::ICollection&lt;Uri ^&gt; ^ get(); void set(System::Collections::Generic::ICollection&lt;Uri ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;System.Uri&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a collection of SIP URI's of users to match.
+            If non-null, only messages from users having one of the specified SIP URI's will be returned.
+            </summary>
+        <value>The authors.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateBeginning">
+      <MemberSignature Language="C#" Value="public DateTime DateBeginning { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime DateBeginning" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.DateBeginning" />
+      <MemberSignature Language="VB.NET" Value="Public Property DateBeginning As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime DateBeginning { DateTime get(); void set(DateTime value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the starting date and time of this query.
+            This value is ignored if <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.StartingMessageID" /> is non-zero.
+            If no <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.DateEnding" /> time is set, messages between <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.DateBeginning" /> and <see cref="P:System.DateTime.Now" /> will be returned.
+            If a <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.DateEnding" /> time is specified, only those messages which were sent between the specified times will be returned.
+            </summary>
+        <value>The start time of the query.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateEnding">
+      <MemberSignature Language="C#" Value="public DateTime DateEnding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime DateEnding" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.DateEnding" />
+      <MemberSignature Language="VB.NET" Value="Public Property DateEnding As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime DateEnding { DateTime get(); void set(DateTime value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the starting date and time of this query.
+            This value is ignored if <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.StartingMessageID" /> is non-zero.
+            If no <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.DateBeginning" /> time is set, messages between <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.DateEnding" /> and <see cref="P:System.DateTime.Now" /> will be returned.
+            If a <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.DateBeginning" /> time is specified, only those messages which were sent between the specified times will be returned.
+            </summary>
+        <value>The ending time of the query.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchCaseSensitive">
+      <MemberSignature Language="C#" Value="public bool MatchCaseSensitive { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MatchCaseSensitive" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.MatchCaseSensitive" />
+      <MemberSignature Language="VB.NET" Value="Public Property MatchCaseSensitive As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MatchCaseSensitive { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether the query should be performed with case sensitivity.
+            </summary>
+        <value>
+          <see cref="true" /> if matching case sensitive; otherwise, <see cref="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchExactPhrase">
+      <MemberSignature Language="C#" Value="public bool MatchExactPhrase { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MatchExactPhrase" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.MatchExactPhrase" />
+      <MemberSignature Language="VB.NET" Value="Public Property MatchExactPhrase As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MatchExactPhrase { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether to treat the <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.SearchString" /> as a single search term, and match on the exact phrase.
+            </summary>
+        <value>
+          <see cref="true" /> if matching an exact phrase; otherwise, <see cref="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResultLimit">
+      <MemberSignature Language="C#" Value="public int ResultLimit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ResultLimit" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.ResultLimit" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResultLimit As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ResultLimit { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the result limit, indicating the maximum number of message per chat room 
+            which should be returned by this query.
+            The Persistent Chat server imposes a maximum limit on results of backchat queries.
+            If the requested <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.ResultLimit" /> exceeds the server imposed limit, the server imposed limit prevails.
+            </summary>
+        <value>The result limit.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SearchOrderReversed">
+      <MemberSignature Language="C#" Value="public bool SearchOrderReversed { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SearchOrderReversed" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.SearchOrderReversed" />
+      <MemberSignature Language="VB.NET" Value="Public Property SearchOrderReversed As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SearchOrderReversed { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether messages should be searched starting with the most recent messages first.
+            The server imposes a limit on the number of messages that can be returned in a chat history query.
+            This property can be useful in reducing the amount of paging which is necessary
+            when the target message occured recently.
+            </summary>
+        <value>
+          <see cref="true" /> if searching from the most recent message first; otherwise, <see cref="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SearchString">
+      <MemberSignature Language="C#" Value="public string SearchString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SearchString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.SearchString" />
+      <MemberSignature Language="VB.NET" Value="Public Property SearchString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SearchString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the search string.
+            The search string may consist of one or more space-separated words, each of which will be treated as a search term.
+            If the property <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.MatchCaseSensitive" /> is <see cref="true" />, this search will be case sensitive.
+            If the property <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.MatchExactPhrase" /> is <see cref="true" />, the entire search string will be treated as a single search term.
+            </summary>
+        <value>The search string.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SortOrderReversed">
+      <MemberSignature Language="C#" Value="public bool SortOrderReversed { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SortOrderReversed" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.SortOrderReversed" />
+      <MemberSignature Language="VB.NET" Value="Public Property SortOrderReversed As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SortOrderReversed { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether the results should be returned starting with the most recent messages frirst.
+            </summary>
+        <value>
+          <see cref="true" /> if the sort order of results should be 'most recent first'; otherwise, <see cref="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartingMessageID">
+      <MemberSignature Language="C#" Value="public long StartingMessageID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 StartingMessageID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.StartingMessageID" />
+      <MemberSignature Language="VB.NET" Value="Public Property StartingMessageID As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long StartingMessageID { long get(); void set(long value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the starting message ID for this query.
+            If this value is set to a non-zero value, the <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.DateBeginning" /> and <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.DateEnding" />
+            properties will be ignored, and the search will be performed relative to the specified message.
+            Use this parameter to retrieve an additional page of results when a search returns <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryResult.ExceededServerLimit" />.
+            </summary>
+        <value>The message id.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

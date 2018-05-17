@@ -1,0 +1,167 @@
+﻿<Type Name="ChatRoomParticipant" FullName="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomParticipant">
+  <TypeSignature Language="C#" Value="public class ChatRoomParticipant" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChatRoomParticipant extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomParticipant" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChatRoomParticipant" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChatRoomParticipant" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Represents a user that is actively joined to a <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EntityGuid">
+      <MemberSignature Language="C#" Value="public Guid EntityGuid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid EntityGuid" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomParticipant.EntityGuid" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EntityGuid As Guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid EntityGuid { Guid get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the entity GUID which identifies this user to the system.
+            </summary>
+        <value>The entity GUID.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsManager">
+      <MemberSignature Language="C#" Value="public bool IsManager { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsManager" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomParticipant.IsManager" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsManager As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsManager { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether this participant is a manager of this chat room.
+            </summary>
+        <value>
+          <see cref="true" /> if this instance is manager; otherwise, <see cref="false" />.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPresenter">
+      <MemberSignature Language="C#" Value="public bool IsPresenter { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsPresenter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomParticipant.IsPresenter" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPresenter As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPresenter { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether this participant is a presenter on this chat room.
+            This value is only used when a chat room is configured as an auditorium.  (see <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.IsAuditorium" />)
+            </summary>
+        <value>
+          <see cref="true" /> if this instance is a presenter; otherwise, <see cref="false" />.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomParticipant.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the name of the user represented by this instance.
+            </summary>
+        <value>The user name.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary (Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomParticipant participant);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary op_Implicit(class Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomParticipant participant) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomParticipant.op_Implicit(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomParticipant)~Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (participant As ChatRoomParticipant) As PersistentChatPrincipalSummary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator Microsoft::Rtc::Collaboration::PersistentChat::Management::PersistentChatPrincipalSummary ^(Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomParticipant ^ participant);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="participant" Type="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomParticipant" />
+      </Parameters>
+      <Docs>
+        <param name="participant">The participant.</param>
+        <summary>
+            Performs an implicit conversion from <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomParticipant" /> to <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary" />.
+            The <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary.ActiveDirectoryPath" /> is unavailable in this context, and will be null on the returned object.
+            Additionally, the <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary.Type" /> of the user is unknown in this context,
+            and will always be set to <see cref="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType.LocalUser" /> on the returned object.
+            </summary>
+        <returns>The result of the conversion.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SipUri">
+      <MemberSignature Language="C#" Value="public Uri SipUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri SipUri" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomParticipant.SipUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SipUri As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ SipUri { Uri ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the SIP URI of this participant.
+            </summary>
+        <value>The SIP URI.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

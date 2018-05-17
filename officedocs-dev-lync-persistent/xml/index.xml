@@ -1,0 +1,122 @@
+<Overview>
+  <Assemblies>
+    <Assembly Name="Microsoft.Rtc.Collaboration.PersistentChat" Version="7.0.0.0">
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 69 4e 34 3e 3b 85 bd 91 bf d3 d5 c0 71 54 85 f8 48 2f 2a 36 7f de d6 60 b5 24 b2 ef b2 95 8c 59 7d 12 a5 08 79 d6 9d 42 bc ee 55 0e 66 fc 58 ca c7 a2 06 af 25 3b 82 db 29 99 8b 8b 03 19 b0 bb c0 fb 71 19 d8 f6 95 50 a9 c1 89 34 5a e6 08 82 07 95 9f 20 3c 3f c6 98 05 f8 e1 2a bf 94 ca a5 a8 9f 54 2d d7 f9 bf d1 81 88 dc 64 02 ba cd b2 cc 9a 33 3d af 95 f8 c0 93 8c 6b 0b 9e 16 c0 b3 ]</AssemblyPublicKey>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.Default | System.Diagnostics.DebuggableAttribute+DebuggingModes.DisableOptimizations | System.Diagnostics.DebuggableAttribute+DebuggingModes.EnableEditAndContinue | System.Diagnostics.DebuggableAttribute+DebuggingModes.IgnoreSymbolStoreSequencePoints)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCompany("Microsoft Corporation")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyConfiguration("DEBUG")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCopyright("© Microsoft Corporation.  All rights reserved.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyDefaultAlias("Microsoft.Rtc.Collaboration.PersistentChat.dll")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyDescription("Microsoft Persistent Chat API Assembly")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyFileVersion("7.0.2044.25")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyKeyName("SfBKey")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyProduct("Skype for Business Server 2019")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyTitle("Microsoft.Rtc.Collaboration.PersistentChat.dll")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.CompilationRelaxations(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.InternalsVisibleTo("Test, PublicKey=0024000004800000940000000602000000240000525341310004000001000100694e343e3b85bd91bfd3d5c0715485f8482f2a367fded660b524b2efb2958c597d12a50879d69d42bcee550e66fc58cac7a206af253b82db29998b8b0319b0bbc0fb7119d8f69550a9c189345ae6088207959f203c3fc69805f8e12abf94caa5a89f542dd7f9bfd18188dc6402bacdb2cc9a333daf95f8c0938c6b0b9e16c0b3")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.7", FrameworkDisplayName=".NET Framework 4")</AttributeName>
+        </Attribute>
+      </Attributes>
+    </Assembly>
+  </Assemblies>
+  <Remarks>To be added.</Remarks>
+  <Copyright>To be added.</Copyright>
+  <Types>
+    <Namespace Name="Microsoft.Rtc.Collaboration.PersistentChat">
+      <Type Name="ChatEmoticon" Kind="Enumeration" />
+      <Type Name="ChatHistoryQueryOptions" Kind="Class" />
+      <Type Name="ChatHistoryResult" Kind="Class" />
+      <Type Name="ChatMessage" Kind="Class" />
+      <Type Name="ChatMessageReceivedEventArgs" Kind="Class" />
+      <Type Name="ChatRoom" Kind="Class" />
+      <Type Name="ChatRoomBehavior" Kind="Enumeration" />
+      <Type Name="ChatRoomCategorySummary" Kind="Class" />
+      <Type Name="ChatRoomFileDownloadJob" Kind="Class" />
+      <Type Name="ChatRoomFileTransferProgressEventArgs" Kind="Class" />
+      <Type Name="ChatRoomFileUploadJob" Kind="Class" />
+      <Type Name="ChatRoomInvitation" Kind="Class" />
+      <Type Name="ChatRoomInvitationEventArgs" Kind="Class" />
+      <Type Name="ChatRoomInvitationSetting" Kind="Enumeration" />
+      <Type Name="ChatRoomParticipant" Kind="Class" />
+      <Type Name="ChatRoomPrivacy" Kind="Enumeration" />
+      <Type Name="ChatRoomPropertiesChangedEventArgs" Kind="Class" />
+      <Type Name="ChatRoomRole" Kind="Enumeration" />
+      <Type Name="ChatRoomSession" Kind="Class" />
+      <Type Name="ChatRoomSessionState" Kind="Enumeration" />
+      <Type Name="ChatRoomSessionStateChangedEventArgs" Kind="Class" />
+      <Type Name="ChatRoomSessionStateException" Kind="Class" />
+      <Type Name="ChatRoomSettings" Kind="Class" />
+      <Type Name="ChatRoomSnapshot" Kind="Class" />
+      <Type Name="ChatRoomSummary" Kind="Class" />
+      <Type Name="ChatServerConnectionException" Kind="Class" />
+      <Type Name="CommandFailedException" Kind="Class" />
+      <Type Name="FormattedOutboundChatMessage" Kind="Class" />
+      <Type Name="InheritedChatRoomInviteProperty" Kind="Class" />
+      <Type Name="MessagePart" Kind="Class" />
+      <Type Name="MessagePartChatRoomLink" Kind="Class" />
+      <Type Name="MessagePartEmoticon" Kind="Class" />
+      <Type Name="MessagePartFileDownloadLink" Kind="Class" />
+      <Type Name="MessagePartHyperLink" Kind="Class" />
+      <Type Name="MessagePartPlainText" Kind="Class" />
+      <Type Name="MessagePartStoryTitle" Kind="Class" />
+      <Type Name="ParticipantAttendanceChangedEventArgs" Kind="Class" />
+      <Type Name="ParticipantLeftEventArgs" Kind="Class" />
+      <Type Name="ParticipantPrivilegeChangedEventArgs" Kind="Class" />
+      <Type Name="PersistentChatAddIn" Kind="Class" />
+      <Type Name="PersistentChatEndpoint" Kind="Class" />
+      <Type Name="PersistentChatEndpointState" Kind="Enumeration" />
+      <Type Name="PersistentChatEndpointStateChangedEventArgs" Kind="Class" />
+      <Type Name="PersistentChatErrorCode" Kind="Enumeration" />
+      <Type Name="PersistentChatException" Kind="Class" />
+      <Type Name="PersistentChatPreferenceBundle" Kind="Class" />
+      <Type Name="PersistentChatPrincipalType" Kind="Enumeration" />
+      <Type Name="PersistentChatServerConfiguration" Kind="Class" />
+      <Type Name="PersistentChatServices" Kind="Class" />
+      <Type Name="RoomPermissionMap" Kind="Enumeration" />
+    </Namespace>
+    <Namespace Name="Microsoft.Rtc.Collaboration.PersistentChat.Management">
+      <Type Name="AuditData" Kind="Class" />
+      <Type Name="ChatRoomInformation" Kind="Class" />
+      <Type Name="ChatRoomManagementServices" Kind="Class" />
+      <Type Name="PersistentChatPrincipal" Kind="Class" />
+      <Type Name="PersistentChatPrincipalSummary" Kind="Class" />
+      <Type Name="PersistentChatRoleDescriptor" Kind="Class" />
+      <Type Name="PersistentChatUser" Kind="Class" />
+      <Type Name="PersistentChatUserGroup" Kind="Class" />
+      <Type Name="PersistentChatUserServices" Kind="Class" />
+    </Namespace>
+  </Types>
+  <Title>Microsoft.Rtc.Collaboration.PersistentChat</Title>
+</Overview>

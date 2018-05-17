@@ -1,0 +1,539 @@
+﻿<Type Name="PersistentChatErrorCode" FullName="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode">
+  <TypeSignature Language="C#" Value="public enum PersistentChatErrorCode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PersistentChatErrorCode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PersistentChatErrorCode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class PersistentChatErrorCode" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Enumerates the persistent chat error codes.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CannotGetParticipantList">
+      <MemberSignature Language="C#" Value="CannotGetParticipantList" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode CannotGetParticipantList = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.CannotGetParticipantList" />
+      <MemberSignature Language="VB.NET" Value="CannotGetParticipantList" />
+      <MemberSignature Language="C++ CLI" Value="CannotGetParticipantList" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>
+            You cannot request the participant list of the chat room.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandFailed">
+      <MemberSignature Language="C#" Value="CommandFailed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode CommandFailed = int32(20)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.CommandFailed" />
+      <MemberSignature Language="VB.NET" Value="CommandFailed" />
+      <MemberSignature Language="C++ CLI" Value="CommandFailed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>20</MemberValue>
+      <Docs>
+        <summary>
+            Command failed - see inner exception for details.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabaseConnection">
+      <MemberSignature Language="C#" Value="DatabaseConnection" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode DatabaseConnection = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.DatabaseConnection" />
+      <MemberSignature Language="VB.NET" Value="DatabaseConnection" />
+      <MemberSignature Language="C++ CLI" Value="DatabaseConnection" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            There was a problem with the server connection to the database.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DataCollision">
+      <MemberSignature Language="C#" Value="DataCollision" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode DataCollision = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.DataCollision" />
+      <MemberSignature Language="VB.NET" Value="DataCollision" />
+      <MemberSignature Language="C++ CLI" Value="DataCollision" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            The object being modified has been changed. Refresh your copy of the object before attempting to modify it.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DuplicateAddinName">
+      <MemberSignature Language="C#" Value="DuplicateAddinName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode DuplicateAddinName = int32(24)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.DuplicateAddinName" />
+      <MemberSignature Language="VB.NET" Value="DuplicateAddinName" />
+      <MemberSignature Language="C++ CLI" Value="DuplicateAddinName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>24</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DuplicateRoomName">
+      <MemberSignature Language="C#" Value="DuplicateRoomName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode DuplicateRoomName = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.DuplicateRoomName" />
+      <MemberSignature Language="VB.NET" Value="DuplicateRoomName" />
+      <MemberSignature Language="C++ CLI" Value="DuplicateRoomName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            A chat room with that name already exists.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorPermission">
+      <MemberSignature Language="C#" Value="ErrorPermission" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode ErrorPermission = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.ErrorPermission" />
+      <MemberSignature Language="VB.NET" Value="ErrorPermission" />
+      <MemberSignature Language="C++ CLI" Value="ErrorPermission" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>9</MemberValue>
+      <Docs>
+        <summary>
+            The signed in user is not authorized to perform the action on the room.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FileDownloadFailed">
+      <MemberSignature Language="C#" Value="FileDownloadFailed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode FileDownloadFailed = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.FileDownloadFailed" />
+      <MemberSignature Language="VB.NET" Value="FileDownloadFailed" />
+      <MemberSignature Language="C++ CLI" Value="FileDownloadFailed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>15</MemberValue>
+      <Docs>
+        <summary>
+            Failed to download file.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FileUploadFailed">
+      <MemberSignature Language="C#" Value="FileUploadFailed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode FileUploadFailed = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.FileUploadFailed" />
+      <MemberSignature Language="VB.NET" Value="FileUploadFailed" />
+      <MemberSignature Language="C++ CLI" Value="FileUploadFailed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>16</MemberValue>
+      <Docs>
+        <summary>
+            Failed to upload file.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidArgument">
+      <MemberSignature Language="C#" Value="InvalidArgument" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode InvalidArgument = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.InvalidArgument" />
+      <MemberSignature Language="VB.NET" Value="InvalidArgument" />
+      <MemberSignature Language="C++ CLI" Value="InvalidArgument" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>
+            One or more provided arguments to the command are invalid.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidFlowOfOperations">
+      <MemberSignature Language="C#" Value="InvalidFlowOfOperations" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode InvalidFlowOfOperations = int32(17)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.InvalidFlowOfOperations" />
+      <MemberSignature Language="VB.NET" Value="InvalidFlowOfOperations" />
+      <MemberSignature Language="C++ CLI" Value="InvalidFlowOfOperations" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>17</MemberValue>
+      <Docs>
+        <summary>
+            Connection flow interrupted. The endpoint is in an invalid state for the attempted operation.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidToken">
+      <MemberSignature Language="C#" Value="InvalidToken" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode InvalidToken = int32(18)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.InvalidToken" />
+      <MemberSignature Language="VB.NET" Value="InvalidToken" />
+      <MemberSignature Language="C++ CLI" Value="InvalidToken" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>18</MemberValue>
+      <Docs>
+        <summary>
+            Chat server returned an invalid file transfer security token.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LimitExceeded">
+      <MemberSignature Language="C#" Value="LimitExceeded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode LimitExceeded = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.LimitExceeded" />
+      <MemberSignature Language="VB.NET" Value="LimitExceeded" />
+      <MemberSignature Language="C++ CLI" Value="LimitExceeded" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>
+            You have exceeded an internal server limit.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MsgNotSupported">
+      <MemberSignature Language="C#" Value="MsgNotSupported" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode MsgNotSupported = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.MsgNotSupported" />
+      <MemberSignature Language="VB.NET" Value="MsgNotSupported" />
+      <MemberSignature Language="C++ CLI" Value="MsgNotSupported" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>6</MemberValue>
+      <Docs>
+        <summary>
+            The command is not supported by the server
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NodeDisabled">
+      <MemberSignature Language="C#" Value="NodeDisabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode NodeDisabled = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.NodeDisabled" />
+      <MemberSignature Language="VB.NET" Value="NodeDisabled" />
+      <MemberSignature Language="C++ CLI" Value="NodeDisabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>7</MemberValue>
+      <Docs>
+        <summary>
+            The chat room is disabled.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NodeHierarchyViolation">
+      <MemberSignature Language="C#" Value="NodeHierarchyViolation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode NodeHierarchyViolation = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.NodeHierarchyViolation" />
+      <MemberSignature Language="VB.NET" Value="NodeHierarchyViolation" />
+      <MemberSignature Language="C++ CLI" Value="NodeHierarchyViolation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>
+            Cannot create rooms under the root category.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoSuchNode">
+      <MemberSignature Language="C#" Value="NoSuchNode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode NoSuchNode = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.NoSuchNode" />
+      <MemberSignature Language="VB.NET" Value="NoSuchNode" />
+      <MemberSignature Language="C++ CLI" Value="NoSuchNode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>10</MemberValue>
+      <Docs>
+        <summary>
+            The room does not exist.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoSuchPrincipal">
+      <MemberSignature Language="C#" Value="NoSuchPrincipal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode NoSuchPrincipal = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.NoSuchPrincipal" />
+      <MemberSignature Language="VB.NET" Value="NoSuchPrincipal" />
+      <MemberSignature Language="C++ CLI" Value="NoSuchPrincipal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>11</MemberValue>
+      <Docs>
+        <summary>
+            One or more principals are invalid.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PresenterNotInMemList">
+      <MemberSignature Language="C#" Value="PresenterNotInMemList" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode PresenterNotInMemList = int32(23)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.PresenterNotInMemList" />
+      <MemberSignature Language="VB.NET" Value="PresenterNotInMemList" />
+      <MemberSignature Language="C++ CLI" Value="PresenterNotInMemList" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>23</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PrincipalsAlreadyDefined">
+      <MemberSignature Language="C#" Value="PrincipalsAlreadyDefined" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode PrincipalsAlreadyDefined = int32(21)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.PrincipalsAlreadyDefined" />
+      <MemberSignature Language="VB.NET" Value="PrincipalsAlreadyDefined" />
+      <MemberSignature Language="C++ CLI" Value="PrincipalsAlreadyDefined" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>21</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PrincipalsNotInScope">
+      <MemberSignature Language="C#" Value="PrincipalsNotInScope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode PrincipalsNotInScope = int32(22)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.PrincipalsNotInScope" />
+      <MemberSignature Language="VB.NET" Value="PrincipalsNotInScope" />
+      <MemberSignature Language="C++ CLI" Value="PrincipalsNotInScope" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>22</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerError">
+      <MemberSignature Language="C#" Value="ServerError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode ServerError = int32(19)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.ServerError" />
+      <MemberSignature Language="VB.NET" Value="ServerError" />
+      <MemberSignature Language="C++ CLI" Value="ServerError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>19</MemberValue>
+      <Docs>
+        <summary>
+            The chat server reported an error. Refer to the exception message for the error code.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnableToCreateRoom">
+      <MemberSignature Language="C#" Value="UnableToCreateRoom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode UnableToCreateRoom = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.UnableToCreateRoom" />
+      <MemberSignature Language="VB.NET" Value="UnableToCreateRoom" />
+      <MemberSignature Language="C++ CLI" Value="UnableToCreateRoom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>12</MemberValue>
+      <Docs>
+        <summary>
+            The signed in user cannot create the chat room.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnknownServerError">
+      <MemberSignature Language="C#" Value="UnknownServerError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode UnknownServerError = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.UnknownServerError" />
+      <MemberSignature Language="VB.NET" Value="UnknownServerError" />
+      <MemberSignature Language="C++ CLI" Value="UnknownServerError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>13</MemberValue>
+      <Docs>
+        <summary>
+            An unknown error occurred on the server.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UserNotJoined">
+      <MemberSignature Language="C#" Value="UserNotJoined" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode UserNotJoined = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.UserNotJoined" />
+      <MemberSignature Language="VB.NET" Value="UserNotJoined" />
+      <MemberSignature Language="C++ CLI" Value="UserNotJoined" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>14</MemberValue>
+      <Docs>
+        <summary>
+            The signed in user is not currently joined to the room.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

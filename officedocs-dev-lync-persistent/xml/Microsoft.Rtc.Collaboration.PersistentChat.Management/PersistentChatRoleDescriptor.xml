@@ -1,0 +1,72 @@
+﻿<Type Name="PersistentChatRoleDescriptor" FullName="Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatRoleDescriptor">
+  <TypeSignature Language="C#" Value="public class PersistentChatRoleDescriptor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PersistentChatRoleDescriptor extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatRoleDescriptor" />
+  <TypeSignature Language="VB.NET" Value="Public Class PersistentChatRoleDescriptor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PersistentChatRoleDescriptor" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Represents the assignment of a <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole" /> to a user or user group.
+            </summary>
+    <remarks>
+      <para>
+            A role can be granted on an individual <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom" />.
+            </para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ChangeHistory">
+      <MemberSignature Language="C#" Value="public Microsoft.Rtc.Collaboration.PersistentChat.Management.AuditData ChangeHistory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Rtc.Collaboration.PersistentChat.Management.AuditData ChangeHistory" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatRoleDescriptor.ChangeHistory" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChangeHistory As AuditData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::Management::AuditData ^ ChangeHistory { Microsoft::Rtc::Collaboration::PersistentChat::Management::AuditData ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.Management.AuditData</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the change history of this role assignment.
+            </summary>
+        <value>The change history.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrincipalWithRole">
+      <MemberSignature Language="C#" Value="public Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary PrincipalWithRole { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary PrincipalWithRole" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatRoleDescriptor.PrincipalWithRole" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrincipalWithRole As PersistentChatPrincipalSummary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::Management::PersistentChatPrincipalSummary ^ PrincipalWithRole { Microsoft::Rtc::Collaboration::PersistentChat::Management::PersistentChatPrincipalSummary ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets basic information about the principal to whom the role has been granted.
+            </summary>
+        <value>The principal with role.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

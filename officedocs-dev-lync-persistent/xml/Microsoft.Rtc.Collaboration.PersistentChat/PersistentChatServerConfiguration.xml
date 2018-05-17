@@ -1,0 +1,204 @@
+﻿<Type Name="PersistentChatServerConfiguration" FullName="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServerConfiguration">
+  <TypeSignature Language="C#" Value="public class PersistentChatServerConfiguration" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PersistentChatServerConfiguration extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServerConfiguration" />
+  <TypeSignature Language="VB.NET" Value="Public Class PersistentChatServerConfiguration" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PersistentChatServerConfiguration" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Properties and configuration settings which apply to the persistent chat server to which the <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> has connected.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DatabaseVersion">
+      <MemberSignature Language="C#" Value="public Guid DatabaseVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid DatabaseVersion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServerConfiguration.DatabaseVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DatabaseVersion As Guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid DatabaseVersion { Guid get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the database version of the Persistent Chat Server
+            </summary>
+        <value>The database version.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayName">
+      <MemberSignature Language="C#" Value="public string DisplayName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServerConfiguration.DisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the friendly name of the persistent chat service.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageSizeLimit">
+      <MemberSignature Language="C#" Value="public int MessageSizeLimit { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MessageSizeLimit" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServerConfiguration.MessageSizeLimit" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MessageSizeLimit As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MessageSizeLimit { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the message size limit, which is the maximum size in bytes that is permitted for any persistent chat message.
+            </summary>
+        <value>The message size limit.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RoomManagementUrl">
+      <MemberSignature Language="C#" Value="public string RoomManagementUrl { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RoomManagementUrl" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServerConfiguration.RoomManagementUrl" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RoomManagementUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RoomManagementUrl { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the URL used for managing rooms.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RootCategoryUri">
+      <MemberSignature Language="C#" Value="public Uri RootCategoryUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri RootCategoryUri" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServerConfiguration.RootCategoryUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RootCategoryUri As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ RootCategoryUri { Uri ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the Root Category URI.
+            The Root Category is the single category which has no parent category,
+            and from which all other chat rooms and chat room categories are inherited.
+            Use this category as a starting point to explore the entire hierarchy of chat rooms and chat room categories.
+            </summary>
+        <value>The root category URI.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SearchLimit">
+      <MemberSignature Language="C#" Value="public int SearchLimit { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SearchLimit" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServerConfiguration.SearchLimit" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SearchLimit As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SearchLimit { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the search result limit which is applied to all user queries
+            </summary>
+        <value>The search limit.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerTimeUtc">
+      <MemberSignature Language="C#" Value="public DateTime ServerTimeUtc { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ServerTimeUtc" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServerConfiguration.ServerTimeUtc" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServerTimeUtc As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime ServerTimeUtc { DateTime get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the server time in UTC (Coordinated Universal Time).
+            Use this value to compute time zone offsets between the server and the client for determing any shift in message timestamps that
+            may exist due to small differences in the system clocks.
+            </summary>
+        <value>The server time in UTC.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StorySizeLimit">
+      <MemberSignature Language="C#" Value="public int StorySizeLimit { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 StorySizeLimit" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServerConfiguration.StorySizeLimit" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StorySizeLimit As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StorySizeLimit { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the story size limit, which is the maximum size in bytes that is permitted for a persistent chat story message.
+            </summary>
+        <value>The story size limit.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

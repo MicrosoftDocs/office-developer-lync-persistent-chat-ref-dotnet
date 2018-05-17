@@ -1,0 +1,160 @@
+﻿<Type Name="ChatRoomFileUploadJob" FullName="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileUploadJob">
+  <TypeSignature Language="C#" Value="public class ChatRoomFileUploadJob" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChatRoomFileUploadJob extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileUploadJob" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChatRoomFileUploadJob" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChatRoomFileUploadJob" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Provides metadata and controls for handling a file upload operation with a chat room.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ChatRoomFileUploadJob (System.IO.FileInfo fileToUpload);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.FileInfo fileToUpload) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileUploadJob.#ctor(System.IO.FileInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fileToUpload As FileInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChatRoomFileUploadJob(System::IO::FileInfo ^ fileToUpload);" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fileToUpload" Type="System.IO.FileInfo" />
+      </Parameters>
+      <Docs>
+        <param name="fileToUpload">The file.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileUploadJob" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelJob">
+      <MemberSignature Language="C#" Value="public void CancelJob ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CancelJob() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileUploadJob.CancelJob" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CancelJob ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelJob();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Cancels the job.  This request is issued asynchronously.
+            When the cancellation is made effective, the <see cref="E:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileUploadJob.ProgressChanged" /> event will be fired,
+            and the <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileTransferProgressEventArgs.Cancelled" /> property will be set to <see cref="true" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileToUpload">
+      <MemberSignature Language="C#" Value="public System.IO.FileInfo FileToUpload { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IO.FileInfo FileToUpload" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileUploadJob.FileToUpload" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileToUpload As FileInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::FileInfo ^ FileToUpload { System::IO::FileInfo ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.FileInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the file to upload.
+            </summary>
+        <value>The file to upload.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PercentComplete">
+      <MemberSignature Language="C#" Value="public int PercentComplete { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PercentComplete" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileUploadJob.PercentComplete" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PercentComplete As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PercentComplete { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the percent complete.
+            </summary>
+        <value>The percent complete.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PerformUpload">
+      <MemberSignature Language="C#" Value="protected void PerformUpload (IAsyncResult asyncResult);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void PerformUpload(class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileUploadJob.PerformUpload(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub PerformUpload (asyncResult As IAsyncResult)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void PerformUpload(IAsyncResult ^ asyncResult);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="asyncResult">The async result.</param>
+        <summary>
+            Performs the transfer.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">Thrown when invalid arguments are passed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ProgressChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileTransferProgressEventArgs&gt; ProgressChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileTransferProgressEventArgs&gt; ProgressChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileUploadJob.ProgressChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ProgressChanged As EventHandler(Of ChatRoomFileTransferProgressEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomFileTransferProgressEventArgs ^&gt; ^ ProgressChanged;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileTransferProgressEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Occurs when file transfer progress has changed.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

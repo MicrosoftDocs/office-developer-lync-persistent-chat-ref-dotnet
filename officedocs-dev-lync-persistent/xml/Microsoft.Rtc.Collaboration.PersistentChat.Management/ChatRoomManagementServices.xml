@@ -1,0 +1,1320 @@
+﻿<Type Name="ChatRoomManagementServices" FullName="Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices">
+  <TypeSignature Language="C#" Value="public class ChatRoomManagementServices" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChatRoomManagementServices extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChatRoomManagementServices" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChatRoomManagementServices" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            A collection of methods which can be used to manage chat rooms.
+            An instance of this class may be obtained from the <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.ChatRoomManagementServices" /> property of <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices" /></summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BeginAddUsersOrGroupsToRole">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginAddUsersOrGroupsToRole (Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole role, Uri chatRoomUri, System.Collections.Generic.ICollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary&gt; principals, AsyncCallback userCallback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginAddUsersOrGroupsToRole(valuetype Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole role, class System.Uri chatRoomUri, class System.Collections.Generic.ICollection`1&lt;class Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary&gt; principals, class System.AsyncCallback userCallback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginAddUsersOrGroupsToRole(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole,System.Uri,System.Collections.Generic.ICollection{Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary},System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginAddUsersOrGroupsToRole (role As ChatRoomRole, chatRoomUri As Uri, principals As ICollection(Of PersistentChatPrincipalSummary), userCallback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginAddUsersOrGroupsToRole(Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomRole role, Uri ^ chatRoomUri, System::Collections::Generic::ICollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::Management::PersistentChatPrincipalSummary ^&gt; ^ principals, AsyncCallback ^ userCallback, System::Object ^ state);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="role" Type="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole" />
+        <Parameter Name="chatRoomUri" Type="System.Uri" />
+        <Parameter Name="principals" Type="System.Collections.Generic.ICollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary&gt;" />
+        <Parameter Name="userCallback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="role">The role to which the users and user groups will be added.</param>
+        <param name="chatRoomUri">The chat room URI.</param>
+        <param name="principals">A collection of users and user groups to add to the specified role.</param>
+        <param name="userCallback">The method to be invoked when this asynchronous operation completes.</param>
+        <param name="state">An object to be passed back to the callback.</param>
+        <summary>
+            Adds the specified collection of users or user groups to the role on the chat room.
+            </summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that references this operation.</returns>
+        <remarks>
+          <para>
+            All principals must meet eligibility requirements to be added to a role.  
+            To find eligible principals for a role, use <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginFindUsersOrGroupsForRole(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole,System.Uri,System.String,System.AsyncCallback,System.Object)" />.
+            This request will be processed asynchronously.
+            See <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndAddUsersOrGroupsToRole(System.IAsyncResult)" /> to complete this asynchronous operation.
+            </para>
+          <para />
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="chatRoomUri" /> is not a valid chat room URI.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="chatRoomUri" /> or <paramref name="principals" /> is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="role" /> has value <see cref="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole.Creator" /></exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatServerConnectionException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> is not established.</exception>
+        <exception cref="T:System.InvalidOperationException">The chat server connection is not in a valid state to send the command.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginChangeParentCategory">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginChangeParentCategory (Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom chatRoomToChange, Uri newParentCategoryUri, AsyncCallback userCallback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginChangeParentCategory(class Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom chatRoomToChange, class System.Uri newParentCategoryUri, class System.AsyncCallback userCallback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginChangeParentCategory(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom,System.Uri,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginChangeParentCategory (chatRoomToChange As ChatRoom, newParentCategoryUri As Uri, userCallback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginChangeParentCategory(Microsoft::Rtc::Collaboration::PersistentChat::ChatRoom ^ chatRoomToChange, Uri ^ newParentCategoryUri, AsyncCallback ^ userCallback, System::Object ^ state);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="chatRoomToChange" Type="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom" />
+        <Parameter Name="newParentCategoryUri" Type="System.Uri" />
+        <Parameter Name="userCallback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="chatRoomToChange">The chat room to move.</param>
+        <param name="newParentCategoryUri">The new parent category URI.</param>
+        <param name="userCallback">The method to be invoked when this asynchronous operation completes.</param>
+        <param name="state">An object to be passed back to the callback.</param>
+        <summary>
+            Move a chat room to a new parent category.
+            This request will be processed asynchronously.
+            See <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndChangeParentCategory(System.IAsyncResult)" /> to complete this asynchronous operation.
+            </summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that references this operation.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="chatRoomToChange" /> or <paramref name="newParentCategoryUri" /> is null.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="newParentCategoryUri" /> is not a valid category URI.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatServerConnectionException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> is not established.</exception>
+        <exception cref="T:System.InvalidOperationException">The chat server connection is not in a valid state to send the command.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginCreateChatRoom">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginCreateChatRoom (Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSettings settings, AsyncCallback userCallback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginCreateChatRoom(class Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSettings settings, class System.AsyncCallback userCallback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginCreateChatRoom(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSettings,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginCreateChatRoom (settings As ChatRoomSettings, userCallback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginCreateChatRoom(Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomSettings ^ settings, AsyncCallback ^ userCallback, System::Object ^ state);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="settings" Type="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSettings" />
+        <Parameter Name="userCallback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="settings">The settings to be applied to the new chat room.</param>
+        <param name="userCallback">The method to be invoked when this asynchronous operation completes.</param>
+        <param name="state">An object to be passed back to the callback.</param>
+        <summary>
+            Create a new chat room with the given settings.
+            This request will be processed asynchronously.
+            See <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndCreateChatRoom(System.IAsyncResult)" /> to complete this asynchronous operation.
+            </summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that references this operation.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="settings" /> is null.</exception>
+        <exception cref="T:System.ArgumentException">The <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSettings.Name" /> property of <paramref name="settings" /> is null or empty.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatServerConnectionException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> is not established.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSettings.Name" /> property of <paramref name="settings" /> is null or empty or the chat server connection is not in a valid state to send the command.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginCreateChatRoom">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginCreateChatRoom (string chatRoomName, Uri parentCategoryUri, AsyncCallback userCallback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginCreateChatRoom(string chatRoomName, class System.Uri parentCategoryUri, class System.AsyncCallback userCallback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginCreateChatRoom(System.String,System.Uri,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginCreateChatRoom (chatRoomName As String, parentCategoryUri As Uri, userCallback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginCreateChatRoom(System::String ^ chatRoomName, Uri ^ parentCategoryUri, AsyncCallback ^ userCallback, System::Object ^ state);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="chatRoomName" Type="System.String" />
+        <Parameter Name="parentCategoryUri" Type="System.Uri" />
+        <Parameter Name="userCallback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="chatRoomName">Name of the new chat room</param>
+        <param name="parentCategoryUri">URI of the parent category into which this chat room will be created.</param>
+        <param name="userCallback">The method to be invoked when this asynchronous operation completes.</param>
+        <param name="state">An object to be passed back to the callback.</param>
+        <summary>
+            Create a new chat room with the given name and parent category Uri.
+            This request will be processed asynchronously.
+            See <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndCreateChatRoom(System.IAsyncResult)" /> to complete this asynchronous operation.
+            </summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that references this operation.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="chatRoomName" /> is null or empty.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatServerConnectionException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> is not established.</exception>
+        <exception cref="T:System.InvalidOperationException">The chat server connection is not in a valid state to send the command.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginFindCategoriesWithCreateRights">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginFindCategoriesWithCreateRights (AsyncCallback userCallback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginFindCategoriesWithCreateRights(class System.AsyncCallback userCallback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginFindCategoriesWithCreateRights(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginFindCategoriesWithCreateRights (userCallback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginFindCategoriesWithCreateRights(AsyncCallback ^ userCallback, System::Object ^ state);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userCallback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="userCallback">The method to be invoked when this asynchronous operation completes.</param>
+        <param name="state">An object to be passed back to the callback.</param>
+        <summary>
+            Finds all categories for which the currently logged in user has rights to create new chat rooms.  
+            </summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that references this operation.</returns>
+        <remarks>
+          <para>
+            Any allowed creator in a category can create new chatrooms.
+            This request will be processed asynchronously.
+            See <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndFindCategoriesWithCreateRights(System.IAsyncResult)" /> to complete this asynchronous operation.
+            </para>
+          <para />
+        </remarks>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatServerConnectionException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> is not established.</exception>
+        <exception cref="T:System.InvalidOperationException">The chat server connection is not in a valid state to send the command.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginFindChatRoomsByParentCategory">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginFindChatRoomsByParentCategory (Uri parentCategory, AsyncCallback userCallback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginFindChatRoomsByParentCategory(class System.Uri parentCategory, class System.AsyncCallback userCallback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginFindChatRoomsByParentCategory(System.Uri,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginFindChatRoomsByParentCategory (parentCategory As Uri, userCallback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginFindChatRoomsByParentCategory(Uri ^ parentCategory, AsyncCallback ^ userCallback, System::Object ^ state);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parentCategory" Type="System.Uri" />
+        <Parameter Name="userCallback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="parentCategory">The parent category.</param>
+        <param name="userCallback">The method to be invoked when this asynchronous operation completes.</param>
+        <param name="state">An object to be passed back to the callback.</param>
+        <summary>
+            Finds all chat rooms in the parent category referenced by the specified category Uri. 
+            This request will be processed asynchronously.
+            See <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndFindChatRoomsByParentCategory(System.IAsyncResult)" /> to complete this asynchronous operation.
+            </summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that references this operation.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="parentCategory" /> is an invalid category URI.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="parentCategory" /> is null.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatServerConnectionException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> is not established.</exception>
+        <exception cref="T:System.InvalidOperationException">The chat server connection is not in a valid state to send the command.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginFindChatRoomsUsingAddIn">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginFindChatRoomsUsingAddIn (Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatAddIn addIn, AsyncCallback userCallback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginFindChatRoomsUsingAddIn(class Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatAddIn addIn, class System.AsyncCallback userCallback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginFindChatRoomsUsingAddIn(Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatAddIn,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginFindChatRoomsUsingAddIn (addIn As PersistentChatAddIn, userCallback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginFindChatRoomsUsingAddIn(Microsoft::Rtc::Collaboration::PersistentChat::PersistentChatAddIn ^ addIn, AsyncCallback ^ userCallback, System::Object ^ state);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="addIn" Type="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatAddIn" />
+        <Parameter Name="userCallback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="addIn">The add-in.</param>
+        <param name="userCallback">The method to be invoked when this asynchronous operation completes.</param>
+        <param name="state">An object to be passed back to the callback.</param>
+        <summary>
+            Finds all chat rooms currently using the specified add-in. 
+            This request will be processed asynchronously.
+            See <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndFindChatRoomsUsingAddIn(System.IAsyncResult)" /> to complete this asynchronous operation.
+            </summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that references this operation.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="addIn" /> is null.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatServerConnectionException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> is not established.</exception>
+        <exception cref="T:System.InvalidOperationException">The chat server connection is not in a valid state to send the command.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginFindUsersOrGroupsForRole">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginFindUsersOrGroupsForRole (Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole role, Uri chatRoomUri, string searchString, AsyncCallback userCallback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginFindUsersOrGroupsForRole(valuetype Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole role, class System.Uri chatRoomUri, string searchString, class System.AsyncCallback userCallback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginFindUsersOrGroupsForRole(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole,System.Uri,System.String,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginFindUsersOrGroupsForRole (role As ChatRoomRole, chatRoomUri As Uri, searchString As String, userCallback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginFindUsersOrGroupsForRole(Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomRole role, Uri ^ chatRoomUri, System::String ^ searchString, AsyncCallback ^ userCallback, System::Object ^ state);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="role" Type="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole" />
+        <Parameter Name="chatRoomUri" Type="System.Uri" />
+        <Parameter Name="searchString" Type="System.String" />
+        <Parameter Name="userCallback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="role">The role for which eligible users are being searched.</param>
+        <param name="chatRoomUri">The chat room URI.</param>
+        <param name="searchString">The search string by which eligible users will be filtered.</param>
+        <param name="userCallback">The method to be invoked when this asynchronous operation completes.</param>
+        <param name="state">An object to be passed back to the callback.</param>
+        <summary>
+            Finds users or user groups who are eligible for the given role on the specified chat room.
+            </summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that references this operation.</returns>
+        <remarks>
+          <para>
+            The searchString parameter value matches against the <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary.Name" /> of the user or user group.
+            To be eligible for <see cref="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole.Member" /> or <see cref="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole.Manager" /> roles, 
+            a user or user group must be in scope on the category.
+            To be eligible for <see cref="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole.Presenter" />, the principal must already be a member of the chat room.
+            This request will be processed asynchronously.
+            See <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndFindUsersOrGroupsForRole(System.IAsyncResult)" /> to complete this asynchronous operation.
+            </para>
+          <para />
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="searchString" /> is null or empty, <paramref name="chatRoomUri" /> is not a valid chat room URI.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="role" /> has value <see cref="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole.Creator" /></exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="chatRoomUri" /> is null.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatServerConnectionException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> is not established.</exception>
+        <exception cref="T:System.InvalidOperationException">The chat server connection is not in a valid state to send the command.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginGetAllAddIns">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginGetAllAddIns (AsyncCallback userCallback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginGetAllAddIns(class System.AsyncCallback userCallback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginGetAllAddIns(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginGetAllAddIns (userCallback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginGetAllAddIns(AsyncCallback ^ userCallback, System::Object ^ state);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userCallback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="userCallback">The method to be invoked when this asynchronous operation completes.</param>
+        <param name="state">An object to be passed back to the callback.</param>
+        <summary>
+            Retrieves the complete list of AddIns that have been registered with the server.
+            This request will be processed asynchronously.
+            See <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndGetAllAddIns(System.IAsyncResult)" /> to complete this asynchronous operation.
+            </summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that references this operation.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatServerConnectionException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> is not established.</exception>
+        <exception cref="T:System.InvalidOperationException">The chat server connection is not in a valid state to send the command.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginGetCategoryUsers">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginGetCategoryUsers (Uri categoryUri, string filter, int resultSize, AsyncCallback userCallBack, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginGetCategoryUsers(class System.Uri categoryUri, string filter, int32 resultSize, class System.AsyncCallback userCallBack, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginGetCategoryUsers(System.Uri,System.String,System.Int32,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginGetCategoryUsers (categoryUri As Uri, filter As String, resultSize As Integer, userCallBack As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginGetCategoryUsers(Uri ^ categoryUri, System::String ^ filter, int resultSize, AsyncCallback ^ userCallBack, System::Object ^ state);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="categoryUri" Type="System.Uri" />
+        <Parameter Name="filter" Type="System.String" />
+        <Parameter Name="resultSize" Type="System.Int32" />
+        <Parameter Name="userCallBack" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="categoryUri"> The target category to search for users </param>
+        <param name="filter"> A filter to specify the first few characters of a name </param>
+        <param name="resultSize"> The size of the resulted list </param>
+        <param name="userCallBack">The method to be invoked when this asynchronous operation completes.</param>
+        <param name="state">An object to be passed back to the callback.</param>
+        <summary>
+            Finds users or user groups who are eligible for the <see cref="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole.Creator" /> role on the specified category.
+            </summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that references this operation.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="categoryUri" /> or <paramref name="filter" /> is null.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="categoryUri" /> is not a valid category URI.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatServerConnectionException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> is not established.</exception>
+        <exception cref="T:System.InvalidOperationException">The chat server connection is not in a valid state to send the command.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginGetChatRoom">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginGetChatRoom (string chatRoomName, AsyncCallback userCallback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginGetChatRoom(string chatRoomName, class System.AsyncCallback userCallback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginGetChatRoom(System.String,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginGetChatRoom (chatRoomName As String, userCallback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginGetChatRoom(System::String ^ chatRoomName, AsyncCallback ^ userCallback, System::Object ^ state);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="chatRoomName" Type="System.String" />
+        <Parameter Name="userCallback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="chatRoomName">The name of the chat room.</param>
+        <param name="userCallback">The method to be invoked when this asynchronous operation completes.</param>
+        <param name="state">An object to be passed back to the callback.</param>
+        <summary>
+            Retrieves the <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom" /> with the given name.
+            This request will be processed asynchronously.
+            See <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndGetChatRoom(System.IAsyncResult)" /> to complete this asynchronous operation.
+            </summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that references this operation.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="chatRoomName" /> is null or empty.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatServerConnectionException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> is not established.</exception>
+        <exception cref="T:System.InvalidOperationException">The chat server connection is not in a valid state to send the command.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginGetChatRoom">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginGetChatRoom (Uri chatRoomUri, AsyncCallback userCallback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginGetChatRoom(class System.Uri chatRoomUri, class System.AsyncCallback userCallback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginGetChatRoom(System.Uri,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginGetChatRoom (chatRoomUri As Uri, userCallback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginGetChatRoom(Uri ^ chatRoomUri, AsyncCallback ^ userCallback, System::Object ^ state);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="chatRoomUri" Type="System.Uri" />
+        <Parameter Name="userCallback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="chatRoomUri">The chat room URI.</param>
+        <param name="userCallback">The method to be invoked when this asynchronous operation completes.</param>
+        <param name="state">An object to be passed back to the callback.</param>
+        <summary>
+            Retrieves the <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom" /> for the given URI.
+            This request will be processed asynchronously.
+            See <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndGetChatRoom(System.IAsyncResult)" /> to complete this asynchronous operation.
+            </summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that references this operation.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="chatRoomUri" /> is not a valid chat room URI.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="chatRoomUri" /> is null.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatServerConnectionException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> is not established.</exception>
+        <exception cref="T:System.InvalidOperationException">The chat server connection is not in a valid state to send the command.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginGetChatRoomPermissions">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginGetChatRoomPermissions (Uri roomUri, AsyncCallback userCallBack, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginGetChatRoomPermissions(class System.Uri roomUri, class System.AsyncCallback userCallBack, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginGetChatRoomPermissions(System.Uri,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginGetChatRoomPermissions (roomUri As Uri, userCallBack As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginGetChatRoomPermissions(Uri ^ roomUri, AsyncCallback ^ userCallBack, System::Object ^ state);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="roomUri" Type="System.Uri" />
+        <Parameter Name="userCallBack" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="roomUri">The room uri </param>
+        <param name="userCallBack">The method to be invoked when this asynchronous operation completes.</param>
+        <param name="state">An object to be passed back to the callback.</param>
+        <summary>
+            Returns the permissions that the signed in user has on the specified room.  
+            </summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that references this operation.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="roomUri" /> is null.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatServerConnectionException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> is not established.</exception>
+        <exception cref="T:System.InvalidOperationException">The chat server connection is not in a valid state to send the command.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginGetManagers">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginGetManagers (Uri chatRoomUri, AsyncCallback userCallback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginGetManagers(class System.Uri chatRoomUri, class System.AsyncCallback userCallback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginGetManagers(System.Uri,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginGetManagers (chatRoomUri As Uri, userCallback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginGetManagers(Uri ^ chatRoomUri, AsyncCallback ^ userCallback, System::Object ^ state);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="chatRoomUri" Type="System.Uri" />
+        <Parameter Name="userCallback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="chatRoomUri">The chat room URI.</param>
+        <param name="userCallback">The method to be invoked when this asynchronous operation completes.</param>
+        <param name="state">An object to be passed back to the callback.</param>
+        <summary>
+            Gets the managers of the specified chat room.
+            This request will be processed asynchronously.
+            See <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndGetManagers(System.IAsyncResult)" /> to complete this asynchronous operation.
+            </summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that references this operation.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="chatRoomUri" /> is null.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="chatRoomUri" /> is not a valid chat room URI.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatServerConnectionException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> is not established.</exception>
+        <exception cref="T:System.InvalidOperationException">The chat server connection is not in a valid state to send the command.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginGetMembers">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginGetMembers (Uri chatRoomUri, AsyncCallback userCallback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginGetMembers(class System.Uri chatRoomUri, class System.AsyncCallback userCallback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginGetMembers(System.Uri,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginGetMembers (chatRoomUri As Uri, userCallback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginGetMembers(Uri ^ chatRoomUri, AsyncCallback ^ userCallback, System::Object ^ state);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="chatRoomUri" Type="System.Uri" />
+        <Parameter Name="userCallback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="chatRoomUri">The chat room URI.</param>
+        <param name="userCallback">The method to be invoked when this asynchronous operation completes.</param>
+        <param name="state">An object to be passed back to the callback.</param>
+        <summary>
+            Gets the members of the specified chat room.
+            This request will be processed asynchronously.
+            See <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndGetMembers(System.IAsyncResult)" /> to complete this asynchronous operation.
+            </summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that references this operation.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="chatRoomUri" /> is null.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="chatRoomUri" /> is not a valid chat room URI.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatServerConnectionException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> is not established.</exception>
+        <exception cref="T:System.InvalidOperationException">The chat server connection is not in a valid state to send the command.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginGetPresenters">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginGetPresenters (Uri chatRoomUri, AsyncCallback userCallback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginGetPresenters(class System.Uri chatRoomUri, class System.AsyncCallback userCallback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginGetPresenters(System.Uri,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginGetPresenters (chatRoomUri As Uri, userCallback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginGetPresenters(Uri ^ chatRoomUri, AsyncCallback ^ userCallback, System::Object ^ state);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="chatRoomUri" Type="System.Uri" />
+        <Parameter Name="userCallback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="chatRoomUri">The chat room URI.</param>
+        <param name="userCallback">The method to be invoked when this asynchronous operation completes.</param>
+        <param name="state">An object to be passed back to the callback.</param>
+        <summary>
+            Gets the presenters of the specified chat room.
+            Presenters are the members of a chat room who may post new messages when the type of the chat room is set to <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.IsAuditorium" />
+            This request will be processed asynchronously.
+            See <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndGetManagers(System.IAsyncResult)" /> to complete this asynchronous operation.
+            </summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that references this operation.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="chatRoomUri" /> is null.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="chatRoomUri" /> is not a valid chat room URI.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatServerConnectionException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> is not established.</exception>
+        <exception cref="T:System.InvalidOperationException">The chat server connection is not in a valid state to send the command.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginRemoveUsersOrGroupsFromRole">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginRemoveUsersOrGroupsFromRole (Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole role, Uri chatRoomUri, System.Collections.Generic.ICollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary&gt; principals, AsyncCallback userCallback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginRemoveUsersOrGroupsFromRole(valuetype Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole role, class System.Uri chatRoomUri, class System.Collections.Generic.ICollection`1&lt;class Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary&gt; principals, class System.AsyncCallback userCallback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginRemoveUsersOrGroupsFromRole(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole,System.Uri,System.Collections.Generic.ICollection{Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary},System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginRemoveUsersOrGroupsFromRole (role As ChatRoomRole, chatRoomUri As Uri, principals As ICollection(Of PersistentChatPrincipalSummary), userCallback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginRemoveUsersOrGroupsFromRole(Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomRole role, Uri ^ chatRoomUri, System::Collections::Generic::ICollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::Management::PersistentChatPrincipalSummary ^&gt; ^ principals, AsyncCallback ^ userCallback, System::Object ^ state);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="role" Type="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole" />
+        <Parameter Name="chatRoomUri" Type="System.Uri" />
+        <Parameter Name="principals" Type="System.Collections.Generic.ICollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary&gt;" />
+        <Parameter Name="userCallback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="role">The role from which the users and user groups will be removed.</param>
+        <param name="chatRoomUri">The chat room URI.</param>
+        <param name="principals">A collection of users and user groups to remove from the specified role.</param>
+        <param name="userCallback">The method to be invoked when this asynchronous operation completes.</param>
+        <param name="state">An object to be passed back to the callback.</param>
+        <summary>
+            Removes the specified collection of users or user groups from the role on the chat room.
+            This request will be processed asynchronously.
+            See <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndRemoveUsersOrGroupsFromRole(System.IAsyncResult)" /> to complete this asynchronous operation.
+            </summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that references this operation.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="chatRoomUri" /> is not a valid chat room URI.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="chatRoomUri" /> or <paramref name="principals" /> is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="role" /> has value <see cref="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole.Creator" /></exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatServerConnectionException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> is not established.</exception>
+        <exception cref="T:System.InvalidOperationException">The chat server connection is not in a valid state to send the command.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginUpdateChatRoom">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginUpdateChatRoom (Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomInformation info, AsyncCallback userCallback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginUpdateChatRoom(class Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomInformation info, class System.AsyncCallback userCallback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginUpdateChatRoom(Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomInformation,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginUpdateChatRoom (info As ChatRoomInformation, userCallback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginUpdateChatRoom(Microsoft::Rtc::Collaboration::PersistentChat::Management::ChatRoomInformation ^ info, AsyncCallback ^ userCallback, System::Object ^ state);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomInformation" />
+        <Parameter Name="userCallback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="info">The information to update on the chat room.</param>
+        <param name="userCallback">The method to be invoked when this asynchronous operation completes.</param>
+        <param name="state">An object to be passed back to the callback.</param>
+        <summary>
+            Update the chat room properties with the given <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomInformation" />.
+            This request will be processed asynchronously.
+            See <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndUpdateChatRoom(System.IAsyncResult)" /> to complete this asynchronous operation.
+            </summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that references this operation.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="info" /> is null.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatServerConnectionException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> is not established.</exception>
+        <exception cref="T:System.InvalidOperationException">The chat server connection is not in a valid state to send the command.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginUpdateChatRoom">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginUpdateChatRoom (Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomInformation roomInfo, System.Collections.Generic.ICollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary&gt; members, System.Collections.Generic.ICollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary&gt; managers, System.Collections.Generic.ICollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary&gt; presenters, AsyncCallback userCallBack, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginUpdateChatRoom(class Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomInformation roomInfo, class System.Collections.Generic.ICollection`1&lt;class Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary&gt; members, class System.Collections.Generic.ICollection`1&lt;class Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary&gt; managers, class System.Collections.Generic.ICollection`1&lt;class Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary&gt; presenters, class System.AsyncCallback userCallBack, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginUpdateChatRoom(Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomInformation,System.Collections.Generic.ICollection{Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary},System.Collections.Generic.ICollection{Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary},System.Collections.Generic.ICollection{Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary},System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginUpdateChatRoom (roomInfo As ChatRoomInformation, members As ICollection(Of PersistentChatPrincipalSummary), managers As ICollection(Of PersistentChatPrincipalSummary), presenters As ICollection(Of PersistentChatPrincipalSummary), userCallBack As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginUpdateChatRoom(Microsoft::Rtc::Collaboration::PersistentChat::Management::ChatRoomInformation ^ roomInfo, System::Collections::Generic::ICollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::Management::PersistentChatPrincipalSummary ^&gt; ^ members, System::Collections::Generic::ICollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::Management::PersistentChatPrincipalSummary ^&gt; ^ managers, System::Collections::Generic::ICollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::Management::PersistentChatPrincipalSummary ^&gt; ^ presenters, AsyncCallback ^ userCallBack, System::Object ^ state);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="roomInfo" Type="Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomInformation" />
+        <Parameter Name="members" Type="System.Collections.Generic.ICollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary&gt;" />
+        <Parameter Name="managers" Type="System.Collections.Generic.ICollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary&gt;" />
+        <Parameter Name="presenters" Type="System.Collections.Generic.ICollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary&gt;" />
+        <Parameter Name="userCallBack" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="roomInfo">Object that contains the room settings</param>
+        <param name="members">A collection of users and user groups to be set as members. Pass in null to leave the 
+            current members unchanged. </param>
+        <param name="managers">A collection of users and user groups to be set as managers. Pass in null to leave the 
+            current managers unchanged. </param>
+        <param name="presenters">A collection of users and user groups to be set as presenters. Pass in null to leave the 
+            current presenters unchanged. </param>
+        <param name="userCallBack">The method to be invoked when this asynchronous operation completes.</param>
+        <param name="state">An object to be passed back to the callback.</param>
+        <summary>
+            Update chat room settings, member list, manager list and presenter list with one API call.
+            </summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that references this operation.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="roomInfo" /> is null.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatServerConnectionException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> is not established.</exception>
+        <exception cref="T:System.InvalidOperationException">The chat server connection is not in a valid state to send the command.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndAddUsersOrGroupsToRole">
+      <MemberSignature Language="C#" Value="public void EndAddUsersOrGroupsToRole (IAsyncResult asyncResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndAddUsersOrGroupsToRole(class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndAddUsersOrGroupsToRole(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndAddUsersOrGroupsToRole (asyncResult As IAsyncResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndAddUsersOrGroupsToRole(IAsyncResult ^ asyncResult);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> that references this operation.</param>
+        <summary>
+            Completes the asynchronous request initiated by <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginAddUsersOrGroupsToRole(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole,System.Uri,System.Collections.Generic.ICollection{Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary},System.AsyncCallback,System.Object)" /></summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="asyncResult" /> is null.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.CommandFailedException">The chat server encountered an error processing the request.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+        <exception cref="T:System.InvalidOperationException">This method was invoked multiple times with the same <see cref="T:System.IAsyncResult" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndChangeParentCategory">
+      <MemberSignature Language="C#" Value="public void EndChangeParentCategory (IAsyncResult asyncResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndChangeParentCategory(class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndChangeParentCategory(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndChangeParentCategory (asyncResult As IAsyncResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndChangeParentCategory(IAsyncResult ^ asyncResult);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> that references this operation.</param>
+        <summary>
+            Completes the asynchronous request initiated by <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginChangeParentCategory(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom,System.Uri,System.AsyncCallback,System.Object)" /></summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="asyncResult" /> is null.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.CommandFailedException">The chat server encountered an error processing the request.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+        <exception cref="T:System.InvalidOperationException">This method was invoked multiple times with the same <see cref="T:System.IAsyncResult" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndCreateChatRoom">
+      <MemberSignature Language="C#" Value="public Uri EndCreateChatRoom (IAsyncResult asyncResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Uri EndCreateChatRoom(class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndCreateChatRoom(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndCreateChatRoom (asyncResult As IAsyncResult) As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Uri ^ EndCreateChatRoom(IAsyncResult ^ asyncResult);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> that references this operation.</param>
+        <summary>
+            Completes the asynchronous request initiated by <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginCreateChatRoom(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSettings,System.AsyncCallback,System.Object)" /></summary>
+        <returns>The URI of the newly created chat room.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="asyncResult" /> is null.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.CommandFailedException">The chat server encountered an error processing the request.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+        <exception cref="T:System.InvalidOperationException">This method was invoked multiple times with the same <see cref="T:System.IAsyncResult" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndFindCategoriesWithCreateRights">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomCategorySummary&gt; EndFindCategoriesWithCreateRights (IAsyncResult asyncResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomCategorySummary&gt; EndFindCategoriesWithCreateRights(class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndFindCategoriesWithCreateRights(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndFindCategoriesWithCreateRights (asyncResult As IAsyncResult) As ReadOnlyCollection(Of ChatRoomCategorySummary)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomCategorySummary ^&gt; ^ EndFindCategoriesWithCreateRights(IAsyncResult ^ asyncResult);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomCategorySummary&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> that references this operation.</param>
+        <summary>
+            Completes the asynchronous request initiated by <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginFindCategoriesWithCreateRights(System.AsyncCallback,System.Object)" /></summary>
+        <returns>A collection of objects describing categories which match the requested criteria.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="asyncResult" /> is null.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.CommandFailedException">The chat server encountered an error processing the request.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+        <exception cref="T:System.InvalidOperationException">This method was invoked multiple times with the same <see cref="T:System.IAsyncResult" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndFindChatRoomsByParentCategory">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary&gt; EndFindChatRoomsByParentCategory (IAsyncResult asyncResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary&gt; EndFindChatRoomsByParentCategory(class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndFindChatRoomsByParentCategory(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndFindChatRoomsByParentCategory (asyncResult As IAsyncResult) As ReadOnlyCollection(Of ChatRoomSummary)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomSummary ^&gt; ^ EndFindChatRoomsByParentCategory(IAsyncResult ^ asyncResult);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> that references this operation.</param>
+        <summary>
+            Completes the asynchronous request initiated by <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginFindChatRoomsByParentCategory(System.Uri,System.AsyncCallback,System.Object)" /></summary>
+        <returns>A collection of objects describing chat rooms which match the requested criteria.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="asyncResult" /> is null.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.CommandFailedException">The chat server encountered an error processing the request.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+        <exception cref="T:System.InvalidOperationException">This method was invoked multiple times with the same <see cref="T:System.IAsyncResult" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndFindChatRoomsUsingAddIn">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary&gt; EndFindChatRoomsUsingAddIn (IAsyncResult asyncResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary&gt; EndFindChatRoomsUsingAddIn(class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndFindChatRoomsUsingAddIn(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndFindChatRoomsUsingAddIn (asyncResult As IAsyncResult) As ReadOnlyCollection(Of ChatRoomSummary)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomSummary ^&gt; ^ EndFindChatRoomsUsingAddIn(IAsyncResult ^ asyncResult);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> that references this operation.</param>
+        <summary>
+            Completes the asynchronous request initiated by <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginFindChatRoomsUsingAddIn(Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatAddIn,System.AsyncCallback,System.Object)" /></summary>
+        <returns>A collection of objects describing chat rooms which match the requested criteria.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="asyncResult" /> is null.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.CommandFailedException">The chat server encountered an error processing the request.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+        <exception cref="T:System.InvalidOperationException">This method was invoked multiple times with the same <see cref="T:System.IAsyncResult" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndFindUsersOrGroupsForRole">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary&gt; EndFindUsersOrGroupsForRole (IAsyncResult asyncResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary&gt; EndFindUsersOrGroupsForRole(class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndFindUsersOrGroupsForRole(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndFindUsersOrGroupsForRole (asyncResult As IAsyncResult) As ReadOnlyCollection(Of PersistentChatPrincipalSummary)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::Management::PersistentChatPrincipalSummary ^&gt; ^ EndFindUsersOrGroupsForRole(IAsyncResult ^ asyncResult);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> that references this operation.</param>
+        <summary>
+            Completes the asynchronous request initiated by <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginFindUsersOrGroupsForRole(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole,System.Uri,System.String,System.AsyncCallback,System.Object)" /></summary>
+        <returns>A collection of objects describing the users and user groups who are eligible for the role on the specified chat room.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="asyncResult" /> is null.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.CommandFailedException">The chat server encountered an error processing the request.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+        <exception cref="T:System.InvalidOperationException">This method was invoked multiple times with the same <see cref="T:System.IAsyncResult" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndGetAllAddIns">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatAddIn&gt; EndGetAllAddIns (IAsyncResult asyncResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatAddIn&gt; EndGetAllAddIns(class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndGetAllAddIns(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndGetAllAddIns (asyncResult As IAsyncResult) As ReadOnlyCollection(Of PersistentChatAddIn)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::PersistentChatAddIn ^&gt; ^ EndGetAllAddIns(IAsyncResult ^ asyncResult);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatAddIn&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> that references this operation.</param>
+        <summary>
+            Completes the asynchronous request initiated by <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginGetAllAddIns(System.AsyncCallback,System.Object)" /></summary>
+        <returns>The complete set of AddIns that have been registered with the server.
+            </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="asyncResult" /> is null.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.CommandFailedException">The chat server encountered an error processing the request.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+        <exception cref="T:System.InvalidOperationException">This method was invoked multiple times with the same <see cref="T:System.IAsyncResult" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndGetCategoryUsers">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary&gt; EndGetCategoryUsers (IAsyncResult asyncResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary&gt; EndGetCategoryUsers(class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndGetCategoryUsers(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndGetCategoryUsers (asyncResult As IAsyncResult) As ReadOnlyCollection(Of PersistentChatPrincipalSummary)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::Management::PersistentChatPrincipalSummary ^&gt; ^ EndGetCategoryUsers(IAsyncResult ^ asyncResult);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> that references this operation.</param>
+        <summary>
+            Completes the asynchronous request initiated by <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginGetCategoryUsers(System.Uri,System.String,System.Int32,System.AsyncCallback,System.Object)" />.
+            </summary>
+        <returns>Returns a list of ChatPrincipalSummary objects for a category based on the search parameters 
+            BeginGetCategoryUsers receives.
+            </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="asyncResult" /> is null.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.CommandFailedException">The chat server encountered an error processing the request.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+        <exception cref="T:System.InvalidOperationException">This method was invoked multiple times with the same <see cref="T:System.IAsyncResult" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndGetChatRoom">
+      <MemberSignature Language="C#" Value="public Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom EndGetChatRoom (IAsyncResult asyncResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom EndGetChatRoom(class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndGetChatRoom(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndGetChatRoom (asyncResult As IAsyncResult) As ChatRoom" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Rtc::Collaboration::PersistentChat::ChatRoom ^ EndGetChatRoom(IAsyncResult ^ asyncResult);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> that references this operation.</param>
+        <summary>
+            Completes the asynchronous request initiated by <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginGetChatRoom(System.String,System.AsyncCallback,System.Object)" />
+            or <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginGetChatRoom(System.Uri,System.AsyncCallback,System.Object)" /></summary>
+        <returns>The requested chat room
+            </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="asyncResult" /> is null.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.CommandFailedException">The chat server encountered an error processing the request.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+        <exception cref="T:System.InvalidOperationException">This method was invoked multiple times with the same <see cref="T:System.IAsyncResult" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndGetChatRoomPermissions">
+      <MemberSignature Language="C#" Value="public Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap EndGetChatRoomPermissions (IAsyncResult asyncResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap EndGetChatRoomPermissions(class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndGetChatRoomPermissions(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndGetChatRoomPermissions (asyncResult As IAsyncResult) As RoomPermissionMap" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Rtc::Collaboration::PersistentChat::RoomPermissionMap EndGetChatRoomPermissions(IAsyncResult ^ asyncResult);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> that references this operation.</param>
+        <summary>
+            Completes the asynchronous request initiated by <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginGetChatRoomPermissions(System.Uri,System.AsyncCallback,System.Object)" />.
+            </summary>
+        <returns>Returns a <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap" /> of the permissions that the user has on the room.
+            </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="asyncResult" /> is null.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.CommandFailedException">The chat server encountered an error processing the request.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+        <exception cref="T:System.InvalidOperationException">This method was invoked multiple times with the same <see cref="T:System.IAsyncResult" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndGetManagers">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatRoleDescriptor&gt; EndGetManagers (IAsyncResult asyncResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatRoleDescriptor&gt; EndGetManagers(class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndGetManagers(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndGetManagers (asyncResult As IAsyncResult) As ReadOnlyCollection(Of PersistentChatRoleDescriptor)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::Management::PersistentChatRoleDescriptor ^&gt; ^ EndGetManagers(IAsyncResult ^ asyncResult);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatRoleDescriptor&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> that references this operation.</param>
+        <summary>
+            Completes the asynchronous request initiated by <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginGetManagers(System.Uri,System.AsyncCallback,System.Object)" /></summary>
+        <returns>A collection of objects describing the managers of the requested chat room.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="asyncResult" /> is null.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.CommandFailedException">The chat server encountered an error processing the request.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+        <exception cref="T:System.InvalidOperationException">This method was invoked multiple times with the same <see cref="T:System.IAsyncResult" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndGetMembers">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatRoleDescriptor&gt; EndGetMembers (IAsyncResult asyncResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatRoleDescriptor&gt; EndGetMembers(class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndGetMembers(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndGetMembers (asyncResult As IAsyncResult) As ReadOnlyCollection(Of PersistentChatRoleDescriptor)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::Management::PersistentChatRoleDescriptor ^&gt; ^ EndGetMembers(IAsyncResult ^ asyncResult);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatRoleDescriptor&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> that references this operation.</param>
+        <summary>
+            Completes the asynchronous request initiated by <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginGetMembers(System.Uri,System.AsyncCallback,System.Object)" /></summary>
+        <returns>A collection of objects describing the members of the requested chat room.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="asyncResult" /> is null.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.CommandFailedException">The chat server encountered an error processing the request.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+        <exception cref="T:System.InvalidOperationException">This method was invoked multiple times with the same <see cref="T:System.IAsyncResult" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndGetPresenters">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatRoleDescriptor&gt; EndGetPresenters (IAsyncResult asyncResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatRoleDescriptor&gt; EndGetPresenters(class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndGetPresenters(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndGetPresenters (asyncResult As IAsyncResult) As ReadOnlyCollection(Of PersistentChatRoleDescriptor)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::Management::PersistentChatRoleDescriptor ^&gt; ^ EndGetPresenters(IAsyncResult ^ asyncResult);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatRoleDescriptor&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> that references this operation.</param>
+        <summary>
+            Completes the asynchronous request initiated by <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginGetPresenters(System.Uri,System.AsyncCallback,System.Object)" /></summary>
+        <returns>A collection of objects describing the presenters of the requested chat room.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="asyncResult" /> is null.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.CommandFailedException">The chat server encountered an error processing the request.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+        <exception cref="T:System.InvalidOperationException">This method was invoked multiple times with the same <see cref="T:System.IAsyncResult" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Endpoint">
+      <MemberSignature Language="C#" Value="public Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint Endpoint { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint Endpoint" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.Endpoint" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Endpoint As PersistentChatEndpoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::PersistentChatEndpoint ^ Endpoint { Microsoft::Rtc::Collaboration::PersistentChat::PersistentChatEndpoint ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the endpoint that this service object is tied to.
+            </summary>
+        <value>The endpoint.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndRemoveUsersOrGroupsFromRole">
+      <MemberSignature Language="C#" Value="public void EndRemoveUsersOrGroupsFromRole (IAsyncResult asyncResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndRemoveUsersOrGroupsFromRole(class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndRemoveUsersOrGroupsFromRole(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndRemoveUsersOrGroupsFromRole (asyncResult As IAsyncResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndRemoveUsersOrGroupsFromRole(IAsyncResult ^ asyncResult);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> that references this operation.</param>
+        <summary>
+            Completes the asynchronous request initiated by <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginRemoveUsersOrGroupsFromRole(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole,System.Uri,System.Collections.Generic.ICollection{Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary},System.AsyncCallback,System.Object)" /></summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="asyncResult" /> is null.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.CommandFailedException">The chat server encountered an error processing the request.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+        <exception cref="T:System.InvalidOperationException">This method was invoked multiple times with the same <see cref="T:System.IAsyncResult" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndUpdateChatRoom">
+      <MemberSignature Language="C#" Value="public void EndUpdateChatRoom (IAsyncResult asyncResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndUpdateChatRoom(class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndUpdateChatRoom(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndUpdateChatRoom (asyncResult As IAsyncResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndUpdateChatRoom(IAsyncResult ^ asyncResult);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> that references this operation.</param>
+        <summary>
+            Completes the asynchronous request initiated by <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginUpdateChatRoom(Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomInformation,System.AsyncCallback,System.Object)" />
+            or <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginUpdateChatRoom(Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomInformation,System.Collections.Generic.ICollection{Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary},System.Collections.Generic.ICollection{Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary},System.Collections.Generic.ICollection{Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary},System.AsyncCallback,System.Object)" /></summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="asyncResult" /> is null.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.CommandFailedException">The chat server encountered an error processing the request.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+        <exception cref="T:System.InvalidOperationException">This method was invoked multiple times with the same <see cref="T:System.IAsyncResult" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RootCategoryUri">
+      <MemberSignature Language="C#" Value="public Uri RootCategoryUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri RootCategoryUri" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.RootCategoryUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RootCategoryUri As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ RootCategoryUri { Uri ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the Root Category URI.
+            The Root Category is the single category which has no parent category,
+            and from which all other chat rooms and chat room categories are inherited.
+            Use this category as a starting point to explore the entire hierarchy of chat rooms and chat room categories.
+            </summary>
+        <value>The root category URI.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

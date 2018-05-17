@@ -1,0 +1,174 @@
+﻿<Type Name="RoomPermissionMap" FullName="Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap">
+  <TypeSignature Language="C#" Value="public enum RoomPermissionMap" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RoomPermissionMap extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RoomPermissionMap" />
+  <TypeSignature Language="C++ CLI" Value="public enum class RoomPermissionMap" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Enumerates the room permission map.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CanAuditoriumChat">
+      <MemberSignature Language="C#" Value="CanAuditoriumChat" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap CanAuditoriumChat = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap.CanAuditoriumChat" />
+      <MemberSignature Language="VB.NET" Value="CanAuditoriumChat" />
+      <MemberSignature Language="C++ CLI" Value="CanAuditoriumChat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap</ReturnType>
+      </ReturnValue>
+      <MemberValue>32</MemberValue>
+      <Docs>
+        <summary>
+            The user is a presenter in the auditorium room and can chat.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CanChat">
+      <MemberSignature Language="C#" Value="CanChat" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap CanChat = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap.CanChat" />
+      <MemberSignature Language="VB.NET" Value="CanChat" />
+      <MemberSignature Language="C++ CLI" Value="CanChat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>
+            The user can chat in the room.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CanJoin">
+      <MemberSignature Language="C#" Value="CanJoin" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap CanJoin = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap.CanJoin" />
+      <MemberSignature Language="VB.NET" Value="CanJoin" />
+      <MemberSignature Language="C++ CLI" Value="CanJoin" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            The user can join the room.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CanManageRoom">
+      <MemberSignature Language="C#" Value="CanManageRoom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap CanManageRoom = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap.CanManageRoom" />
+      <MemberSignature Language="VB.NET" Value="CanManageRoom" />
+      <MemberSignature Language="C++ CLI" Value="CanManageRoom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            The user can manage the room.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CanReadHistory">
+      <MemberSignature Language="C#" Value="CanReadHistory" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap CanReadHistory = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap.CanReadHistory" />
+      <MemberSignature Language="VB.NET" Value="CanReadHistory" />
+      <MemberSignature Language="C++ CLI" Value="CanReadHistory" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>
+            The user can read the room history.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CanView">
+      <MemberSignature Language="C#" Value="CanView" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap CanView = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap.CanView" />
+      <MemberSignature Language="VB.NET" Value="CanView" />
+      <MemberSignature Language="C++ CLI" Value="CanView" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap</ReturnType>
+      </ReturnValue>
+      <MemberValue>16</MemberValue>
+      <Docs>
+        <summary>
+            The room is visible to the user.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            The user has no permissions on the room.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

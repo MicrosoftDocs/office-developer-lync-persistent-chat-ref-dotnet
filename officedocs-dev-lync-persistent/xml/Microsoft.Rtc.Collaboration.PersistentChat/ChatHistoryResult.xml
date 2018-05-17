@@ -1,0 +1,141 @@
+﻿<Type Name="ChatHistoryResult" FullName="Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryResult">
+  <TypeSignature Language="C#" Value="public class ChatHistoryResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChatHistoryResult extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryResult" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChatHistoryResult" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChatHistoryResult" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            A collection of <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryResult.Messages" /> for a single chat room, which match 
+            the requested <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions" />.
+            Returned as the result of a chat history query.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ChatRoomName">
+      <MemberSignature Language="C#" Value="public string ChatRoomName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ChatRoomName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryResult.ChatRoomName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChatRoomName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ChatRoomName { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the name of the chat room for the messages contained in this instance.
+            </summary>
+        <value>The name of the chat room.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChatRoomUri">
+      <MemberSignature Language="C#" Value="public Uri ChatRoomUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ChatRoomUri" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryResult.ChatRoomUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChatRoomUri As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ChatRoomUri { Uri ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the URI of the chat room for the messages contained in this instance.
+            </summary>
+        <value>The chat room URI.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExceededServerLimit">
+      <MemberSignature Language="C#" Value="public bool ExceededServerLimit { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ExceededServerLimit" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryResult.ExceededServerLimit" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExceededServerLimit As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExceededServerLimit { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether the query results exceeded the server limit.
+            If the limit was exceeded, an additional page of results may be obtained by setting the 
+            <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.StartingMessageID" /> to the <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.MessageId" />
+            of the last message found in this result set.
+            </summary>
+        <value>
+          <see cref="true" /> if the results exceeded the server limit; otherwise, <see cref="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Messages">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage&gt; Messages { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage&gt; Messages" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryResult.Messages" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Messages As ReadOnlyCollection(Of ChatMessage)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::ChatMessage ^&gt; ^ Messages { System::Collections::ObjectModel::ReadOnlyCollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::ChatMessage ^&gt; ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the collection of messages which matched the query.
+            </summary>
+        <value>The messages.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SearchResultsCount">
+      <MemberSignature Language="C#" Value="public int SearchResultsCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SearchResultsCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryResult.SearchResultsCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SearchResultsCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SearchResultsCount { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the total count of messages which matched the query.
+            Due to server limits, the result may not contain all matching messages.
+            If the result set was truncated, <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryResult.ExceededServerLimit" /> will be <see cref="true" />.
+            </summary>
+        <value>The search results count.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

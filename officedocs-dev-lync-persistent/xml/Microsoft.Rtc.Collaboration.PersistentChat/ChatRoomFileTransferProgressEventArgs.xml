@@ -1,0 +1,115 @@
+﻿<Type Name="ChatRoomFileTransferProgressEventArgs" FullName="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileTransferProgressEventArgs">
+  <TypeSignature Language="C#" Value="public class ChatRoomFileTransferProgressEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChatRoomFileTransferProgressEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileTransferProgressEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChatRoomFileTransferProgressEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChatRoomFileTransferProgressEventArgs : EventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Event argument forwarded by a <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileDownloadJob" /> or <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileUploadJob" />
+            when file transfer progress has changed.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Cancelled">
+      <MemberSignature Language="C#" Value="public bool Cancelled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Cancelled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileTransferProgressEventArgs.Cancelled" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Cancelled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Cancelled { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether this operation is cancelled.
+            </summary>
+        <value>
+          <see cref="true" /> if cancelled; otherwise, <see cref="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Completed">
+      <MemberSignature Language="C#" Value="public bool Completed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Completed" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileTransferProgressEventArgs.Completed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Completed As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Completed { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether this operation is completed.
+            </summary>
+        <value>
+          <see cref="true" /> if completed; otherwise, <see cref="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PercentTransferred">
+      <MemberSignature Language="C#" Value="public int PercentTransferred { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PercentTransferred" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileTransferProgressEventArgs.PercentTransferred" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PercentTransferred As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PercentTransferred { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the percent complete.
+            </summary>
+        <value>The percent complete.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TotalBytes">
+      <MemberSignature Language="C#" Value="public Nullable&lt;long&gt; TotalBytes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; TotalBytes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileTransferProgressEventArgs.TotalBytes" />
+      <MemberSignature Language="VB.NET" Value="Public Property TotalBytes As Nullable(Of Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;long&gt; TotalBytes { Nullable&lt;long&gt; get(); void set(Nullable&lt;long&gt; value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the size of the file (the total number of bytes to be transferre).  
+            This is a discovered value, and may be null if the file size is not yet known.
+            </summary>
+        <value>The size of the file, or 0 if the file size is unknown.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

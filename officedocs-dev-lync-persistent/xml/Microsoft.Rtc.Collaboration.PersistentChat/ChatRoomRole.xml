@@ -1,0 +1,115 @@
+﻿<Type Name="ChatRoomRole" FullName="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole">
+  <TypeSignature Language="C#" Value="public enum ChatRoomRole" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ChatRoomRole extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ChatRoomRole" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ChatRoomRole" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Enumerates a permissioned role on a <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom" />.
+            These roles may be granted to any provisioned <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipal" />.
+            </summary>
+    <remarks>
+      <para>
+            For information about users and user groups having a defined role on a chat room, 
+            see <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices" />.  For example: to view the list of members 
+            on a chat room, see <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginGetMembers(System.Uri,System.AsyncCallback,System.Object)" />.
+            </para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="Creator" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole Creator = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole.Creator" />
+      <MemberSignature Language="VB.NET" Value="Creator" />
+      <MemberSignature Language="C++ CLI" Value="Creator" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>
+            A creator is a <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipal" /> that has been granted permission to create a chat room.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Manager">
+      <MemberSignature Language="C#" Value="Manager" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole Manager = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole.Manager" />
+      <MemberSignature Language="VB.NET" Value="Manager" />
+      <MemberSignature Language="C++ CLI" Value="Manager" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            A manager is a <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipal" /> that has been granted permission to manage a chat room.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Member">
+      <MemberSignature Language="C#" Value="Member" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole Member = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole.Member" />
+      <MemberSignature Language="VB.NET" Value="Member" />
+      <MemberSignature Language="C++ CLI" Value="Member" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            A member is a <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipal" /> that has been granted permission to join a chat room and view the chat history.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Presenter">
+      <MemberSignature Language="C#" Value="Presenter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole Presenter = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole.Presenter" />
+      <MemberSignature Language="VB.NET" Value="Presenter" />
+      <MemberSignature Language="C++ CLI" Value="Presenter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            A presenter is a <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipal" /> that has been granted permission to post messages to 
+            a chat room when that chat room is configured as an auditorium.  (see <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.IsAuditorium" />)
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

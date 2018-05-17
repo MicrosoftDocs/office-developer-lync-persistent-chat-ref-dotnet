@@ -1,0 +1,124 @@
+﻿<Type Name="PersistentChatAddIn" FullName="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatAddIn">
+  <TypeSignature Language="C#" Value="public class PersistentChatAddIn" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PersistentChatAddIn extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatAddIn" />
+  <TypeSignature Language="VB.NET" Value="Public Class PersistentChatAddIn" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PersistentChatAddIn" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            An add-in is a web-based application which can be associated with a chat room
+            (see <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.AddIn" />).  
+            </summary>
+    <remarks>
+      <para>
+            The chat room interacts with the add-in, sending it notification of inbound and outbound messages.
+            The add-in also has access to metadata about the chat room and the messages which are posted to it. 
+            </para>
+      <para>
+            An add-in must be registered with the system before it can be used on a chat room. 
+            The list of registered add-ins may be obtained from <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginGetAllAddIns(System.AsyncCallback,System.Object)" /></para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddInId">
+      <MemberSignature Language="C#" Value="public Guid AddInId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid AddInId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatAddIn.AddInId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AddInId As Guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid AddInId { Guid get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the add-in ID.
+            </summary>
+        <value>The add-in ID.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatAddIn.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the name of the add-in.
+            The name will be displayed in a list of add-ins from which chat room managers can select when they
+            are managing a chat room.
+            </summary>
+        <value>The name of the add-in.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Uri">
+      <MemberSignature Language="C#" Value="public Uri Uri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Uri" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatAddIn.Uri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Uri As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Uri { Uri ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the URI of the web page to be displayed by the add-in.  Can be null if
+            the UriString is not a valid URI-compatible format like "http://www.contoso.com".
+            </summary>
+        <value>The URI.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UriString">
+      <MemberSignature Language="C#" Value="public string UriString { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UriString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatAddIn.UriString" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UriString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UriString { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the string representation of the URI of the web page to be displayed by the add-in.  
+            </summary>
+        <value>The URI.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

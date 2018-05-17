@@ -1,0 +1,246 @@
+﻿<Type Name="ChatMessage" FullName="Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage">
+  <TypeSignature Language="C#" Value="public class ChatMessage" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChatMessage extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChatMessage" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChatMessage" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Represents a message that was posted to a chat room.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ChatRoomName">
+      <MemberSignature Language="C#" Value="public string ChatRoomName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ChatRoomName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.ChatRoomName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChatRoomName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ChatRoomName { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the name of the chat room to which this message was posted.
+            </summary>
+        <value>The name of the chat room.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChatRoomUri">
+      <MemberSignature Language="C#" Value="public Uri ChatRoomUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ChatRoomUri" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.ChatRoomUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChatRoomUri As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ChatRoomUri { Uri ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the chat room URI.
+            </summary>
+        <value>The chat room URI.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormattedMessageParts">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.MessagePart&gt; FormattedMessageParts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Microsoft.Rtc.Collaboration.PersistentChat.MessagePart&gt; FormattedMessageParts" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.FormattedMessageParts" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FormattedMessageParts As ReadOnlyCollection(Of MessagePart)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::MessagePart ^&gt; ^ FormattedMessageParts { System::Collections::ObjectModel::ReadOnlyCollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::MessagePart ^&gt; ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.MessagePart&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Parses the chat message into <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.MessagePart" /> segments, and returns a collection
+            of the parts found.
+            </summary>
+        <value>The message parts.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormattedRtfMessageParts">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.MessagePart&gt; FormattedRtfMessageParts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Microsoft.Rtc.Collaboration.PersistentChat.MessagePart&gt; FormattedRtfMessageParts" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.FormattedRtfMessageParts" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FormattedRtfMessageParts As ReadOnlyCollection(Of MessagePart)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::MessagePart ^&gt; ^ FormattedRtfMessageParts { System::Collections::ObjectModel::ReadOnlyCollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::MessagePart ^&gt; ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.MessagePart&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Parses the chat message into <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.MessagePart" /> segments, and returns a collection
+            of the parts found using the RTF formatted portion of the message.
+            </summary>
+        <value>The message parts.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAlert">
+      <MemberSignature Language="C#" Value="public bool IsAlert { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsAlert" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.IsAlert" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAlert As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAlert { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether this message was sent as a high priority alert.
+            </summary>
+        <value>
+          <see cref="true" /> if this instance is alert; otherwise, <see cref="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageAuthor">
+      <MemberSignature Language="C#" Value="public Uri MessageAuthor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri MessageAuthor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.MessageAuthor" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MessageAuthor As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ MessageAuthor { Uri ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the SIP URI of the user who sent the message.
+            </summary>
+        <value>The message author.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageContent">
+      <MemberSignature Language="C#" Value="public string MessageContent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MessageContent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.MessageContent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MessageContent As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MessageContent { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the content of the chat message.
+            </summary>
+        <value>The message body.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageId">
+      <MemberSignature Language="C#" Value="public long MessageId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 MessageId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.MessageId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MessageId As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MessageId { long get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the message ID.  Each chat message is assigned a unique identifier in the persistent chat database.
+            </summary>
+        <value>The message id.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageRtfContent">
+      <MemberSignature Language="C#" Value="public string MessageRtfContent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MessageRtfContent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.MessageRtfContent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MessageRtfContent As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MessageRtfContent { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the content of the chat message.
+            </summary>
+        <value>The message body.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Timestamp">
+      <MemberSignature Language="C#" Value="public DateTime Timestamp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime Timestamp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.Timestamp" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Timestamp As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime Timestamp { DateTime get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the timestamp when this message was received by the Persistent Chat server.
+            </summary>
+        <value>The timestamp.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

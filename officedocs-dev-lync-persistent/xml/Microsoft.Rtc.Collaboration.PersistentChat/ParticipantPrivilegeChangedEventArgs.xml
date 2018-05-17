@@ -1,0 +1,68 @@
+﻿<Type Name="ParticipantPrivilegeChangedEventArgs" FullName="Microsoft.Rtc.Collaboration.PersistentChat.ParticipantPrivilegeChangedEventArgs">
+  <TypeSignature Language="C#" Value="public class ParticipantPrivilegeChangedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ParticipantPrivilegeChangedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.ParticipantPrivilegeChangedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class ParticipantPrivilegeChangedEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ParticipantPrivilegeChangedEventArgs : EventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Event argument forwarded by a <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession" /> when the privileges
+            of a user have changed; see <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomParticipant.IsManager" /> and <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomParticipant.IsPresenter" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ChatRoomUri">
+      <MemberSignature Language="C#" Value="public Uri ChatRoomUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ChatRoomUri" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ParticipantPrivilegeChangedEventArgs.ChatRoomUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChatRoomUri As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ChatRoomUri { Uri ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the chat room URI.
+            </summary>
+        <value>The chat room URI.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Participant">
+      <MemberSignature Language="C#" Value="public Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomParticipant Participant { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomParticipant Participant" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ParticipantPrivilegeChangedEventArgs.Participant" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Participant As ChatRoomParticipant" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomParticipant ^ Participant { Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomParticipant ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomParticipant</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the participant whose privileges have changed, and the set of of privileges now granted to this participant.
+            </summary>
+        <value>The participant.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
