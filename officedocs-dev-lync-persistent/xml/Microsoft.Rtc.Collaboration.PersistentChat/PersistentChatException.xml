@@ -1,0 +1,22 @@
+﻿<Type Name="PersistentChatException" FullName="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatException">
+  <TypeSignature Language="C#" Value="public class PersistentChatException : Exception" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PersistentChatException extends System.Exception" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatException" />
+  <TypeSignature Language="VB.NET" Value="Public Class PersistentChatException&#xA;Inherits Exception" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PersistentChatException : Exception" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Exception</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+             Represents the base class for all exceptions defined in the Microsoft Persistent Chat API. 
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

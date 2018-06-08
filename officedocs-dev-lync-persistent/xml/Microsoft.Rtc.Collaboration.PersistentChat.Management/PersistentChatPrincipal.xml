@@ -1,0 +1,225 @@
+﻿<Type Name="PersistentChatPrincipal" FullName="Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipal">
+  <TypeSignature Language="C#" Value="public abstract class PersistentChatPrincipal" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PersistentChatPrincipal extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipal" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class PersistentChatPrincipal" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PersistentChatPrincipal abstract" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Describes a user or user group which is provisioned for persistent chat, and has specific 
+            roles and permissions assigned to it in the persistent chat system.
+            </summary>
+    <remarks>
+      <para>
+            For better manageability, it is recommended to assign chat room membership and other roles
+            to groups (see <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserGroup" />), rather than to the constituents of the group individually.
+            However, assignment of roles and permissions to both user groups and individual users is fully supported.
+            This object represents an instance of a permissionable entity.
+            </para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ActiveDirectoryPath">
+      <MemberSignature Language="C#" Value="public string ActiveDirectoryPath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ActiveDirectoryPath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipal.ActiveDirectoryPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property ActiveDirectoryPath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ActiveDirectoryPath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the Active Directory path of this principal.
+            </summary>
+        <value>The Active Directory path.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeHistory">
+      <MemberSignature Language="C#" Value="public Microsoft.Rtc.Collaboration.PersistentChat.Management.AuditData ChangeHistory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Rtc.Collaboration.PersistentChat.Management.AuditData ChangeHistory" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipal.ChangeHistory" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChangeHistory As AuditData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::Management::AuditData ^ ChangeHistory { Microsoft::Rtc::Collaboration::PersistentChat::Management::AuditData ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.Management.AuditData</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the change history of this principal.
+            </summary>
+        <value>The change history.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityGuid">
+      <MemberSignature Language="C#" Value="public Guid EntityGuid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid EntityGuid" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipal.EntityGuid" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EntityGuid As Guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid EntityGuid { Guid get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the entity GUID which identifies this user or user group to the system.
+            </summary>
+        <value>The entity GUID.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MemberOf">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary&gt; MemberOf { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary&gt; MemberOf" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipal.MemberOf" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MemberOf As ReadOnlyCollection(Of PersistentChatPrincipalSummary)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::Management::PersistentChatPrincipalSummary ^&gt; ^ MemberOf { System::Collections::ObjectModel::ReadOnlyCollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::Management::PersistentChatPrincipalSummary ^&gt; ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a collection of objects which describe the user groups to which this principal belongs.
+            
+            Local users belong to a domain (see <see cref="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType.Domain" />),
+            a hierarchy of Active Directory containers and organizational units (see <see cref="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType.DirectoryFolder" />,
+            as well as an arbitrary number of security groups and distribution lists (see <see cref="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType.DirectoryGroup" />).
+            Affiliation with these various user groups can be used to grant permissions to a user,
+            as well as membership or management roles on chat rooms.
+            
+            User groups may also have an affiliated membership list.
+            A security group or distribution list (<see cref="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType.DirectoryGroup" />) principal 
+            may be defined as a member of an arbitrary number of other directory groups, and 
+            an active directory container (<see cref="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType.DirectoryFolder" />) exists in
+            a hierarchy of directory containers.
+            </summary>
+        <value>The user groups to which this principal belongs.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipal.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the name of the user or user group represented by this instance.
+            </summary>
+        <value>The name.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary (Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipal principal);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary op_Implicit(class Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipal principal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipal.op_Implicit(Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipal)~Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (principal As PersistentChatPrincipal) As PersistentChatPrincipalSummary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator Microsoft::Rtc::Collaboration::PersistentChat::Management::PersistentChatPrincipalSummary ^(Microsoft::Rtc::Collaboration::PersistentChat::Management::PersistentChatPrincipal ^ principal);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="principal" Type="Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipal" />
+      </Parameters>
+      <Docs>
+        <param name="principal">The user or user group.</param>
+        <summary>
+            Performs an implicit conversion from <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipal" /> to <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary" />.
+            Methods which operate on any user or user group may require a reference to a <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary" />.
+            </summary>
+        <returns>The result of the conversion.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipal.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As PersistentChatPrincipalType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::PersistentChatPrincipalType Type { Microsoft::Rtc::Collaboration::PersistentChat::PersistentChatPrincipalType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the type of principal represented by this instance.
+            </summary>
+        <value>The type.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Uri">
+      <MemberSignature Language="C#" Value="public Uri Uri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Uri" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipal.Uri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Uri As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Uri { Uri ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the URI for this principal.  User's have SIP URI's, and groups have URI's of the form 'ma-grp:<see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipal.EntityGuid" />@u.g'
+            </summary>
+        <value>The URI.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

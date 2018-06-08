@@ -1,0 +1,241 @@
+﻿<Type Name="ChatEmoticon" FullName="Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon">
+  <TypeSignature Language="C#" Value="public enum ChatEmoticon" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ChatEmoticon extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ChatEmoticon" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ChatEmoticon" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Enumerates a chat message emoticon, which can be used as part of a chat message. See <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartEmoticon" /></summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Angry">
+      <MemberSignature Language="C#" Value="Angry" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon Angry = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Angry" />
+      <MemberSignature Language="VB.NET" Value="Angry" />
+      <MemberSignature Language="C++ CLI" Value="Angry" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon</ReturnType>
+      </ReturnValue>
+      <MemberValue>9</MemberValue>
+      <Docs>
+        <summary>
+            An emoticon which represents the face of an angry person; typed as &gt;:O</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Confused">
+      <MemberSignature Language="C#" Value="Confused" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon Confused = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Confused" />
+      <MemberSignature Language="VB.NET" Value="Confused" />
+      <MemberSignature Language="C++ CLI" Value="Confused" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>
+            An emoticon which represents the face of a person who appears confused; typed as :-/</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Cool">
+      <MemberSignature Language="C#" Value="Cool" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon Cool = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Cool" />
+      <MemberSignature Language="VB.NET" Value="Cool" />
+      <MemberSignature Language="C++ CLI" Value="Cool" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            An emoticon which represents the face of a person wearing sunglasses; typed as 8-)</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Crying">
+      <MemberSignature Language="C#" Value="Crying" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon Crying = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Crying" />
+      <MemberSignature Language="VB.NET" Value="Crying" />
+      <MemberSignature Language="C++ CLI" Value="Crying" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon</ReturnType>
+      </ReturnValue>
+      <MemberValue>6</MemberValue>
+      <Docs>
+        <summary>
+            An emoticon which represents the face of a person who is crying; typed as :'(</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Frown">
+      <MemberSignature Language="C#" Value="Frown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon Frown = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Frown" />
+      <MemberSignature Language="VB.NET" Value="Frown" />
+      <MemberSignature Language="C++ CLI" Value="Frown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            An emoticon which represents the face of a person who is frowning; typed as :(</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Kissing">
+      <MemberSignature Language="C#" Value="Kissing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon Kissing = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Kissing" />
+      <MemberSignature Language="VB.NET" Value="Kissing" />
+      <MemberSignature Language="C++ CLI" Value="Kissing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon</ReturnType>
+      </ReturnValue>
+      <MemberValue>10</MemberValue>
+      <Docs>
+        <summary>
+            An emoticon which represents the face of a person whose lips are puckered up for a kiss; typed as :-*</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Laughing">
+      <MemberSignature Language="C#" Value="Laughing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon Laughing = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Laughing" />
+      <MemberSignature Language="VB.NET" Value="Laughing" />
+      <MemberSignature Language="C++ CLI" Value="Laughing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>
+            An emoticon which represents the face of a person whose mouth is open and laughing; typed as :-D</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Shocked">
+      <MemberSignature Language="C#" Value="Shocked" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon Shocked = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Shocked" />
+      <MemberSignature Language="VB.NET" Value="Shocked" />
+      <MemberSignature Language="C++ CLI" Value="Shocked" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>
+            An emoticon which represents the face of a person whose mouth is wide open; typed as :-O</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Smile">
+      <MemberSignature Language="C#" Value="Smile" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon Smile = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Smile" />
+      <MemberSignature Language="VB.NET" Value="Smile" />
+      <MemberSignature Language="C++ CLI" Value="Smile" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            An emoticon which represents the face of a person who is smiling; typed as :)</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Tongue">
+      <MemberSignature Language="C#" Value="Tongue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon Tongue = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Tongue" />
+      <MemberSignature Language="VB.NET" Value="Tongue" />
+      <MemberSignature Language="C++ CLI" Value="Tongue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon</ReturnType>
+      </ReturnValue>
+      <MemberValue>7</MemberValue>
+      <Docs>
+        <summary>
+            An emoticon which represents the face of a person whose tongue is sticking out; typed as :-P</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Wink">
+      <MemberSignature Language="C#" Value="Wink" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon Wink = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Wink" />
+      <MemberSignature Language="VB.NET" Value="Wink" />
+      <MemberSignature Language="C++ CLI" Value="Wink" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>
+            An emoticon which represents the face of a person who is winking; typed as ;)</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

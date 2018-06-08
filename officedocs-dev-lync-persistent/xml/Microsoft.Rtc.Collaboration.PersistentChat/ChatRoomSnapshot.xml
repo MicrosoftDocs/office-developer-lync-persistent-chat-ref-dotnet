@@ -1,0 +1,51 @@
+﻿<Type Name="ChatRoomSnapshot" FullName="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSnapshot">
+  <TypeSignature Language="C#" Value="public class ChatRoomSnapshot : Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChatRoomSnapshot extends Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSnapshot" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChatRoomSnapshot&#xA;Inherits ChatRoomSummary" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChatRoomSnapshot : Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomSummary" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Returned from a request to browse chat rooms. 
+            </summary>
+    <remarks>
+      <para>
+            Because it is a subclass of <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary" />, a <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSnapshot" /> can 
+            be used to join a chat room (see <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.BeginJoin(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary,System.AsyncCallback,System.Object)" />)
+            </para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="NumberOfParticipants">
+      <MemberSignature Language="C#" Value="public int NumberOfParticipants { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfParticipants" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSnapshot.NumberOfParticipants" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NumberOfParticipants As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NumberOfParticipants { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the number of participants currently joined to the chat room.
+            </summary>
+        <value>The number of participants.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

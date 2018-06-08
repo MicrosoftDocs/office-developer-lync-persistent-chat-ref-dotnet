@@ -1,0 +1,118 @@
+﻿<Type Name="InheritedChatRoomInviteProperty" FullName="Microsoft.Rtc.Collaboration.PersistentChat.InheritedChatRoomInviteProperty">
+  <TypeSignature Language="C#" Value="public class InheritedChatRoomInviteProperty" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InheritedChatRoomInviteProperty extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.InheritedChatRoomInviteProperty" />
+  <TypeSignature Language="VB.NET" Value="Public Class InheritedChatRoomInviteProperty" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InheritedChatRoomInviteProperty" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Represents the room invitations property which is derived from information associated with
+            a chatroom, as well as information associated with the parent category.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="InheritedValue">
+      <MemberSignature Language="C#" Value="public bool InheritedValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool InheritedValue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.InheritedChatRoomInviteProperty.InheritedValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InheritedValue As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool InheritedValue { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the inherited value of the property.  
+            This value is the effective <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.InheritedChatRoomInviteProperty.Value" /> of the property on the parent.
+            </summary>
+        <value>The inherited value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalValue">
+      <MemberSignature Language="C#" Value="public Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomInvitationSetting LocalValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomInvitationSetting LocalValue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.InheritedChatRoomInviteProperty.LocalValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocalValue As ChatRoomInvitationSetting" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomInvitationSetting LocalValue { Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomInvitationSetting get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomInvitationSetting</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the locally defined value of the property.
+            </summary>
+        <value>The locally defined value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.InheritedChatRoomInviteProperty.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Returns a <see cref="T:System.String" /> that represents the current <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.InheritedChatRoomInviteProperty" />.
+            </summary>
+        <returns>
+            A <see cref="T:System.String" /> that represents the current <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.InheritedChatRoomInviteProperty" />.
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public bool Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.InheritedChatRoomInviteProperty.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Value { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the effective value of the property.
+            This is the actual value which defines the behavior, as resolved from the rules governing this property, 
+            as well as the <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.InheritedChatRoomInviteProperty.LocalValue" /> and <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.InheritedChatRoomInviteProperty.InheritedValue" /> which have been defined.
+            </summary>
+        <value>The value of the property</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

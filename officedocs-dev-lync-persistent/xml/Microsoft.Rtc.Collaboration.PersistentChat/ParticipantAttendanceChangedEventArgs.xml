@@ -1,0 +1,90 @@
+﻿<Type Name="ParticipantAttendanceChangedEventArgs" FullName="Microsoft.Rtc.Collaboration.PersistentChat.ParticipantAttendanceChangedEventArgs">
+  <TypeSignature Language="C#" Value="public class ParticipantAttendanceChangedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ParticipantAttendanceChangedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.ParticipantAttendanceChangedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class ParticipantAttendanceChangedEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ParticipantAttendanceChangedEventArgs : EventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Event argument forwarded by a <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession" /> when a user enters or leaves the room.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ChatRoomUri">
+      <MemberSignature Language="C#" Value="public Uri ChatRoomUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ChatRoomUri" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ParticipantAttendanceChangedEventArgs.ChatRoomUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChatRoomUri As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ChatRoomUri { Uri ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the chat room URI.
+            </summary>
+        <value>The chat room URI.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsActive">
+      <MemberSignature Language="C#" Value="public bool IsActive { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsActive" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ParticipantAttendanceChangedEventArgs.IsActive" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsActive As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsActive { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether this participant is active in the room.
+            </summary>
+        <value>
+          <see cref="true" /> if this user is active; otherwise, <see cref="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Participant">
+      <MemberSignature Language="C#" Value="public Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomParticipant Participant { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomParticipant Participant" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ParticipantAttendanceChangedEventArgs.Participant" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Participant As ChatRoomParticipant" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomParticipant ^ Participant { Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomParticipant ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomParticipant</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the participant that has joined the chat room.
+            </summary>
+        <value>The participant.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

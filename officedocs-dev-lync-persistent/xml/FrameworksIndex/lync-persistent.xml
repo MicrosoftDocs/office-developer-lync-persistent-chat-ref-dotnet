@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Framework Name="lync-persistent">
+  <Namespace Name="Microsoft.Rtc.Collaboration.PersistentChat">
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon">
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Angry" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Confused" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Cool" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Crying" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Frown" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Kissing" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Laughing" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Shocked" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Smile" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Tongue" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Wink" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions">
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.#ctor(System.String,System.Boolean,System.Boolean)" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.Authors" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.DateBeginning" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.DateEnding" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.MatchCaseSensitive" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.MatchExactPhrase" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.ResultLimit" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.SearchOrderReversed" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.SearchString" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.SortOrderReversed" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.StartingMessageID" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryResult" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryResult">
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryResult.ChatRoomName" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryResult.ChatRoomUri" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryResult.ExceededServerLimit" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryResult.Messages" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryResult.SearchResultsCount" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage">
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.ChatRoomName" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.ChatRoomUri" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.FormattedMessageParts" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.FormattedRtfMessageParts" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.IsAlert" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.MessageAuthor" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.MessageContent" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.MessageId" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.MessageRtfContent" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.Timestamp" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.ChatMessageReceivedEventArgs" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessageReceivedEventArgs">
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessageReceivedEventArgs.Message" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom">
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.op_Implicit(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom)~Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.AddIn" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.ChangeHistory" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.ChatRoomUri" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.Description" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.FileStoreUri" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.IsAuditorium" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.IsDisabled" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.Name" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.ParentCategoryDescription" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.ParentCategoryName" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.ParentCategoryUri" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.Privacy" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.SendInvitationsToMembers" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomBehavior" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomBehavior">
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomBehavior.Auditorium" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomBehavior.Normal" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomBehavior.Unset" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomCategorySummary" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomCategorySummary">
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomCategorySummary.Description" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomCategorySummary.Invitations" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomCategorySummary.Name" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomCategorySummary.Uri" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileDownloadJob" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileDownloadJob">
+      <Member Id="E:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileDownloadJob.ProgressChanged" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileDownloadJob.#ctor(Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink,System.String)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileDownloadJob.CancelJob" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileDownloadJob.DestinationPath" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileDownloadJob.PercentComplete" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileDownloadJob.SourceUrl" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileTransferProgressEventArgs" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileTransferProgressEventArgs">
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileTransferProgressEventArgs.Cancelled" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileTransferProgressEventArgs.Completed" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileTransferProgressEventArgs.PercentTransferred" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileTransferProgressEventArgs.TotalBytes" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileUploadJob" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileUploadJob">
+      <Member Id="E:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileUploadJob.ProgressChanged" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileUploadJob.#ctor(System.IO.FileInfo)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileUploadJob.CancelJob" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileUploadJob.PerformUpload(System.IAsyncResult)" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileUploadJob.FileToUpload" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileUploadJob.PercentComplete" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomInvitation" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomInvitation">
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomInvitation.ChatRoomSnapshot" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomInvitation.CreatedOn" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomInvitation.InvId" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomInvitationEventArgs" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomInvitationEventArgs">
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomInvitationEventArgs.ChatRoom" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomInvitationSetting" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomInvitationSetting">
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomInvitationSetting.False" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomInvitationSetting.Inherit" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomParticipant" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomParticipant">
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomParticipant.op_Implicit(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomParticipant)~Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomParticipant.EntityGuid" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomParticipant.IsManager" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomParticipant.IsPresenter" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomParticipant.Name" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomParticipant.SipUri" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomPrivacy" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomPrivacy">
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomPrivacy.Closed" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomPrivacy.Open" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomPrivacy.Secret" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomPropertiesChangedEventArgs" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomPropertiesChangedEventArgs">
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomPropertiesChangedEventArgs.ChatRoomUri" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomPropertiesChangedEventArgs.NewChatRoomProperties" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomPropertiesChangedEventArgs.OldChatRoomProperties" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole">
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole.Creator" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole.Manager" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole.Member" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole.Presenter" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession">
+      <Member Id="E:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.ChatMessageReceived" />
+      <Member Id="E:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.ChatRoomPropertiesChanged" />
+      <Member Id="E:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.ChatRoomSessionStateChanged" />
+      <Member Id="E:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.ParticipantAttendanceChanged" />
+      <Member Id="E:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.ParticipantPrivilegeChanged" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.#ctor(Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.BeginDownloadFile(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileDownloadJob,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.BeginGetHiddenParticipantList(System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.BeginGetRecentChatHistory(System.Int32,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.BeginJoin(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.BeginJoin(System.String,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.BeginJoin(System.Uri,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.BeginLeave(System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.BeginQueryChatHistory(Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.BeginQueryChatHistory(System.String,System.Boolean,System.Boolean,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.BeginSendChatMessage(Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.BeginSendChatMessage(Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage,System.String,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.BeginSendChatMessage(System.String,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.BeginSendChatMessage(System.String,System.Boolean,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.BeginSendChatMessage(System.String,System.Boolean,System.String,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.BeginSendChatMessage(System.String,System.String,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.BeginSendChatMessage(System.String,System.String,System.Boolean,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.BeginSendChatMessage(System.String,System.String,System.String,System.Boolean,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.BeginUploadFile(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileUploadJob,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.EndDownloadFile(System.IAsyncResult)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.EndGetHiddenParticipantList(System.IAsyncResult)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.EndGetRecentChatHistory(System.IAsyncResult)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.EndJoin(System.IAsyncResult)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.EndLeave(System.IAsyncResult)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.EndQueryChatHistory(System.IAsyncResult)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.EndSendChatMessage(System.IAsyncResult)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.EndUploadFile(System.IAsyncResult)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.op_Implicit(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession)~Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.AddIn" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.CanChat" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.CanManage" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.ChatRoomUri" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.Description" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.Endpoint" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.IsAuditorium" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.IsFilePostAllowed" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.IsInvite" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.IsLogged" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.Name" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.ParentCategoryUri" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.Participants" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.State" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.VisibleOnlyToMembers" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionState" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionState">
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionState.Established" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionState.Establishing" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionState.Idle" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionState.Terminated" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionState.Terminating" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionStateChangedEventArgs" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionStateChangedEventArgs">
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionStateChangedEventArgs.State" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionStateException" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionStateException" />
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSettings" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSettings">
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSettings.#ctor(System.String,System.Uri)" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSettings.AddIn" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSettings.Description" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSettings.IsAuditorium" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSettings.IsDisabled" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSettings.Name" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSettings.ParentCategoryUri" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSettings.SendInvitationsToMembers" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSettings.VisibleOnlyToMembers" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSnapshot" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSnapshot">
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSnapshot.NumberOfParticipants" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary">
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary.ChatRoomUri" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary.Description" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary.Name" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.ChatServerConnectionException" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatServerConnectionException" />
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.CommandFailedException" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.CommandFailedException">
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.CommandFailedException.ErrorCode" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage">
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.#ctor" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.#ctor(System.Boolean)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.#ctor(System.Boolean,System.String)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.AppendChatRoomLink(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.AppendEmoticon(Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.AppendHyperLink(System.String,System.Uri)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.AppendPlainText(System.String)" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.FormattedMessageParts" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.IsAlert" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.MessageContent" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.StoryTitle" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.InheritedChatRoomInviteProperty" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.InheritedChatRoomInviteProperty">
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.InheritedChatRoomInviteProperty.ToString" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.InheritedChatRoomInviteProperty.InheritedValue" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.InheritedChatRoomInviteProperty.LocalValue" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.InheritedChatRoomInviteProperty.Value" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.MessagePart" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.MessagePart">
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePart.#ctor" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePart.Equals(Microsoft.Rtc.Collaboration.PersistentChat.MessagePart)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePart.Equals(System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePart.GetHashCode" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePart.ToString" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.MessagePart.DisplayText" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.MessagePart.RawText" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.MessagePartChatRoomLink" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartChatRoomLink">
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartChatRoomLink.#ctor(System.String,System.Uri)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartChatRoomLink.Equals(Microsoft.Rtc.Collaboration.PersistentChat.MessagePartChatRoomLink)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartChatRoomLink.Equals(System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartChatRoomLink.GetHashCode" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartChatRoomLink.ChatRoomUri" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.MessagePartEmoticon" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartEmoticon">
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartEmoticon.Equals(Microsoft.Rtc.Collaboration.PersistentChat.MessagePartEmoticon)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartEmoticon.Equals(System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartEmoticon.GetEmoticonString(Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartEmoticon.GetHashCode" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartEmoticon.Emoticon" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink">
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink.Equals(Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink.Equals(System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink.GetHashCode" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink.FileName" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink.FileSizeEstimate" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink.FileUri" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.MessagePartHyperLink" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartHyperLink">
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartHyperLink.Equals(Microsoft.Rtc.Collaboration.PersistentChat.MessagePartHyperLink)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartHyperLink.Equals(System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartHyperLink.GetHashCode" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartHyperLink.Hyperlink" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.MessagePartPlainText" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartPlainText">
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartPlainText.Equals(Microsoft.Rtc.Collaboration.PersistentChat.MessagePartPlainText)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartPlainText.Equals(System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartPlainText.GetHashCode" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.MessagePartStoryTitle" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartStoryTitle">
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartStoryTitle.Equals(Microsoft.Rtc.Collaboration.PersistentChat.MessagePartStoryTitle)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartStoryTitle.Equals(System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartStoryTitle.GetHashCode" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.ParticipantAttendanceChangedEventArgs" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.ParticipantAttendanceChangedEventArgs">
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ParticipantAttendanceChangedEventArgs.ChatRoomUri" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ParticipantAttendanceChangedEventArgs.IsActive" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ParticipantAttendanceChangedEventArgs.Participant" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.ParticipantLeftEventArgs" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.ParticipantLeftEventArgs">
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ParticipantLeftEventArgs.ChatRoomUri" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ParticipantLeftEventArgs.ParticipantUri" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.ParticipantPrivilegeChangedEventArgs" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.ParticipantPrivilegeChangedEventArgs">
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ParticipantPrivilegeChangedEventArgs.ChatRoomUri" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.ParticipantPrivilegeChangedEventArgs.Participant" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatAddIn" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatAddIn">
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatAddIn.AddInId" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatAddIn.Name" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatAddIn.Uri" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatAddIn.UriString" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint">
+      <Member Id="E:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.ChatRoomInvitationReceived" />
+      <Member Id="E:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.ConnectionStateChanged" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.#ctor(System.Uri,Microsoft.Rtc.Collaboration.LocalEndpoint)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.BeginEstablish(System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.BeginTerminate(System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.EndEstablish(System.IAsyncResult)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.EndTerminate(System.IAsyncResult)" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.ActiveChatRoomSessions" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.InnerEndpoint" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.Item(System.String)" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.Item(System.Uri)" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.PersistentChatServices" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.State" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpointState" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpointState">
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpointState.Established" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpointState.Establishing" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpointState.Idle" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpointState.Terminated" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpointState.Terminating" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpointStateChangedEventArgs" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpointStateChangedEventArgs">
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpointStateChangedEventArgs.State" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode">
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.CannotGetParticipantList" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.CommandFailed" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.DatabaseConnection" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.DataCollision" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.DuplicateAddinName" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.DuplicateRoomName" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.ErrorPermission" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.FileDownloadFailed" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.FileUploadFailed" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.InvalidArgument" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.InvalidFlowOfOperations" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.InvalidToken" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.LimitExceeded" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.MsgNotSupported" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.NodeDisabled" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.NodeHierarchyViolation" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.NoSuchNode" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.NoSuchPrincipal" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.PresenterNotInMemList" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.PrincipalsAlreadyDefined" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.PrincipalsNotInScope" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.ServerError" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.UnableToCreateRoom" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.UnknownServerError" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.UserNotJoined" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatException" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatException" />
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPreferenceBundle" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPreferenceBundle">
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPreferenceBundle.#ctor(System.String,System.Int32,System.String)" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPreferenceBundle.Data" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPreferenceBundle.Label" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPreferenceBundle.SequenceId" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType">
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType.DirectoryFolder" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType.DirectoryGroup" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType.Domain" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType.LocalUser" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServerConfiguration" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServerConfiguration">
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServerConfiguration.DatabaseVersion" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServerConfiguration.DisplayName" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServerConfiguration.MessageSizeLimit" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServerConfiguration.RoomManagementUrl" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServerConfiguration.RootCategoryUri" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServerConfiguration.SearchLimit" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServerConfiguration.ServerTimeUtc" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServerConfiguration.StorySizeLimit" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices">
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.BeginBrowseChatRoomsByCategoryUri(System.Uri,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.BeginBrowseChatRoomsByCategoryUri(System.Uri,System.Int32,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.BeginBrowseChatRoomsByCriteria(System.String,System.Boolean,System.Boolean,System.Boolean,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.BeginBrowseChatRoomsByCriteria(System.String,System.Boolean,System.Boolean,System.Boolean,System.Int32,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.BeginBrowseChatRoomsByFilterCriteria(System.String,System.Boolean,System.String,System.String,System.Uri,System.Nullable{System.Guid},System.Boolean,System.Nullable{Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomPrivacy},System.Nullable{Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomBehavior},System.Nullable{System.Boolean},System.Boolean,System.Int32,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.BeginBrowseChatRoomsByInvitations(System.Int32,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.BeginBrowseChatRoomsByJoinedUser(System.Uri,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.BeginBrowseChatRoomsIManage(System.AsyncCallback,System.Object,System.UInt32)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.BeginBrowseMyChatRooms(System.AsyncCallback,System.Object,System.UInt32)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.BeginGetPreferenceBundle(System.String,System.Int32,System.Boolean,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.BeginQueryChatHistory(System.Collections.Generic.ICollection{System.Uri},Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.BeginQueryChatHistory(System.Collections.Generic.ICollection{System.Uri},System.String,System.Boolean,System.Boolean,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.BeginSetPreferenceBundle(Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPreferenceBundle,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.EndBrowseChatRoomsByCategoryUri(System.IAsyncResult)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.EndBrowseChatRoomsByCriteria(System.IAsyncResult)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.EndBrowseChatRoomsByFilterCriteria(System.IAsyncResult)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.EndBrowseChatRoomsByInvitations(System.IAsyncResult,System.Int32@)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.EndBrowseChatRoomsByJoinedUser(System.IAsyncResult)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.EndBrowseChatRoomsIManage(System.IAsyncResult)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.EndBrowseMyChatRooms(System.IAsyncResult)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.EndGetPreferenceBundle(System.IAsyncResult)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.EndQueryChatHistory(System.IAsyncResult)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.EndSetPreferenceBundle(System.IAsyncResult)" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.ChatRoomManagementServices" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.DomainName" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.Endpoint" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.RootCategoryUri" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.ServerConfiguration" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.ServerTimeUtc" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.UserServices" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap">
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap.CanAuditoriumChat" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap.CanChat" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap.CanJoin" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap.CanManageRoom" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap.CanReadHistory" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap.CanView" />
+      <Member Id="F:Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap.None" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Rtc.Collaboration.PersistentChat.Management">
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.Management.AuditData" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.Management.AuditData">
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.AuditData.CreatedBy" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.AuditData.CreatedOn" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.AuditData.UpdatedBy" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.AuditData.UpdatedOn" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomInformation" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomInformation">
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomInformation.#ctor(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom)" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomInformation.AddIn" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomInformation.ChangeHistory" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomInformation.ChatRoomUri" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomInformation.Description" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomInformation.IsAuditorium" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomInformation.IsDisabled" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomInformation.Name" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomInformation.ParentCategoryUri" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomInformation.Privacy" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomInformation.SendInvitationsToMembers" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices">
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginAddUsersOrGroupsToRole(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole,System.Uri,System.Collections.Generic.ICollection{Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary},System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginChangeParentCategory(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom,System.Uri,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginCreateChatRoom(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSettings,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginCreateChatRoom(System.String,System.Uri,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginFindCategoriesWithCreateRights(System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginFindChatRoomsByParentCategory(System.Uri,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginFindChatRoomsUsingAddIn(Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatAddIn,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginFindUsersOrGroupsForRole(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole,System.Uri,System.String,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginGetAllAddIns(System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginGetCategoryUsers(System.Uri,System.String,System.Int32,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginGetChatRoom(System.String,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginGetChatRoom(System.Uri,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginGetChatRoomPermissions(System.Uri,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginGetManagers(System.Uri,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginGetMembers(System.Uri,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginGetPresenters(System.Uri,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginRemoveUsersOrGroupsFromRole(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole,System.Uri,System.Collections.Generic.ICollection{Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary},System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginUpdateChatRoom(Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomInformation,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginUpdateChatRoom(Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomInformation,System.Collections.Generic.ICollection{Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary},System.Collections.Generic.ICollection{Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary},System.Collections.Generic.ICollection{Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary},System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndAddUsersOrGroupsToRole(System.IAsyncResult)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndChangeParentCategory(System.IAsyncResult)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndCreateChatRoom(System.IAsyncResult)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndFindCategoriesWithCreateRights(System.IAsyncResult)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndFindChatRoomsByParentCategory(System.IAsyncResult)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndFindChatRoomsUsingAddIn(System.IAsyncResult)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndFindUsersOrGroupsForRole(System.IAsyncResult)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndGetAllAddIns(System.IAsyncResult)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndGetCategoryUsers(System.IAsyncResult)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndGetChatRoom(System.IAsyncResult)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndGetChatRoomPermissions(System.IAsyncResult)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndGetManagers(System.IAsyncResult)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndGetMembers(System.IAsyncResult)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndGetPresenters(System.IAsyncResult)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndRemoveUsersOrGroupsFromRole(System.IAsyncResult)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.EndUpdateChatRoom(System.IAsyncResult)" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.Endpoint" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.RootCategoryUri" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipal" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipal">
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipal.op_Implicit(Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipal)~Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipal.ActiveDirectoryPath" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipal.ChangeHistory" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipal.EntityGuid" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipal.MemberOf" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipal.Name" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipal.Type" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipal.Uri" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary">
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary.ActiveDirectoryPath" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary.DisplayName" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary.EntityGuid" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary.Name" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary.Type" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary.Uri" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatRoleDescriptor" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatRoleDescriptor">
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatRoleDescriptor.ChangeHistory" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatRoleDescriptor.PrincipalWithRole" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUser" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUser">
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUser.CompanyName" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUser.DisplayName" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUser.Email" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUser.IsDisabled" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserGroup" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserGroup" />
+    <Type Name="Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserServices" Id="T:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserServices">
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserServices.BeginFindUsers(System.String,System.String,System.String,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserServices.BeginGetUser(System.Uri,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserServices.BeginGetUserGroup(Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary,System.AsyncCallback,System.Object)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserServices.EndFindUsers(System.IAsyncResult,System.Boolean@)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserServices.EndGetUser(System.IAsyncResult)" />
+      <Member Id="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserServices.EndGetUserGroup(System.IAsyncResult)" />
+      <Member Id="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserServices.Endpoint" />
+    </Type>
+  </Namespace>
+</Framework>

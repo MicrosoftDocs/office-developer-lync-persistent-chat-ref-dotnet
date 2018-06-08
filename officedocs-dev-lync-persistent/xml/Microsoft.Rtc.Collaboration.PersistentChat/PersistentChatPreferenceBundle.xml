@@ -1,0 +1,137 @@
+﻿<Type Name="PersistentChatPreferenceBundle" FullName="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPreferenceBundle">
+  <TypeSignature Language="C#" Value="public class PersistentChatPreferenceBundle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PersistentChatPreferenceBundle extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPreferenceBundle" />
+  <TypeSignature Language="VB.NET" Value="Public Class PersistentChatPreferenceBundle" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PersistentChatPreferenceBundle" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Describes an arbitrary block of <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPreferenceBundle.Data" /> which a persistent chat application may
+            define for storing user preferences and settings, or any other purpose.
+            </summary>
+    <remarks>
+      <para>
+            The Version 14 or older Group Chat clients use a set of preference bundles to store client settings such as
+            chat rooms joined, chat room display settings, and other customizations.
+            The format of data stored in a preference bundle is application dependent.
+            </para>
+      <para>
+            Each preference bundle has a name (see <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPreferenceBundle.Label" />) and version number (see <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPreferenceBundle.SequenceId" />).
+            When requesting preferences for a given <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPreferenceBundle.Label" /> via <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.BeginGetPreferenceBundle(System.String,System.Int32,System.Boolean,System.AsyncCallback,System.Object)" />,
+            the supplied <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPreferenceBundle.SequenceId" /> will be compared to the version stored on the server.
+            If the supplied version is greater than or equal to the server version, no data will be returned.
+            If the supplied version is less than the server version, a current version of the data will be returned.
+            </para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PersistentChatPreferenceBundle (string label, int sequenceID, string data);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string label, int32 sequenceID, string data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPreferenceBundle.#ctor(System.String,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (label As String, sequenceID As Integer, data As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PersistentChatPreferenceBundle(System::String ^ label, int sequenceID, System::String ^ data);" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="label" Type="System.String" />
+        <Parameter Name="sequenceID" Type="System.Int32" />
+        <Parameter Name="data" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="label">The <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPreferenceBundle.Label" />.</param>
+        <param name="sequenceID">The <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPreferenceBundle.SequenceId" />.</param>
+        <param name="data">The <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPreferenceBundle.Data" />.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPreferenceBundle" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="label" /> is null or empty.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Data">
+      <MemberSignature Language="C#" Value="public string Data { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Data" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPreferenceBundle.Data" />
+      <MemberSignature Language="VB.NET" Value="Public Property Data As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Data { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the block of data which this preference represents.
+            A preference bundle can be used to store arbitrary information which is needed by a
+            persistent chat application.
+            </summary>
+        <value>The data.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Label">
+      <MemberSignature Language="C#" Value="public string Label { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Label" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPreferenceBundle.Label" />
+      <MemberSignature Language="VB.NET" Value="Public Property Label As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Label { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the label for this preference bundle.  The label is a short name or description
+            for the block of data stored in this preference.
+            </summary>
+        <value>The label.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SequenceId">
+      <MemberSignature Language="C#" Value="public int SequenceId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SequenceId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPreferenceBundle.SequenceId" />
+      <MemberSignature Language="VB.NET" Value="Public Property SequenceId As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SequenceId { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the sequence ID.  The sequence ID is a monotonically increasing value
+            which governs the revision level of a preference.
+            Every time the pref bundle is accessed, whether for read or write, the seq ID is incremented.
+            </summary>
+        <value>The sequence ID.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

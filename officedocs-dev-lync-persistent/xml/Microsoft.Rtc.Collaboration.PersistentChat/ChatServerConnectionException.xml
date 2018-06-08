@@ -1,0 +1,23 @@
+﻿<Type Name="ChatServerConnectionException" FullName="Microsoft.Rtc.Collaboration.PersistentChat.ChatServerConnectionException">
+  <TypeSignature Language="C#" Value="public class ChatServerConnectionException : Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChatServerConnectionException extends Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatException" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatServerConnectionException" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChatServerConnectionException&#xA;Inherits PersistentChatException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChatServerConnectionException : Microsoft::Rtc::Collaboration::PersistentChat::PersistentChatException" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatException</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> fails to connect to the Persistent Chat server, or when
+            an request is made when the <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> is not in a valid state.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

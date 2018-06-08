@@ -1,0 +1,127 @@
+﻿<Type Name="ChatRoomSessionState" FullName="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionState">
+  <TypeSignature Language="C#" Value="public enum ChatRoomSessionState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ChatRoomSessionState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionState" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ChatRoomSessionState" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ChatRoomSessionState" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Enumerates the state of a chat room session
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Established">
+      <MemberSignature Language="C#" Value="Established" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionState Established = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionState.Established" />
+      <MemberSignature Language="VB.NET" Value="Established" />
+      <MemberSignature Language="C++ CLI" Value="Established" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionState</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            The session is connected and ready to use
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Establishing">
+      <MemberSignature Language="C#" Value="Establishing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionState Establishing = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionState.Establishing" />
+      <MemberSignature Language="VB.NET" Value="Establishing" />
+      <MemberSignature Language="C++ CLI" Value="Establishing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionState</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            The session is in the process of connecting
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Idle">
+      <MemberSignature Language="C#" Value="Idle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionState Idle = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionState.Idle" />
+      <MemberSignature Language="VB.NET" Value="Idle" />
+      <MemberSignature Language="C++ CLI" Value="Idle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionState</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            The session is idle
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Terminated">
+      <MemberSignature Language="C#" Value="Terminated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionState Terminated = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionState.Terminated" />
+      <MemberSignature Language="VB.NET" Value="Terminated" />
+      <MemberSignature Language="C++ CLI" Value="Terminated" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionState</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>
+            The session is terminated
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Terminating">
+      <MemberSignature Language="C#" Value="Terminating" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionState Terminating = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionState.Terminating" />
+      <MemberSignature Language="VB.NET" Value="Terminating" />
+      <MemberSignature Language="C++ CLI" Value="Terminating" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionState</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>
+            The session is in the process of terminating
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

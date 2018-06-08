@@ -1,0 +1,12 @@
+{
+  "dependencies": [
+    "Microsoft.Rtc.Chat.Endpoint",
+    "Microsoft.Rtc.Collaboration",
+    "SIPEPS",
+    "System",
+    "System.Web.Services"
+  ],
+  "lync-persistent": [
+    "Microsoft.Rtc.Collaboration.PersistentChat"
+  ]
+}

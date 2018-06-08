@@ -1,0 +1,412 @@
+﻿<Type Name="ChatRoom" FullName="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom">
+  <TypeSignature Language="C#" Value="public class ChatRoom" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChatRoom extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChatRoom" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChatRoom" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Describes a chat room. A chat room is a topic oriented, access controlled forum for posting real-time messages to be shared with 
+            a group of users.  Chat rooms optionally support logging of chat history, which is available to members for review or query.
+            To obtain a reference to a <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom" />, and access other metadata about the chat room,
+            see <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.ChatRoomManagementServices" />.
+            </summary>
+    <remarks>
+      <para>
+            This class describes the configuration of a chat room.  
+            To send and receive messages in a chat room, you must be a member, 
+            and join the chat room using <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession.BeginJoin(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary,System.AsyncCallback,System.Object)" />.
+            To facilitate this process, <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom" /> supports an implicit conversion to
+            <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary" />.  (See <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.op_Implicit(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom)~Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary" />)
+            </para>
+      <para>
+            Chat rooms belong to a Category, which provides logical groupings of chat rooms,
+            as well as a set of common properties applying to all chat rooms in the category.
+            The category is identified by the <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.ParentCategoryUri" />.
+            </para>
+      <para>
+            Each chat room describes its purpose with metadata such as <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.Name" /> and <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.Description" />.
+            In addition, the chat room has properties which can be set to control its behavior.
+            Permission to join or manage a chat room is controlled by an access control list.
+            Users must be in scope on the Category in order to be added as a member.
+            To find users who are eligible to be granted a specific role on a chat room, see <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginFindUsersOrGroupsForRole(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole,System.Uri,System.String,System.AsyncCallback,System.Object)" /></para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddIn">
+      <MemberSignature Language="C#" Value="public Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatAddIn AddIn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatAddIn AddIn" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.AddIn" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AddIn As PersistentChatAddIn" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::PersistentChatAddIn ^ AddIn { Microsoft::Rtc::Collaboration::PersistentChat::PersistentChatAddIn ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatAddIn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the add-in for this chat room.  An add-in is a web page that can be embedded in a chat room.
+            The chat room interacts with the add-in, sending it notification of inbound and outbound messages.
+            The add-in also has access to metadata about the chat room and the messages which are posted to it. 
+            An add-in must be registered with the system before it can be used on a chat room. 
+            </summary>
+        <value>The add-in.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeHistory">
+      <MemberSignature Language="C#" Value="public Microsoft.Rtc.Collaboration.PersistentChat.Management.AuditData ChangeHistory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Rtc.Collaboration.PersistentChat.Management.AuditData ChangeHistory" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.ChangeHistory" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChangeHistory As AuditData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::Management::AuditData ^ ChangeHistory { Microsoft::Rtc::Collaboration::PersistentChat::Management::AuditData ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.Management.AuditData</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the change history of this chat room.
+            </summary>
+        <value>The change history.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChatRoomUri">
+      <MemberSignature Language="C#" Value="public Uri ChatRoomUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ChatRoomUri" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.ChatRoomUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChatRoomUri As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ChatRoomUri { Uri ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the URI of the chat room. The URI provides a unique key for identifying a chat room.
+            The URI is generated by the Persistent Chat Server when the chat room is created, and is never changed.
+            </summary>
+        <value>The URI of the chat room.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.Description" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the description of this chat room.  The description is optional, and is used only to
+            provide additional details about the purpose of this chat room.
+            </summary>
+        <value>The description.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileStoreUri">
+      <MemberSignature Language="C#" Value="public Uri FileStoreUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri FileStoreUri" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.FileStoreUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileStoreUri As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ FileStoreUri { Uri ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the file store URI.  The file store URI is address of the web service to which
+            files will be uploaded when posted to this chat room.
+            </summary>
+        <value>The file store URI.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAuditorium">
+      <MemberSignature Language="C#" Value="public bool IsAuditorium { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsAuditorium" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.IsAuditorium" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAuditorium As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAuditorium { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether this chat room is an auditorium-style room.
+            When <see cref="true" />, only those users who are on the Presenters list may post messages.
+            Other members of the chat room can read the messages and chat history, but may not participate in the conversation.
+            The default value of this setting is <see cref="false" />, which means that any user who is a member of the chat room 
+            may participate in the conversation.
+            </summary>
+        <value>
+          <see cref="true" /> if this instance is auditorium; otherwise, <see cref="false" />.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDisabled">
+      <MemberSignature Language="C#" Value="public bool IsDisabled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDisabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.IsDisabled" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDisabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDisabled { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether this chat room is disabled.
+            Once created, a chat room cannot be deleted.  However, it can be disabled; disabling a chat room
+            prevents users from joining the chat room, or reading the chat history. 
+            </summary>
+        <value>
+          <see cref="true" /> if this instance is disabled; otherwise, <see cref="false" />.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the name of the chat room. The chat room name is a short, unique name which identifies the purpose of the room.
+            </summary>
+        <value>The name of the chat room.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary (Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom chatRoom);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary op_Implicit(class Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom chatRoom) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.op_Implicit(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom)~Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomSummary ^(Microsoft::Rtc::Collaboration::PersistentChat::ChatRoom ^ chatRoom);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="chatRoom" Type="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom" />
+      </Parameters>
+      <Docs>
+        <param name="chatRoom">The chat room.</param>
+        <summary>
+            Performs an implicit conversion from <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom" /> 
+            to <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary" />.
+            </summary>
+        <returns>The result of the conversion.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentCategoryDescription">
+      <MemberSignature Language="C#" Value="public string ParentCategoryDescription { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ParentCategoryDescription" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.ParentCategoryDescription" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentCategoryDescription As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ParentCategoryDescription { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the description of the parent category of this chat room.
+            Chat rooms are organized hierarchically into categories.  Each category may contain any number of 
+            chat rooms.  Each chat room and category in the system has precisely one parent category.
+            There is a single top-level chat room category, called the root category, which is referenced by the <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.RootCategoryUri" />
+            To change the parent category, use <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginChangeParentCategory(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom,System.Uri,System.AsyncCallback,System.Object)" />.
+            
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentCategoryName">
+      <MemberSignature Language="C#" Value="public string ParentCategoryName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ParentCategoryName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.ParentCategoryName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentCategoryName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ParentCategoryName { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the name of the parent category of this chat room.
+            Chat rooms are organized hierarchically into categories.  Each category may contain any number of 
+            chat rooms.  Each chat room and category in the system has precisely one parent category.
+            There is a single top-level chat room category, called the root category, which is referenced by the <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.RootCategoryUri" />
+            To change the parent category, use <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginChangeParentCategory(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom,System.Uri,System.AsyncCallback,System.Object)" />.
+            
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentCategoryUri">
+      <MemberSignature Language="C#" Value="public Uri ParentCategoryUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ParentCategoryUri" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.ParentCategoryUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentCategoryUri As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ParentCategoryUri { Uri ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the URI of the parent category of this chat room.
+            Chat rooms are organized hierarchically into categories.  Each category may contain any number of 
+            chat rooms. Each chat room in the system has precisely one parent category. There is a single 
+            top-level chat room category, called the root category, which is referenced by the <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.RootCategoryUri" />
+            To change the parent category, use <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.ChatRoomManagementServices.BeginChangeParentCategory(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom,System.Uri,System.AsyncCallback,System.Object)" />.
+            
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Privacy">
+      <MemberSignature Language="C#" Value="public Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomPrivacy Privacy { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomPrivacy Privacy" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.Privacy" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Privacy As ChatRoomPrivacy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomPrivacy Privacy { Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomPrivacy get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomPrivacy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the visibility of this chat room.  Visibility defines the behavior of 
+            searches, in which a user queries the system for chat rooms matching a certain criteria 
+            (See <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.BeginBrowseChatRoomsByCriteria(System.String,System.Boolean,System.Boolean,System.Boolean,System.AsyncCallback,System.Object)" /> or
+                 <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.BeginBrowseChatRoomsByCriteria(System.String,System.Boolean,System.Boolean,System.Boolean,System.Int32,System.AsyncCallback,System.Object)" />).
+            Chat rooms which are not visible to a user will not appear in the search results.
+            Visibility can also determine who can join a chat room.
+            When <see cref="Open" />, the chat room is visible to all users and can be joined by all users in scope on the parent category.
+            When <see cref="Private" />, the chat room is visible to all users in scope on the parent category.
+            If <see cref="Hidden" />, the chat room will only be visible to its members.
+            The default value is <see cref="Private" />.
+            </summary>
+        <value>
+          <see cref="Open" /> if this chat room should be visible to all users in scope;
+                <see cref="Private" /> if this chat room should be visible to anyone who is in scope on the parent category;  (default)
+                <see cref="Hidden" /> if this chat room should be visible only to members of the chat room
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendInvitationsToMembers">
+      <MemberSignature Language="C#" Value="public Microsoft.Rtc.Collaboration.PersistentChat.InheritedChatRoomInviteProperty SendInvitationsToMembers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Rtc.Collaboration.PersistentChat.InheritedChatRoomInviteProperty SendInvitationsToMembers" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.SendInvitationsToMembers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SendInvitationsToMembers As InheritedChatRoomInviteProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::InheritedChatRoomInviteProperty ^ SendInvitationsToMembers { Microsoft::Rtc::Collaboration::PersistentChat::InheritedChatRoomInviteProperty ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.InheritedChatRoomInviteProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the default behavior of this chat room for sending invitations to new members.
+            Invitations are issued by the persistent chat server when a user connects, and subsequently when a new user is added to the member list.
+            
+            The value of this property is derived by combining the value set on this instance (if any) with the value
+            that is inherited from the parent category.
+            The default value is <see cref="null" />, which causes the chat room to inherit the value set by the parent category.
+            The setting can be overriden only if the parent category counterpart is set to <see cref="true" />.
+            
+            </summary>
+        <value>
+                A data structure which conveys the value set on this chat room (if any),
+                the value which is inherited from the parent category, and the effective value which is used.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

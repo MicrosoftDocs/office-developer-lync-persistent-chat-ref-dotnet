@@ -1,0 +1,165 @@
+﻿<Type Name="MessagePartFileDownloadLink" FullName="Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink">
+  <TypeSignature Language="C#" Value="public sealed class MessagePartFileDownloadLink : Microsoft.Rtc.Collaboration.PersistentChat.MessagePart" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MessagePartFileDownloadLink extends Microsoft.Rtc.Collaboration.PersistentChat.MessagePart" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MessagePartFileDownloadLink&#xA;Inherits MessagePart" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MessagePartFileDownloadLink sealed : Microsoft::Rtc::Collaboration::PersistentChat::MessagePart" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Rtc.Collaboration.PersistentChat.MessagePart</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            A portion of a message which represents a downloadable file.
+            This message part cannot be used for sending messages, it is only used for parsing inbound messages.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(class Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink.Equals(Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As MessagePartFileDownloadLink) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(Microsoft::Rtc::Collaboration::PersistentChat::MessagePartFileDownloadLink ^ other);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink" />
+      </Parameters>
+      <Docs>
+        <param name="other">To be added.</param>
+        <summary>
+            Returns true if the given <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink" /> is equal to this
+            </summary>
+        <returns>Returns true if the given <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink" /> is equal to this</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>
+            Returns true if the given object is equal to this
+            </summary>
+        <returns>True if the given object is equal to this</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileName">
+      <MemberSignature Language="C#" Value="public string FileName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FileName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink.FileName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the name of the file.
+            </summary>
+        <value>The name of the file.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileSizeEstimate">
+      <MemberSignature Language="C#" Value="public string FileSizeEstimate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FileSizeEstimate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink.FileSizeEstimate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileSizeEstimate As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileSizeEstimate { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a description of the estimated file size.  For example '100 bytes' or '10 kilobytes'.
+            </summary>
+        <value>The size of the file.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileUri">
+      <MemberSignature Language="C#" Value="public Uri FileUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri FileUri" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink.FileUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileUri As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ FileUri { Uri ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the file URI.
+            </summary>
+        <value>The file URI.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Returns a hash code for this object
+            </summary>
+        <returns>A hash code for this object</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

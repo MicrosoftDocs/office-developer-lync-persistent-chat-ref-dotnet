@@ -1,0 +1,113 @@
+﻿<Type Name="PersistentChatPrincipalType" FullName="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType">
+  <TypeSignature Language="C#" Value="public enum PersistentChatPrincipalType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PersistentChatPrincipalType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PersistentChatPrincipalType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class PersistentChatPrincipalType" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Enumerates a type of user or user group.
+            </summary>
+    <remarks>
+      <para>
+            A <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipal" /> is a permissionable entity.  Permissions may be assigned
+            to a variety of types of users and user groups.  The specific type of user or user group that is 
+            represented by a <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipal.Type" /> is specified by this enumeration.
+            </para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DirectoryFolder">
+      <MemberSignature Language="C#" Value="DirectoryFolder" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType DirectoryFolder = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType.DirectoryFolder" />
+      <MemberSignature Language="VB.NET" Value="DirectoryFolder" />
+      <MemberSignature Language="C++ CLI" Value="DirectoryFolder" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            The principal is an Active Directory container, such as an organization unit.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DirectoryGroup">
+      <MemberSignature Language="C#" Value="DirectoryGroup" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType DirectoryGroup = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType.DirectoryGroup" />
+      <MemberSignature Language="VB.NET" Value="DirectoryGroup" />
+      <MemberSignature Language="C++ CLI" Value="DirectoryGroup" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            The principal is an Active Directory security group or distribution list.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Domain">
+      <MemberSignature Language="C#" Value="Domain" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType Domain = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType.Domain" />
+      <MemberSignature Language="VB.NET" Value="Domain" />
+      <MemberSignature Language="C++ CLI" Value="Domain" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>
+            The principal is an Active Directory domain.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalUser">
+      <MemberSignature Language="C#" Value="LocalUser" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType LocalUser = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType.LocalUser" />
+      <MemberSignature Language="VB.NET" Value="LocalUser" />
+      <MemberSignature Language="C++ CLI" Value="LocalUser" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            The principal is a SIP-enabled Active Directory user.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

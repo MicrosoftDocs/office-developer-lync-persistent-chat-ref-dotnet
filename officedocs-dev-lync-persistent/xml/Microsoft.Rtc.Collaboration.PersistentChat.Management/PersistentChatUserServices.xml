@@ -1,0 +1,273 @@
+﻿<Type Name="PersistentChatUserServices" FullName="Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserServices">
+  <TypeSignature Language="C#" Value="public class PersistentChatUserServices" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PersistentChatUserServices extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserServices" />
+  <TypeSignature Language="VB.NET" Value="Public Class PersistentChatUserServices" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PersistentChatUserServices" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            A collection of methods which can be used to manage persistent chat users and user groups.
+            An instance of this class may be obtained from the <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.UserServices" /> property of <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices" /></summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BeginFindUsers">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginFindUsers (string searchLastName, string searchFirstName, string searchEmail, AsyncCallback userCallback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginFindUsers(string searchLastName, string searchFirstName, string searchEmail, class System.AsyncCallback userCallback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserServices.BeginFindUsers(System.String,System.String,System.String,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginFindUsers (searchLastName As String, searchFirstName As String, searchEmail As String, userCallback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginFindUsers(System::String ^ searchLastName, System::String ^ searchFirstName, System::String ^ searchEmail, AsyncCallback ^ userCallback, System::Object ^ state);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="searchLastName" Type="System.String" />
+        <Parameter Name="searchFirstName" Type="System.String" />
+        <Parameter Name="searchEmail" Type="System.String" />
+        <Parameter Name="userCallback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="searchLastName">Last name search string.</param>
+        <param name="searchFirstName">First name search string.</param>
+        <param name="searchEmail">Email address search string.</param>
+        <param name="userCallback">The method to be invoked when this asynchronous operation completes.</param>
+        <param name="state">An object to be passed back to the callback.</param>
+        <summary>
+            Finds users having a first name, last name, or email address containing the corresponding search string.
+            </summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that references this operation.</returns>
+        <remarks>
+          <para>
+            This request will be processed asynchronously.
+            Call <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserServices.EndFindUsers(System.IAsyncResult,System.Boolean@)" /> to complete this asynchronous operation.
+            </para>
+          <para />
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="searchLastName" />, <paramref name="searchFirstName" />, and <paramref name="searchEmail" /> are null or empty.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatServerConnectionException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> is not established.</exception>
+        <exception cref="T:System.InvalidOperationException">The chat server connection is not in a valid state to send the command.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginGetUser">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginGetUser (Uri sipUri, AsyncCallback userCallback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginGetUser(class System.Uri sipUri, class System.AsyncCallback userCallback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserServices.BeginGetUser(System.Uri,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginGetUser (sipUri As Uri, userCallback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginGetUser(Uri ^ sipUri, AsyncCallback ^ userCallback, System::Object ^ state);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sipUri" Type="System.Uri" />
+        <Parameter Name="userCallback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="sipUri">The SIP URI of the user to retreive.</param>
+        <param name="userCallback">The method to be invoked when this asynchronous operation completes.</param>
+        <param name="state">An object to be passed back to the callback.</param>
+        <summary>
+            Gets the <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUser" /> for the given SIP URI.
+            </summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that references this operation.</returns>
+        <remarks>
+          <para>
+            This request will be processed asynchronously.
+            Call <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserServices.EndGetUser(System.IAsyncResult)" /> to complete this asynchronous operation.
+            </para>
+          <para />
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="sipUri" /> is null.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="sipUri" /> is not a valid SIP URI.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatServerConnectionException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> is not established.</exception>
+        <exception cref="T:System.InvalidOperationException">The chat server connection is not in a valid state to send the command.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginGetUserGroup">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginGetUserGroup (Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary group, AsyncCallback userCallback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginGetUserGroup(class Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary group, class System.AsyncCallback userCallback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserServices.BeginGetUserGroup(Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginGetUserGroup (group As PersistentChatPrincipalSummary, userCallback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginGetUserGroup(Microsoft::Rtc::Collaboration::PersistentChat::Management::PersistentChatPrincipalSummary ^ group, AsyncCallback ^ userCallback, System::Object ^ state);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="group" Type="Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary" />
+        <Parameter Name="userCallback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="group">An object describing the <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserGroup" /> for which detailed information is being requested.</param>
+        <param name="userCallback">The method to be invoked when this asynchronous operation completes.</param>
+        <param name="state">An object to be passed back to the callback.</param>
+        <summary>
+            Gets detailed information, permissions, and membership affiliations for the specified group.
+            </summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that references this operation.</returns>
+        <remarks>
+          <para>
+            This request will be processed asynchronously.
+            Call <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserServices.EndGetUserGroup(System.IAsyncResult)" /> to complete this asynchronous operation.
+            </para>
+          <para />
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="group" /> is null.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatServerConnectionException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> is not established.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="group" /> is not a valid type for this operation or the chat server connection is not in a valid state to send the command.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndFindUsers">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary&gt; EndFindUsers (IAsyncResult asyncResult, out bool moreAvailable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary&gt; EndFindUsers(class System.IAsyncResult asyncResult, [out] bool&amp; moreAvailable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserServices.EndFindUsers(System.IAsyncResult,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndFindUsers (asyncResult As IAsyncResult, ByRef moreAvailable As Boolean) As ReadOnlyCollection(Of PersistentChatPrincipalSummary)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::Management::PersistentChatPrincipalSummary ^&gt; ^ EndFindUsers(IAsyncResult ^ asyncResult, [Runtime::InteropServices::Out] bool % moreAvailable);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+        <Parameter Name="moreAvailable" Type="System.Boolean&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> that references this operation.</param>
+        <param name="moreAvailable">
+            Output parameter - set to <see cref="true" /> if this search has truncated results.
+            When <see cref="true" />, consider trying the search again with more restrictive search criteria.
+            </param>
+        <summary>
+            Completes the asynchronous request initiated by <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserServices.BeginFindUsers(System.String,System.String,System.String,System.AsyncCallback,System.Object)" /></summary>
+        <returns>A collection of objects describing users or user groups matching any of the specified search strings.
+            </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="asyncResult" /> is null.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.CommandFailedException">The chat server encountered an error processing the request.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+        <exception cref="T:System.InvalidOperationException">This method was invoked multiple times with the same <see cref="T:System.IAsyncResult" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndGetUser">
+      <MemberSignature Language="C#" Value="public Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUser EndGetUser (IAsyncResult asyncResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUser EndGetUser(class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserServices.EndGetUser(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndGetUser (asyncResult As IAsyncResult) As PersistentChatUser" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Rtc::Collaboration::PersistentChat::Management::PersistentChatUser ^ EndGetUser(IAsyncResult ^ asyncResult);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUser</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> that references this operation.</param>
+        <summary>
+            Completes the asynchronous request initiated by <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserServices.BeginGetUser(System.Uri,System.AsyncCallback,System.Object)" /></summary>
+        <returns>The requested user.
+            </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="asyncResult" /> is null.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.CommandFailedException">The chat server encountered an error processing the request.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+        <exception cref="T:System.InvalidOperationException">This method was invoked multiple times with the same <see cref="T:System.IAsyncResult" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndGetUserGroup">
+      <MemberSignature Language="C#" Value="public Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserGroup EndGetUserGroup (IAsyncResult asyncResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserGroup EndGetUserGroup(class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserServices.EndGetUserGroup(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndGetUserGroup (asyncResult As IAsyncResult) As PersistentChatUserGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Rtc::Collaboration::PersistentChat::Management::PersistentChatUserGroup ^ EndGetUserGroup(IAsyncResult ^ asyncResult);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserGroup</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> that references this operation.</param>
+        <summary>
+            Completes the asynchronous request initiated by <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserServices.BeginGetUserGroup(Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary,System.AsyncCallback,System.Object)" /></summary>
+        <returns>The requested user group
+            </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="asyncResult" /> is null.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.CommandFailedException">The chat server encountered an error processing the request.</exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> encountered an error communicating with the chat server.</exception>
+        <exception cref="T:System.InvalidOperationException">This method was invoked multiple times with the same <see cref="T:System.IAsyncResult" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Endpoint">
+      <MemberSignature Language="C#" Value="public Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint Endpoint { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint Endpoint" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserServices.Endpoint" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Endpoint As PersistentChatEndpoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::PersistentChatEndpoint ^ Endpoint { Microsoft::Rtc::Collaboration::PersistentChat::PersistentChatEndpoint ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the endpoint that this service object is tied to.
+            </summary>
+        <value>The endpoint.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

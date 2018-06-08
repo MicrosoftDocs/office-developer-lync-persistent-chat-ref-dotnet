@@ -1,0 +1,23 @@
+﻿<Type Name="ChatRoomSessionStateException" FullName="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionStateException">
+  <TypeSignature Language="C#" Value="public class ChatRoomSessionStateException : Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChatRoomSessionStateException extends Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatException" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionStateException" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChatRoomSessionStateException&#xA;Inherits PersistentChatException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChatRoomSessionStateException : Microsoft::Rtc::Collaboration::PersistentChat::PersistentChatException" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatException</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Thrown when an operation is attempted on a <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession" />
+            which is not supported based on its current state.  
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

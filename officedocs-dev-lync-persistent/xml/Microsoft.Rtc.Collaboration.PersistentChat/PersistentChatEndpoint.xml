@@ -1,0 +1,370 @@
+﻿<Type Name="PersistentChatEndpoint" FullName="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint">
+  <TypeSignature Language="C#" Value="public class PersistentChatEndpoint" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PersistentChatEndpoint extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" />
+  <TypeSignature Language="VB.NET" Value="Public Class PersistentChatEndpoint" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PersistentChatEndpoint" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            An endpoint which is the basis for all communication with the Persistent Chat server.
+            This endpoint represents a single connection to a single persistent chat server, using an existing <see cref="T:Microsoft.Rtc.Collaboration.LocalEndpoint" /> instance.
+            This endpoint encapsulates references to all active <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession" /> instances to which the user has joined,
+            and provides a access to a variety of management services, functionality for browsing the catalog of available chat rooms, and 
+            methods for reviewing chat history.  (See <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.PersistentChatServices" />)
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PersistentChatEndpoint (Uri groupChatServerAddress, Microsoft.Rtc.Collaboration.LocalEndpoint ocs);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri groupChatServerAddress, class Microsoft.Rtc.Collaboration.LocalEndpoint ocs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.#ctor(System.Uri,Microsoft.Rtc.Collaboration.LocalEndpoint)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (groupChatServerAddress As Uri, ocs As LocalEndpoint)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PersistentChatEndpoint(Uri ^ groupChatServerAddress, Microsoft::Rtc::Collaboration::LocalEndpoint ^ ocs);" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="groupChatServerAddress" Type="System.Uri" />
+        <Parameter Name="ocs" Type="Microsoft.Rtc.Collaboration.LocalEndpoint" />
+      </Parameters>
+      <Docs>
+        <param name="groupChatServerAddress">The chat server address. By convention, the chat server address
+            is usually set to "lyncchat@yourdomain.com".</param>
+        <param name="ocs">The local endpoint instance.  This endpoint must be registered and connected independently, prior to
+            instantiating a PersistentChatEndpoint, as it provides the conduit for all messages delivered between the PersistentChatEndpoint
+            and the chat server.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="groupChatServerAddress" /> or <paramref name="ocs" /> is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ActiveChatRoomSessions">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession&gt; ActiveChatRoomSessions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession&gt; ActiveChatRoomSessions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.ActiveChatRoomSessions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveChatRoomSessions As ReadOnlyCollection(Of ChatRoomSession)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomSession ^&gt; ^ ActiveChatRoomSessions { System::Collections::ObjectModel::ReadOnlyCollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomSession ^&gt; ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a copy of the collection of currently active <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession" /> instances.
+            Only those sessions which have successfully joined a chat room are included in the collection of <see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.ActiveChatRoomSessions" />.
+            This property returns copy of the endpoint's collection.  To access a single active <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession" /> by name, without
+            incurring this overhead, use the indexer (see (<see cref="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.Item(System.String)" />).
+            </summary>
+        <value>The active chat room sessions.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginEstablish">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginEstablish (AsyncCallback userCallback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginEstablish(class System.AsyncCallback userCallback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.BeginEstablish(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginEstablish (userCallback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginEstablish(AsyncCallback ^ userCallback, System::Object ^ state);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userCallback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="userCallback">The method to be invoked when this asynchronous operation completes.</param>
+        <param name="state">An object to be passed back to the callback.</param>
+        <summary>
+            Establish a connection with the Persistent Chat server.
+            This request will be processed asynchronously.
+            See <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.EndEstablish(System.IAsyncResult)" /> to complete this asynchronous operation.
+            </summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that references this operation.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The session encountered an error communicating with the Lync server. </exception>
+        <exception cref="T:System.InvalidOperationException">The endpoint is not in a valid state. An endpoint can only be established once and cannot be reused after being terminated.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginTerminate">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginTerminate (AsyncCallback userCallback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginTerminate(class System.AsyncCallback userCallback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.BeginTerminate(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginTerminate (userCallback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginTerminate(AsyncCallback ^ userCallback, System::Object ^ state);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userCallback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="userCallback">The method to be invoked when this asynchronous operation completes.</param>
+        <param name="state">An object to be passed back to the callback.</param>
+        <summary>
+            Terminate an established connection with the Persistent Chat server, and clean up all resources associated with the connection.
+            This request will be processed asynchronously.
+            See <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.EndTerminate(System.IAsyncResult)" /> to complete this asynchronous operation.
+            </summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that references this operation.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatServerConnectionException">The endpoint is not in a valid state. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ChatRoomInvitationReceived">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomInvitationEventArgs&gt; ChatRoomInvitationReceived;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomInvitationEventArgs&gt; ChatRoomInvitationReceived" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.ChatRoomInvitationReceived" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ChatRoomInvitationReceived As EventHandler(Of ChatRoomInvitationEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomInvitationEventArgs ^&gt; ^ ChatRoomInvitationReceived;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomInvitationEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Occurs when a chat room invitation is received.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionStateChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpointStateChangedEventArgs&gt; ConnectionStateChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpointStateChangedEventArgs&gt; ConnectionStateChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.ConnectionStateChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ConnectionStateChanged As EventHandler(Of PersistentChatEndpointStateChangedEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Rtc::Collaboration::PersistentChat::PersistentChatEndpointStateChangedEventArgs ^&gt; ^ ConnectionStateChanged;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpointStateChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Occurs when the connection state of this endpoint changes.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndEstablish">
+      <MemberSignature Language="C#" Value="public void EndEstablish (IAsyncResult asyncResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndEstablish(class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.EndEstablish(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndEstablish (asyncResult As IAsyncResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndEstablish(IAsyncResult ^ asyncResult);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> that references this operation.</param>
+        <summary>
+            Completes the asynchronous request initiated by <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.BeginEstablish(System.AsyncCallback,System.Object)" /></summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="asyncResult" /> is null.</exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatServerConnectionException">The persistent chat server is unreachable or the connection attempt is refused. </exception>
+        <exception cref="T:Microsoft.Rtc.Collaboration.PersistentChat.CommandFailedException">The endpoint is not in a valid state to be established, or the connection call flow is interrupted. </exception>
+        <exception cref="T:Microsoft.Rtc.Signaling.RealTimeException">The session encountered an error communicating with the Lync server. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTerminate">
+      <MemberSignature Language="C#" Value="public void EndTerminate (IAsyncResult asyncResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndTerminate(class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.EndTerminate(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndTerminate (asyncResult As IAsyncResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndTerminate(IAsyncResult ^ asyncResult);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> that references this operation.</param>
+        <summary>
+            Completes the asynchronous request initiated by <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.BeginTerminate(System.AsyncCallback,System.Object)" /></summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="asyncResult" /> is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="InnerEndpoint">
+      <MemberSignature Language="C#" Value="public Microsoft.Rtc.Collaboration.LocalEndpoint InnerEndpoint { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Rtc.Collaboration.LocalEndpoint InnerEndpoint" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.InnerEndpoint" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InnerEndpoint As LocalEndpoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::LocalEndpoint ^ InnerEndpoint { Microsoft::Rtc::Collaboration::LocalEndpoint ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.LocalEndpoint</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the inner endpoint which provides a conduit for delivery of messages between this client and the persistent chat servers.
+            </summary>
+        <value>The inner endpoint.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession this[string name] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession Item(string)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As ChatRoomSession" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomSession ^ default[System::String ^] { Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomSession ^ get(System::String ^ name); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>
+            Gets an active <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession" /> with the specified name.
+            The name is not case sensitive.  
+            </summary>
+        <value>The active chat room session with the specified name, or null if no such session exists.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is null or empty.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession this[Uri uri] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession Item(class System.Uri)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.Item(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(uri As Uri) As ChatRoomSession" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomSession ^ default[Uri ^] { Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomSession ^ get(Uri ^ uri); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="uri">To be added.</param>
+        <summary>
+            Gets an active <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession" /> with the specified URI.
+            </summary>
+        <value>The active chat room session with the specified URI, or null if no such session exists.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="uri" /> is null.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="uri" /> is not a valid chat room URI.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistentChatServices">
+      <MemberSignature Language="C#" Value="public Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices PersistentChatServices { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices PersistentChatServices" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.PersistentChatServices" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PersistentChatServices As PersistentChatServices" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::PersistentChatServices ^ PersistentChatServices { Microsoft::Rtc::Collaboration::PersistentChat::PersistentChatServices ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            An object which provides access to a wide variety of persistent chat features and services.
+            All administrative functionality and client services, with the exception of 
+            establishing a <see cref="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession" />, are exposed through this object.
+            </summary>
+        <value>The persistent chat services object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpointState State { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpointState State" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.State" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As PersistentChatEndpointState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::PersistentChatEndpointState State { Microsoft::Rtc::Collaboration::PersistentChat::PersistentChatEndpointState get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpointState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether this endpoint is connected to a Persistent Chat server.
+            </summary>
+        <value>
+            	The current state of the endpoint
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
