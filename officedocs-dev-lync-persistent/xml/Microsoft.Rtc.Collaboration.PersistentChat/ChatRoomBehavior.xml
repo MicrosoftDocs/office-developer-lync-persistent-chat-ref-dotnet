@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomBehavior" />
   <TypeSignature Language="VB.NET" Value="Public Enum ChatRoomBehavior" />
   <TypeSignature Language="C++ CLI" Value="public enum class ChatRoomBehavior" />
+  <TypeSignature Language="F#" Value="type ChatRoomBehavior = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomBehavior.Auditorium" />
       <MemberSignature Language="VB.NET" Value="Auditorium" />
       <MemberSignature Language="C++ CLI" Value="Auditorium" />
+      <MemberSignature Language="F#" Value="Auditorium = 2" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomBehavior.Auditorium" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomBehavior.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 1" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomBehavior.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomBehavior.Unset" />
       <MemberSignature Language="VB.NET" Value="Unset" />
       <MemberSignature Language="C++ CLI" Value="Unset" />
+      <MemberSignature Language="F#" Value="Unset = 0" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomBehavior.Unset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>

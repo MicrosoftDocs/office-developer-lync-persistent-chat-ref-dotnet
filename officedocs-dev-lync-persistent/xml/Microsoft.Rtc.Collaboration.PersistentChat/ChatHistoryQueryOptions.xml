@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions" />
   <TypeSignature Language="VB.NET" Value="Public Class ChatHistoryQueryOptions" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChatHistoryQueryOptions" />
+  <TypeSignature Language="F#" Value="type ChatHistoryQueryOptions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (searchString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ChatHistoryQueryOptions(System::String ^ searchString);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions : string -&gt; Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions" Usage="new Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions searchString" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.#ctor(System.String,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (searchString As String, exactPhrase As Boolean, caseSensitive As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ChatHistoryQueryOptions(System::String ^ searchString, bool exactPhrase, bool caseSensitive);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions : string * bool * bool -&gt; Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions" Usage="new Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions (searchString, exactPhrase, caseSensitive)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.Authors" />
       <MemberSignature Language="VB.NET" Value="Public Property Authors As ICollection(Of Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;Uri ^&gt; ^ Authors { System::Collections::Generic::ICollection&lt;Uri ^&gt; ^ get(); void set(System::Collections::Generic::ICollection&lt;Uri ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Authors : System.Collections.Generic.ICollection&lt;Uri&gt; with get, set" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.Authors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.DateBeginning" />
       <MemberSignature Language="VB.NET" Value="Public Property DateBeginning As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime DateBeginning { DateTime get(); void set(DateTime value); };" />
+      <MemberSignature Language="F#" Value="member this.DateBeginning : DateTime with get, set" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.DateBeginning" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -121,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.DateEnding" />
       <MemberSignature Language="VB.NET" Value="Public Property DateEnding As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime DateEnding { DateTime get(); void set(DateTime value); };" />
+      <MemberSignature Language="F#" Value="member this.DateEnding : DateTime with get, set" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.DateEnding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -146,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.MatchCaseSensitive" />
       <MemberSignature Language="VB.NET" Value="Public Property MatchCaseSensitive As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MatchCaseSensitive { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.MatchCaseSensitive : bool with get, set" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.MatchCaseSensitive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -169,6 +176,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.MatchExactPhrase" />
       <MemberSignature Language="VB.NET" Value="Public Property MatchExactPhrase As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MatchExactPhrase { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.MatchExactPhrase : bool with get, set" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.MatchExactPhrase" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -192,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.ResultLimit" />
       <MemberSignature Language="VB.NET" Value="Public Property ResultLimit As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ResultLimit { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ResultLimit : int with get, set" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.ResultLimit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -217,6 +226,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.SearchOrderReversed" />
       <MemberSignature Language="VB.NET" Value="Public Property SearchOrderReversed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SearchOrderReversed { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SearchOrderReversed : bool with get, set" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.SearchOrderReversed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -243,6 +253,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.SearchString" />
       <MemberSignature Language="VB.NET" Value="Public Property SearchString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SearchString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SearchString : string with get, set" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.SearchString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -268,6 +279,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.SortOrderReversed" />
       <MemberSignature Language="VB.NET" Value="Public Property SortOrderReversed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SortOrderReversed { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SortOrderReversed : bool with get, set" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.SortOrderReversed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -291,6 +303,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.StartingMessageID" />
       <MemberSignature Language="VB.NET" Value="Public Property StartingMessageID As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long StartingMessageID { long get(); void set(long value); };" />
+      <MemberSignature Language="F#" Value="member this.StartingMessageID : int64 with get, set" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryQueryOptions.StartingMessageID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>

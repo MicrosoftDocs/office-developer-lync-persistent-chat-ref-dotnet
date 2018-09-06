@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom" />
   <TypeSignature Language="VB.NET" Value="Public Class ChatRoom" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChatRoom" />
+  <TypeSignature Language="F#" Value="type ChatRoom = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.AddIn" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AddIn As PersistentChatAddIn" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::PersistentChatAddIn ^ AddIn { Microsoft::Rtc::Collaboration::PersistentChat::PersistentChatAddIn ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AddIn : Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatAddIn" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.AddIn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.ChangeHistory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChangeHistory As AuditData" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::Management::AuditData ^ ChangeHistory { Microsoft::Rtc::Collaboration::PersistentChat::Management::AuditData ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChangeHistory : Microsoft.Rtc.Collaboration.PersistentChat.Management.AuditData" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.ChangeHistory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.ChatRoomUri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChatRoomUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ChatRoomUri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChatRoomUri : Uri" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.ChatRoomUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.Description" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -141,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.FileStoreUri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileStoreUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ FileStoreUri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FileStoreUri : Uri" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.FileStoreUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -164,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.IsAuditorium" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAuditorium As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAuditorium { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsAuditorium : bool" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.IsAuditorium" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -192,6 +199,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.IsDisabled" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDisabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDisabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDisabled : bool" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.IsDisabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -218,6 +226,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -239,6 +248,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary op_Implicit(class Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom chatRoom) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.op_Implicit(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom)~Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomSummary ^(Microsoft::Rtc::Collaboration::PersistentChat::ChatRoom ^ chatRoom);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom -&gt; Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.op_Implicit chatRoom" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -266,6 +276,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.ParentCategoryDescription" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentCategoryDescription As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ParentCategoryDescription { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParentCategoryDescription : string" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.ParentCategoryDescription" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -293,6 +304,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.ParentCategoryName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentCategoryName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ParentCategoryName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParentCategoryName : string" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.ParentCategoryName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -320,6 +332,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.ParentCategoryUri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentCategoryUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ParentCategoryUri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParentCategoryUri : Uri" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.ParentCategoryUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -347,6 +360,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.Privacy" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Privacy As ChatRoomPrivacy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomPrivacy Privacy { Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomPrivacy get(); };" />
+      <MemberSignature Language="F#" Value="member this.Privacy : Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomPrivacy" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.Privacy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -382,6 +396,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.SendInvitationsToMembers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SendInvitationsToMembers As InheritedChatRoomInviteProperty" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::InheritedChatRoomInviteProperty ^ SendInvitationsToMembers { Microsoft::Rtc::Collaboration::PersistentChat::InheritedChatRoomInviteProperty ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SendInvitationsToMembers : Microsoft.Rtc.Collaboration.PersistentChat.InheritedChatRoomInviteProperty" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoom.SendInvitationsToMembers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>

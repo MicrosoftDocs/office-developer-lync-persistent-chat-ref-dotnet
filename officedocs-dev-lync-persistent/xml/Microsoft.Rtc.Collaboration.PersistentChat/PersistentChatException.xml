@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatException" />
   <TypeSignature Language="VB.NET" Value="Public Class PersistentChatException&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class PersistentChatException : Exception" />
+  <TypeSignature Language="F#" Value="type PersistentChatException = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>

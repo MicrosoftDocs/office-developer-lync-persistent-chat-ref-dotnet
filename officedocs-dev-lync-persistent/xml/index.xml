@@ -49,6 +49,7 @@
           <AttributeName>System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.7", FrameworkDisplayName=".NET Framework 4")</AttributeName>
         </Attribute>
       </Attributes>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 69 4e 34 3e 3b 85 bd 91 bf d3 d5 c0 71 54 85 f8 48 2f 2a 36 7f de d6 60 b5 24 b2 ef b2 95 8c 59 7d 12 a5 08 79 d6 9d 42 bc ee 55 0e 66 fc 58 ca c7 a2 06 af 25 3b 82 db 29 99 8b 8b 03 19 b0 bb c0 fb 71 19 d8 f6 95 50 a9 c1 89 34 5a e6 08 82 07 95 9f 20 3c 3f c6 98 05 f8 e1 2a bf 94 ca a5 a8 9f 54 2d d7 f9 bf d1 81 88 dc 64 02 ba cd b2 cc 9a 33 3d af 95 f8 c0 93 8c 6b 0b 9e 16 c0 b3 ]</AssemblyPublicKey>
     </Assembly>
   </Assemblies>
   <Remarks>To be added.</Remarks>

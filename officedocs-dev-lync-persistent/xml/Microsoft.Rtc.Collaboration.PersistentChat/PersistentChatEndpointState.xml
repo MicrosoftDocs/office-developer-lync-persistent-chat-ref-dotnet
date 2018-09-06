@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpointState" />
   <TypeSignature Language="VB.NET" Value="Public Enum PersistentChatEndpointState" />
   <TypeSignature Language="C++ CLI" Value="public enum class PersistentChatEndpointState" />
+  <TypeSignature Language="F#" Value="type PersistentChatEndpointState = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpointState.Established" />
       <MemberSignature Language="VB.NET" Value="Established" />
       <MemberSignature Language="C++ CLI" Value="Established" />
+      <MemberSignature Language="F#" Value="Established = 0" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpointState.Established" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpointState.Establishing" />
       <MemberSignature Language="VB.NET" Value="Establishing" />
       <MemberSignature Language="C++ CLI" Value="Establishing" />
+      <MemberSignature Language="F#" Value="Establishing = 1" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpointState.Establishing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpointState.Idle" />
       <MemberSignature Language="VB.NET" Value="Idle" />
       <MemberSignature Language="C++ CLI" Value="Idle" />
+      <MemberSignature Language="F#" Value="Idle = 2" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpointState.Idle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpointState.Terminated" />
       <MemberSignature Language="VB.NET" Value="Terminated" />
       <MemberSignature Language="C++ CLI" Value="Terminated" />
+      <MemberSignature Language="F#" Value="Terminated = 4" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpointState.Terminated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -108,6 +113,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpointState.Terminating" />
       <MemberSignature Language="VB.NET" Value="Terminating" />
       <MemberSignature Language="C++ CLI" Value="Terminating" />
+      <MemberSignature Language="F#" Value="Terminating = 3" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpointState.Terminating" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>

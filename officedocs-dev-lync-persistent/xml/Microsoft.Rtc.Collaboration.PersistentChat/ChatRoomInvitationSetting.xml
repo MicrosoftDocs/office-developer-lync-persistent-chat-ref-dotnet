@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomInvitationSetting" />
   <TypeSignature Language="VB.NET" Value="Public Enum ChatRoomInvitationSetting" />
   <TypeSignature Language="C++ CLI" Value="public enum class ChatRoomInvitationSetting" />
+  <TypeSignature Language="F#" Value="type ChatRoomInvitationSetting = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomInvitationSetting.False" />
       <MemberSignature Language="VB.NET" Value="False" />
       <MemberSignature Language="C++ CLI" Value="False" />
+      <MemberSignature Language="F#" Value="False = 0" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomInvitationSetting.False" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomInvitationSetting.Inherit" />
       <MemberSignature Language="VB.NET" Value="Inherit" />
       <MemberSignature Language="C++ CLI" Value="Inherit" />
+      <MemberSignature Language="F#" Value="Inherit = 1" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomInvitationSetting.Inherit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>

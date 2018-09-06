@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" />
   <TypeSignature Language="VB.NET" Value="Public Class PersistentChatEndpoint" />
   <TypeSignature Language="C++ CLI" Value="public ref class PersistentChatEndpoint" />
+  <TypeSignature Language="F#" Value="type PersistentChatEndpoint = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.#ctor(System.Uri,Microsoft.Rtc.Collaboration.LocalEndpoint)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (groupChatServerAddress As Uri, ocs As LocalEndpoint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PersistentChatEndpoint(Uri ^ groupChatServerAddress, Microsoft::Rtc::Collaboration::LocalEndpoint ^ ocs);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint : Uri * Microsoft.Rtc.Collaboration.LocalEndpoint -&gt; Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" Usage="new Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint (groupChatServerAddress, ocs)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.ActiveChatRoomSessions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveChatRoomSessions As ReadOnlyCollection(Of ChatRoomSession)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomSession ^&gt; ^ ActiveChatRoomSessions { System::Collections::ObjectModel::ReadOnlyCollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomSession ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveChatRoomSessions : System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession&gt;" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.ActiveChatRoomSessions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.BeginEstablish(System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginEstablish (userCallback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginEstablish(AsyncCallback ^ userCallback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginEstablish : AsyncCallback * obj -&gt; IAsyncResult" Usage="persistentChatEndpoint.BeginEstablish (userCallback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.BeginTerminate(System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTerminate (userCallback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginTerminate(AsyncCallback ^ userCallback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginTerminate : AsyncCallback * obj -&gt; IAsyncResult" Usage="persistentChatEndpoint.BeginTerminate (userCallback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.ChatRoomInvitationReceived" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ChatRoomInvitationReceived As EventHandler(Of ChatRoomInvitationEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomInvitationEventArgs ^&gt; ^ ChatRoomInvitationReceived;" />
+      <MemberSignature Language="F#" Value="member this.ChatRoomInvitationReceived : EventHandler&lt;Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomInvitationEventArgs&gt; " Usage="member this.ChatRoomInvitationReceived : System.EventHandler&lt;Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomInvitationEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -167,6 +173,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.ConnectionStateChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ConnectionStateChanged As EventHandler(Of PersistentChatEndpointStateChangedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Rtc::Collaboration::PersistentChat::PersistentChatEndpointStateChangedEventArgs ^&gt; ^ ConnectionStateChanged;" />
+      <MemberSignature Language="F#" Value="member this.ConnectionStateChanged : EventHandler&lt;Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpointStateChangedEventArgs&gt; " Usage="member this.ConnectionStateChanged : System.EventHandler&lt;Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpointStateChangedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -188,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.EndEstablish(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndEstablish (asyncResult As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndEstablish(IAsyncResult ^ asyncResult);" />
+      <MemberSignature Language="F#" Value="member this.EndEstablish : IAsyncResult -&gt; unit" Usage="persistentChatEndpoint.EndEstablish asyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -217,6 +225,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.EndTerminate(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndTerminate (asyncResult As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndTerminate(IAsyncResult ^ asyncResult);" />
+      <MemberSignature Language="F#" Value="member this.EndTerminate : IAsyncResult -&gt; unit" Usage="persistentChatEndpoint.EndTerminate asyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -243,6 +252,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.InnerEndpoint" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InnerEndpoint As LocalEndpoint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::LocalEndpoint ^ InnerEndpoint { Microsoft::Rtc::Collaboration::LocalEndpoint ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InnerEndpoint : Microsoft.Rtc.Collaboration.LocalEndpoint" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.InnerEndpoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -265,6 +275,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As ChatRoomSession" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomSession ^ default[System::String ^] { Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomSession ^ get(System::String ^ name); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -294,6 +305,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.Item(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(uri As Uri) As ChatRoomSession" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomSession ^ default[Uri ^] { Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomSession ^ get(Uri ^ uri); };" />
+      <MemberSignature Language="F#" Value="member this.Item(Uri) : Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSession" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -324,6 +336,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.PersistentChatServices" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PersistentChatServices As PersistentChatServices" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::PersistentChatServices ^ PersistentChatServices { Microsoft::Rtc::Collaboration::PersistentChat::PersistentChatServices ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PersistentChatServices : Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.PersistentChatServices" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -348,6 +361,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.State" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As PersistentChatEndpointState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::PersistentChatEndpointState State { Microsoft::Rtc::Collaboration::PersistentChat::PersistentChatEndpointState get(); };" />
+      <MemberSignature Language="F#" Value="member this.State : Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpointState" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint.State" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>

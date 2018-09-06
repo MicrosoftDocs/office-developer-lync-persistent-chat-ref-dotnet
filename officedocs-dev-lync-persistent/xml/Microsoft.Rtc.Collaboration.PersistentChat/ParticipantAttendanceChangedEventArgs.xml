@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.ParticipantAttendanceChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ParticipantAttendanceChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ParticipantAttendanceChangedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ParticipantAttendanceChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ParticipantAttendanceChangedEventArgs.ChatRoomUri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChatRoomUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ChatRoomUri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChatRoomUri : Uri" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ParticipantAttendanceChangedEventArgs.ChatRoomUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ParticipantAttendanceChangedEventArgs.IsActive" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsActive As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsActive { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsActive : bool" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ParticipantAttendanceChangedEventArgs.IsActive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ParticipantAttendanceChangedEventArgs.Participant" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Participant As ChatRoomParticipant" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomParticipant ^ Participant { Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomParticipant ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Participant : Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomParticipant" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ParticipantAttendanceChangedEventArgs.Participant" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>

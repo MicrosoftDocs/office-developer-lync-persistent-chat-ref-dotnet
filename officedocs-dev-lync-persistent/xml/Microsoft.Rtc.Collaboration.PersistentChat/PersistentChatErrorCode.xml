@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode" />
   <TypeSignature Language="VB.NET" Value="Public Enum PersistentChatErrorCode" />
   <TypeSignature Language="C++ CLI" Value="public enum class PersistentChatErrorCode" />
+  <TypeSignature Language="F#" Value="type PersistentChatErrorCode = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.CannotGetParticipantList" />
       <MemberSignature Language="VB.NET" Value="CannotGetParticipantList" />
       <MemberSignature Language="C++ CLI" Value="CannotGetParticipantList" />
+      <MemberSignature Language="F#" Value="CannotGetParticipantList = 4" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.CannotGetParticipantList" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.CommandFailed" />
       <MemberSignature Language="VB.NET" Value="CommandFailed" />
       <MemberSignature Language="C++ CLI" Value="CommandFailed" />
+      <MemberSignature Language="F#" Value="CommandFailed = 20" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.CommandFailed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.DatabaseConnection" />
       <MemberSignature Language="VB.NET" Value="DatabaseConnection" />
       <MemberSignature Language="C++ CLI" Value="DatabaseConnection" />
+      <MemberSignature Language="F#" Value="DatabaseConnection = 0" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.DatabaseConnection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.DataCollision" />
       <MemberSignature Language="VB.NET" Value="DataCollision" />
       <MemberSignature Language="C++ CLI" Value="DataCollision" />
+      <MemberSignature Language="F#" Value="DataCollision = 1" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.DataCollision" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -108,6 +113,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.DuplicateAddinName" />
       <MemberSignature Language="VB.NET" Value="DuplicateAddinName" />
       <MemberSignature Language="C++ CLI" Value="DuplicateAddinName" />
+      <MemberSignature Language="F#" Value="DuplicateAddinName = 24" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.DuplicateAddinName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -127,6 +133,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.DuplicateRoomName" />
       <MemberSignature Language="VB.NET" Value="DuplicateRoomName" />
       <MemberSignature Language="C++ CLI" Value="DuplicateRoomName" />
+      <MemberSignature Language="F#" Value="DuplicateRoomName = 2" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.DuplicateRoomName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -148,6 +155,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.ErrorPermission" />
       <MemberSignature Language="VB.NET" Value="ErrorPermission" />
       <MemberSignature Language="C++ CLI" Value="ErrorPermission" />
+      <MemberSignature Language="F#" Value="ErrorPermission = 9" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.ErrorPermission" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -169,6 +177,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.FileDownloadFailed" />
       <MemberSignature Language="VB.NET" Value="FileDownloadFailed" />
       <MemberSignature Language="C++ CLI" Value="FileDownloadFailed" />
+      <MemberSignature Language="F#" Value="FileDownloadFailed = 15" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.FileDownloadFailed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -190,6 +199,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.FileUploadFailed" />
       <MemberSignature Language="VB.NET" Value="FileUploadFailed" />
       <MemberSignature Language="C++ CLI" Value="FileUploadFailed" />
+      <MemberSignature Language="F#" Value="FileUploadFailed = 16" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.FileUploadFailed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -211,6 +221,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.InvalidArgument" />
       <MemberSignature Language="VB.NET" Value="InvalidArgument" />
       <MemberSignature Language="C++ CLI" Value="InvalidArgument" />
+      <MemberSignature Language="F#" Value="InvalidArgument = 3" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.InvalidArgument" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -232,6 +243,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.InvalidFlowOfOperations" />
       <MemberSignature Language="VB.NET" Value="InvalidFlowOfOperations" />
       <MemberSignature Language="C++ CLI" Value="InvalidFlowOfOperations" />
+      <MemberSignature Language="F#" Value="InvalidFlowOfOperations = 17" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.InvalidFlowOfOperations" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -253,6 +265,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.InvalidToken" />
       <MemberSignature Language="VB.NET" Value="InvalidToken" />
       <MemberSignature Language="C++ CLI" Value="InvalidToken" />
+      <MemberSignature Language="F#" Value="InvalidToken = 18" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.InvalidToken" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -274,6 +287,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.LimitExceeded" />
       <MemberSignature Language="VB.NET" Value="LimitExceeded" />
       <MemberSignature Language="C++ CLI" Value="LimitExceeded" />
+      <MemberSignature Language="F#" Value="LimitExceeded = 5" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.LimitExceeded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -295,6 +309,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.MsgNotSupported" />
       <MemberSignature Language="VB.NET" Value="MsgNotSupported" />
       <MemberSignature Language="C++ CLI" Value="MsgNotSupported" />
+      <MemberSignature Language="F#" Value="MsgNotSupported = 6" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.MsgNotSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -316,6 +331,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.NodeDisabled" />
       <MemberSignature Language="VB.NET" Value="NodeDisabled" />
       <MemberSignature Language="C++ CLI" Value="NodeDisabled" />
+      <MemberSignature Language="F#" Value="NodeDisabled = 7" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.NodeDisabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -337,6 +353,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.NodeHierarchyViolation" />
       <MemberSignature Language="VB.NET" Value="NodeHierarchyViolation" />
       <MemberSignature Language="C++ CLI" Value="NodeHierarchyViolation" />
+      <MemberSignature Language="F#" Value="NodeHierarchyViolation = 8" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.NodeHierarchyViolation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -358,6 +375,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.NoSuchNode" />
       <MemberSignature Language="VB.NET" Value="NoSuchNode" />
       <MemberSignature Language="C++ CLI" Value="NoSuchNode" />
+      <MemberSignature Language="F#" Value="NoSuchNode = 10" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.NoSuchNode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -379,6 +397,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.NoSuchPrincipal" />
       <MemberSignature Language="VB.NET" Value="NoSuchPrincipal" />
       <MemberSignature Language="C++ CLI" Value="NoSuchPrincipal" />
+      <MemberSignature Language="F#" Value="NoSuchPrincipal = 11" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.NoSuchPrincipal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -400,6 +419,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.PresenterNotInMemList" />
       <MemberSignature Language="VB.NET" Value="PresenterNotInMemList" />
       <MemberSignature Language="C++ CLI" Value="PresenterNotInMemList" />
+      <MemberSignature Language="F#" Value="PresenterNotInMemList = 23" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.PresenterNotInMemList" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -419,6 +439,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.PrincipalsAlreadyDefined" />
       <MemberSignature Language="VB.NET" Value="PrincipalsAlreadyDefined" />
       <MemberSignature Language="C++ CLI" Value="PrincipalsAlreadyDefined" />
+      <MemberSignature Language="F#" Value="PrincipalsAlreadyDefined = 21" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.PrincipalsAlreadyDefined" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -438,6 +459,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.PrincipalsNotInScope" />
       <MemberSignature Language="VB.NET" Value="PrincipalsNotInScope" />
       <MemberSignature Language="C++ CLI" Value="PrincipalsNotInScope" />
+      <MemberSignature Language="F#" Value="PrincipalsNotInScope = 22" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.PrincipalsNotInScope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -457,6 +479,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.ServerError" />
       <MemberSignature Language="VB.NET" Value="ServerError" />
       <MemberSignature Language="C++ CLI" Value="ServerError" />
+      <MemberSignature Language="F#" Value="ServerError = 19" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.ServerError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -478,6 +501,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.UnableToCreateRoom" />
       <MemberSignature Language="VB.NET" Value="UnableToCreateRoom" />
       <MemberSignature Language="C++ CLI" Value="UnableToCreateRoom" />
+      <MemberSignature Language="F#" Value="UnableToCreateRoom = 12" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.UnableToCreateRoom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -499,6 +523,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.UnknownServerError" />
       <MemberSignature Language="VB.NET" Value="UnknownServerError" />
       <MemberSignature Language="C++ CLI" Value="UnknownServerError" />
+      <MemberSignature Language="F#" Value="UnknownServerError = 13" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.UnknownServerError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -520,6 +545,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.UserNotJoined" />
       <MemberSignature Language="VB.NET" Value="UserNotJoined" />
       <MemberSignature Language="C++ CLI" Value="UserNotJoined" />
+      <MemberSignature Language="F#" Value="UserNotJoined = 14" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatErrorCode.UserNotJoined" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon" />
   <TypeSignature Language="VB.NET" Value="Public Enum ChatEmoticon" />
   <TypeSignature Language="C++ CLI" Value="public enum class ChatEmoticon" />
+  <TypeSignature Language="F#" Value="type ChatEmoticon = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Angry" />
       <MemberSignature Language="VB.NET" Value="Angry" />
       <MemberSignature Language="C++ CLI" Value="Angry" />
+      <MemberSignature Language="F#" Value="Angry = 9" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Angry" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Confused" />
       <MemberSignature Language="VB.NET" Value="Confused" />
       <MemberSignature Language="C++ CLI" Value="Confused" />
+      <MemberSignature Language="F#" Value="Confused = 5" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Confused" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Cool" />
       <MemberSignature Language="VB.NET" Value="Cool" />
       <MemberSignature Language="C++ CLI" Value="Cool" />
+      <MemberSignature Language="F#" Value="Cool = 2" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Cool" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -83,6 +87,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Crying" />
       <MemberSignature Language="VB.NET" Value="Crying" />
       <MemberSignature Language="C++ CLI" Value="Crying" />
+      <MemberSignature Language="F#" Value="Crying = 6" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Crying" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -103,6 +108,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Frown" />
       <MemberSignature Language="VB.NET" Value="Frown" />
       <MemberSignature Language="C++ CLI" Value="Frown" />
+      <MemberSignature Language="F#" Value="Frown = 1" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Frown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -123,6 +129,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Kissing" />
       <MemberSignature Language="VB.NET" Value="Kissing" />
       <MemberSignature Language="C++ CLI" Value="Kissing" />
+      <MemberSignature Language="F#" Value="Kissing = 10" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Kissing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -143,6 +150,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Laughing" />
       <MemberSignature Language="VB.NET" Value="Laughing" />
       <MemberSignature Language="C++ CLI" Value="Laughing" />
+      <MemberSignature Language="F#" Value="Laughing = 3" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Laughing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -163,6 +171,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Shocked" />
       <MemberSignature Language="VB.NET" Value="Shocked" />
       <MemberSignature Language="C++ CLI" Value="Shocked" />
+      <MemberSignature Language="F#" Value="Shocked = 4" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Shocked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -183,6 +192,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Smile" />
       <MemberSignature Language="VB.NET" Value="Smile" />
       <MemberSignature Language="C++ CLI" Value="Smile" />
+      <MemberSignature Language="F#" Value="Smile = 0" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Smile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -203,6 +213,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Tongue" />
       <MemberSignature Language="VB.NET" Value="Tongue" />
       <MemberSignature Language="C++ CLI" Value="Tongue" />
+      <MemberSignature Language="F#" Value="Tongue = 7" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Tongue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -223,6 +234,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Wink" />
       <MemberSignature Language="VB.NET" Value="Wink" />
       <MemberSignature Language="C++ CLI" Value="Wink" />
+      <MemberSignature Language="F#" Value="Wink = 8" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon.Wink" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>

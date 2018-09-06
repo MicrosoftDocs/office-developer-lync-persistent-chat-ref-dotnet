@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPreferenceBundle" />
   <TypeSignature Language="VB.NET" Value="Public Class PersistentChatPreferenceBundle" />
   <TypeSignature Language="C++ CLI" Value="public ref class PersistentChatPreferenceBundle" />
+  <TypeSignature Language="F#" Value="type PersistentChatPreferenceBundle = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPreferenceBundle.#ctor(System.String,System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (label As String, sequenceID As Integer, data As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PersistentChatPreferenceBundle(System::String ^ label, int sequenceID, System::String ^ data);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPreferenceBundle : string * int * string -&gt; Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPreferenceBundle" Usage="new Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPreferenceBundle (label, sequenceID, data)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPreferenceBundle.Data" />
       <MemberSignature Language="VB.NET" Value="Public Property Data As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Data { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Data : string with get, set" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPreferenceBundle.Data" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPreferenceBundle.Label" />
       <MemberSignature Language="VB.NET" Value="Public Property Label As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Label { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Label : string with get, set" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPreferenceBundle.Label" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPreferenceBundle.SequenceId" />
       <MemberSignature Language="VB.NET" Value="Public Property SequenceId As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SequenceId { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.SequenceId : int with get, set" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPreferenceBundle.SequenceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>

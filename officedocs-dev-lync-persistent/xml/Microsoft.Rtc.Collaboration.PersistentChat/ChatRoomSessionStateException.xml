@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionStateException" />
   <TypeSignature Language="VB.NET" Value="Public Class ChatRoomSessionStateException&#xA;Inherits PersistentChatException" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChatRoomSessionStateException : Microsoft::Rtc::Collaboration::PersistentChat::PersistentChatException" />
+  <TypeSignature Language="F#" Value="type ChatRoomSessionStateException = class&#xA;    inherit PersistentChatException" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>

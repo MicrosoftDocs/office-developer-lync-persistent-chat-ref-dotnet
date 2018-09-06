@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage" />
   <TypeSignature Language="VB.NET" Value="Public Class FormattedOutboundChatMessage" />
   <TypeSignature Language="C++ CLI" Value="public ref class FormattedOutboundChatMessage" />
+  <TypeSignature Language="F#" Value="type FormattedOutboundChatMessage = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (isAlert As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FormattedOutboundChatMessage(bool isAlert);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage : bool -&gt; Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage" Usage="new Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage isAlert" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.#ctor(System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (isAlert As Boolean, storyTitle As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FormattedOutboundChatMessage(bool isAlert, System::String ^ storyTitle);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage : bool * string -&gt; Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage" Usage="new Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage (isAlert, storyTitle)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.AppendChatRoomLink(Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AppendChatRoomLink (chatRoom As ChatRoomSummary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AppendChatRoomLink(Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomSummary ^ chatRoom);" />
+      <MemberSignature Language="F#" Value="member this.AppendChatRoomLink : Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSummary -&gt; unit" Usage="formattedOutboundChatMessage.AppendChatRoomLink chatRoom" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.AppendEmoticon(Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AppendEmoticon (emoticon As ChatEmoticon)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AppendEmoticon(Microsoft::Rtc::Collaboration::PersistentChat::ChatEmoticon emoticon);" />
+      <MemberSignature Language="F#" Value="member this.AppendEmoticon : Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon -&gt; unit" Usage="formattedOutboundChatMessage.AppendEmoticon emoticon" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -148,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.AppendHyperLink(System.String,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AppendHyperLink (displayText As String, hyperLink As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AppendHyperLink(System::String ^ displayText, Uri ^ hyperLink);" />
+      <MemberSignature Language="F#" Value="member this.AppendHyperLink : string * Uri -&gt; unit" Usage="formattedOutboundChatMessage.AppendHyperLink (displayText, hyperLink)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -179,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.AppendPlainText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AppendPlainText (plainText As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AppendPlainText(System::String ^ plainText);" />
+      <MemberSignature Language="F#" Value="member this.AppendPlainText : string -&gt; unit" Usage="formattedOutboundChatMessage.AppendPlainText plainText" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -205,6 +212,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.FormattedMessageParts" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FormattedMessageParts As ReadOnlyCollection(Of MessagePart)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::MessagePart ^&gt; ^ FormattedMessageParts { System::Collections::ObjectModel::ReadOnlyCollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::MessagePart ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FormattedMessageParts : System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.MessagePart&gt;" Usage="Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.FormattedMessageParts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -228,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.IsAlert" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAlert As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAlert { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsAlert : bool" Usage="Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.IsAlert" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -251,6 +260,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.MessageContent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MessageContent As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MessageContent { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MessageContent : string" Usage="Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.MessageContent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -273,6 +283,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.StoryTitle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StoryTitle As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StoryTitle { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StoryTitle : string" Usage="Microsoft.Rtc.Collaboration.PersistentChat.FormattedOutboundChatMessage.StoryTitle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>

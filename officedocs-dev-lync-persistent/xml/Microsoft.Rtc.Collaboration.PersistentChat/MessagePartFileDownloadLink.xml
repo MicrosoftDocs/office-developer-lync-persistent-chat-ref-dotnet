@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MessagePartFileDownloadLink&#xA;Inherits MessagePart" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessagePartFileDownloadLink sealed : Microsoft::Rtc::Collaboration::PersistentChat::MessagePart" />
+  <TypeSignature Language="F#" Value="type MessagePartFileDownloadLink = class&#xA;    inherit MessagePart" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink.Equals(Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As MessagePartFileDownloadLink) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(Microsoft::Rtc::Collaboration::PersistentChat::MessagePartFileDownloadLink ^ other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink -&gt; bool" Usage="messagePartFileDownloadLink.Equals other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="messagePartFileDownloadLink.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink.FileName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FileName : string" Usage="Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink.FileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink.FileSizeEstimate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileSizeEstimate As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileSizeEstimate { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FileSizeEstimate : string" Usage="Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink.FileSizeEstimate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -122,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink.FileUri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ FileUri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FileUri : Uri" Usage="Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink.FileUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -144,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="messagePartFileDownloadLink.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap" />
   <TypeSignature Language="VB.NET" Value="Public Enum RoomPermissionMap" />
   <TypeSignature Language="C++ CLI" Value="public enum class RoomPermissionMap" />
+  <TypeSignature Language="F#" Value="type RoomPermissionMap = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap.CanAuditoriumChat" />
       <MemberSignature Language="VB.NET" Value="CanAuditoriumChat" />
       <MemberSignature Language="C++ CLI" Value="CanAuditoriumChat" />
+      <MemberSignature Language="F#" Value="CanAuditoriumChat = 32" Usage="Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap.CanAuditoriumChat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap.CanChat" />
       <MemberSignature Language="VB.NET" Value="CanChat" />
       <MemberSignature Language="C++ CLI" Value="CanChat" />
+      <MemberSignature Language="F#" Value="CanChat = 4" Usage="Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap.CanChat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap.CanJoin" />
       <MemberSignature Language="VB.NET" Value="CanJoin" />
       <MemberSignature Language="C++ CLI" Value="CanJoin" />
+      <MemberSignature Language="F#" Value="CanJoin = 2" Usage="Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap.CanJoin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap.CanManageRoom" />
       <MemberSignature Language="VB.NET" Value="CanManageRoom" />
       <MemberSignature Language="C++ CLI" Value="CanManageRoom" />
+      <MemberSignature Language="F#" Value="CanManageRoom = 1" Usage="Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap.CanManageRoom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap.CanReadHistory" />
       <MemberSignature Language="VB.NET" Value="CanReadHistory" />
       <MemberSignature Language="C++ CLI" Value="CanReadHistory" />
+      <MemberSignature Language="F#" Value="CanReadHistory = 8" Usage="Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap.CanReadHistory" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -134,6 +140,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap.CanView" />
       <MemberSignature Language="VB.NET" Value="CanView" />
       <MemberSignature Language="C++ CLI" Value="CanView" />
+      <MemberSignature Language="F#" Value="CanView = 16" Usage="Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap.CanView" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -155,6 +162,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.Rtc.Collaboration.PersistentChat.RoomPermissionMap.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>

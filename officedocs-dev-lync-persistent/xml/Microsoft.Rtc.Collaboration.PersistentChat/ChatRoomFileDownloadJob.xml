@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileDownloadJob" />
   <TypeSignature Language="VB.NET" Value="Public Class ChatRoomFileDownloadJob" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChatRoomFileDownloadJob" />
+  <TypeSignature Language="F#" Value="type ChatRoomFileDownloadJob = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileDownloadJob.#ctor(Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (link As MessagePartFileDownloadLink, destinationPath As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ChatRoomFileDownloadJob(Microsoft::Rtc::Collaboration::PersistentChat::MessagePartFileDownloadLink ^ link, System::String ^ destinationPath);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileDownloadJob : Microsoft.Rtc.Collaboration.PersistentChat.MessagePartFileDownloadLink * string -&gt; Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileDownloadJob" Usage="new Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileDownloadJob (link, destinationPath)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileDownloadJob.CancelJob" />
       <MemberSignature Language="VB.NET" Value="Public Sub CancelJob ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelJob();" />
+      <MemberSignature Language="F#" Value="member this.CancelJob : unit -&gt; unit" Usage="chatRoomFileDownloadJob.CancelJob " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileDownloadJob.DestinationPath" />
       <MemberSignature Language="VB.NET" Value="Public Property DestinationPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DestinationPath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DestinationPath : string with get, set" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileDownloadJob.DestinationPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileDownloadJob.PercentComplete" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PercentComplete As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PercentComplete { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.PercentComplete : int" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileDownloadJob.PercentComplete" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -121,6 +126,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileDownloadJob.ProgressChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ProgressChanged As EventHandler(Of ChatRoomFileTransferProgressEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomFileTransferProgressEventArgs ^&gt; ^ ProgressChanged;" />
+      <MemberSignature Language="F#" Value="member this.ProgressChanged : EventHandler&lt;Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileTransferProgressEventArgs&gt; " Usage="member this.ProgressChanged : System.EventHandler&lt;Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileTransferProgressEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -142,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileDownloadJob.SourceUrl" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceUrl { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SourceUrl : string" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomFileDownloadJob.SourceUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
