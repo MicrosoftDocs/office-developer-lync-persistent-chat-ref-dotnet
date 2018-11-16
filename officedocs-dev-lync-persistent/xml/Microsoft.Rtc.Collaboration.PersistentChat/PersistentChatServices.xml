@@ -273,7 +273,7 @@
           <para>
             This request will be processed asynchronously.
             See <see cref="M:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatServices.EndBrowseChatRoomsByFilterCriteria(System.IAsyncResult)" /> to complete this asynchronous operation.
-            If a parameter is null, then we do not search under that paramter. The only exceptions are searchDesc,
+            If a parameter is null, then we do not search under that parameter. The only exceptions are searchDesc,
             which is false to not search description, and invitations, which uses the searchInvitations parameter
             to determine when to search invitations
             </para>
