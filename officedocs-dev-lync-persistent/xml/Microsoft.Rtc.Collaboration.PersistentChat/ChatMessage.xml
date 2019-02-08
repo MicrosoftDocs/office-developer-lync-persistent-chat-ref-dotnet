@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage" />
   <TypeSignature Language="VB.NET" Value="Public Class ChatMessage" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChatMessage" />
+  <TypeSignature Language="F#" Value="type ChatMessage = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.ChatRoomName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChatRoomName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ChatRoomName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChatRoomName : string" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.ChatRoomName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.ChatRoomUri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChatRoomUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ChatRoomUri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChatRoomUri : Uri" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.ChatRoomUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.FormattedMessageParts" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FormattedMessageParts As ReadOnlyCollection(Of MessagePart)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::MessagePart ^&gt; ^ FormattedMessageParts { System::Collections::ObjectModel::ReadOnlyCollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::MessagePart ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FormattedMessageParts : System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.MessagePart&gt;" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.FormattedMessageParts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.FormattedRtfMessageParts" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FormattedRtfMessageParts As ReadOnlyCollection(Of MessagePart)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::MessagePart ^&gt; ^ FormattedRtfMessageParts { System::Collections::ObjectModel::ReadOnlyCollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::MessagePart ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FormattedRtfMessageParts : System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.MessagePart&gt;" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.FormattedRtfMessageParts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -115,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.IsAlert" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAlert As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAlert { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsAlert : bool" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.IsAlert" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -138,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.MessageAuthor" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MessageAuthor As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ MessageAuthor { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MessageAuthor : Uri" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.MessageAuthor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -160,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.MessageContent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MessageContent As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MessageContent { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MessageContent : string" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.MessageContent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -182,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.MessageId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MessageId As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MessageId { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.MessageId : int64" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.MessageId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -204,6 +213,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.MessageRtfContent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MessageRtfContent As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MessageRtfContent { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MessageRtfContent : string" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.MessageRtfContent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -226,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.Timestamp" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Timestamp As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime Timestamp { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.Timestamp : DateTime" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage.Timestamp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>

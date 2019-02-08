@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserGroup" />
   <TypeSignature Language="VB.NET" Value="Public Class PersistentChatUserGroup&#xA;Inherits PersistentChatPrincipal" />
   <TypeSignature Language="C++ CLI" Value="public ref class PersistentChatUserGroup : Microsoft::Rtc::Collaboration::PersistentChat::Management::PersistentChatPrincipal" />
+  <TypeSignature Language="F#" Value="type PersistentChatUserGroup = class&#xA;    inherit PersistentChatPrincipal" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>

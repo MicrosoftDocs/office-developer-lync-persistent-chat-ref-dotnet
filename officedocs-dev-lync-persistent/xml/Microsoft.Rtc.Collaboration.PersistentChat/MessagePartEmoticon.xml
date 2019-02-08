@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartEmoticon" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MessagePartEmoticon&#xA;Inherits MessagePart" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessagePartEmoticon sealed : Microsoft::Rtc::Collaboration::PersistentChat::MessagePart" />
+  <TypeSignature Language="F#" Value="type MessagePartEmoticon = class&#xA;    inherit MessagePart" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartEmoticon.Emoticon" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Emoticon As ChatEmoticon" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::ChatEmoticon Emoticon { Microsoft::Rtc::Collaboration::PersistentChat::ChatEmoticon get(); };" />
+      <MemberSignature Language="F#" Value="member this.Emoticon : Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon" Usage="Microsoft.Rtc.Collaboration.PersistentChat.MessagePartEmoticon.Emoticon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartEmoticon.Equals(Microsoft.Rtc.Collaboration.PersistentChat.MessagePartEmoticon)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As MessagePartEmoticon) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(Microsoft::Rtc::Collaboration::PersistentChat::MessagePartEmoticon ^ other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : Microsoft.Rtc.Collaboration.PersistentChat.MessagePartEmoticon -&gt; bool" Usage="messagePartEmoticon.Equals other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartEmoticon.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="messagePartEmoticon.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartEmoticon.GetEmoticonString(Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetEmoticonString (emoticon As ChatEmoticon) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetEmoticonString(Microsoft::Rtc::Collaboration::PersistentChat::ChatEmoticon emoticon);" />
+      <MemberSignature Language="F#" Value="static member GetEmoticonString : Microsoft.Rtc.Collaboration.PersistentChat.ChatEmoticon -&gt; string" Usage="Microsoft.Rtc.Collaboration.PersistentChat.MessagePartEmoticon.GetEmoticonString emoticon" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -125,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartEmoticon.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="messagePartEmoticon.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>

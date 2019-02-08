@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartPlainText" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MessagePartPlainText&#xA;Inherits MessagePart" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessagePartPlainText sealed : Microsoft::Rtc::Collaboration::PersistentChat::MessagePart" />
+  <TypeSignature Language="F#" Value="type MessagePartPlainText = class&#xA;    inherit MessagePart" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartPlainText.Equals(Microsoft.Rtc.Collaboration.PersistentChat.MessagePartPlainText)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As MessagePartPlainText) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(Microsoft::Rtc::Collaboration::PersistentChat::MessagePartPlainText ^ other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : Microsoft.Rtc.Collaboration.PersistentChat.MessagePartPlainText -&gt; bool" Usage="messagePartPlainText.Equals other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartPlainText.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="messagePartPlainText.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartPlainText.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="messagePartPlainText.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType" />
   <TypeSignature Language="VB.NET" Value="Public Enum PersistentChatPrincipalType" />
   <TypeSignature Language="C++ CLI" Value="public enum class PersistentChatPrincipalType" />
+  <TypeSignature Language="F#" Value="type PersistentChatPrincipalType = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType.DirectoryFolder" />
       <MemberSignature Language="VB.NET" Value="DirectoryFolder" />
       <MemberSignature Language="C++ CLI" Value="DirectoryFolder" />
+      <MemberSignature Language="F#" Value="DirectoryFolder = 2" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType.DirectoryFolder" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType.DirectoryGroup" />
       <MemberSignature Language="VB.NET" Value="DirectoryGroup" />
       <MemberSignature Language="C++ CLI" Value="DirectoryGroup" />
+      <MemberSignature Language="F#" Value="DirectoryGroup = 1" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType.DirectoryGroup" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType.Domain" />
       <MemberSignature Language="VB.NET" Value="Domain" />
       <MemberSignature Language="C++ CLI" Value="Domain" />
+      <MemberSignature Language="F#" Value="Domain = 3" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType.Domain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType.LocalUser" />
       <MemberSignature Language="VB.NET" Value="LocalUser" />
       <MemberSignature Language="C++ CLI" Value="LocalUser" />
+      <MemberSignature Language="F#" Value="LocalUser = 0" Usage="Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType.LocalUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>

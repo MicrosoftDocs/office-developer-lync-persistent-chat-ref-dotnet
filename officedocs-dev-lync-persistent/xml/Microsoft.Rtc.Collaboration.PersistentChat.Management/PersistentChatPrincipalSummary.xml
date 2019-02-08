@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary" />
   <TypeSignature Language="VB.NET" Value="Public Class PersistentChatPrincipalSummary" />
   <TypeSignature Language="C++ CLI" Value="public ref class PersistentChatPrincipalSummary" />
+  <TypeSignature Language="F#" Value="type PersistentChatPrincipalSummary = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary.ActiveDirectoryPath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveDirectoryPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ActiveDirectoryPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveDirectoryPath : string" Usage="Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary.ActiveDirectoryPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string" Usage="Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary.DisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary.EntityGuid" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EntityGuid As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid EntityGuid { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.EntityGuid : Guid" Usage="Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary.EntityGuid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -124,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As PersistentChatPrincipalType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::PersistentChatPrincipalType Type { Microsoft::Rtc::Collaboration::PersistentChat::PersistentChatPrincipalType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatPrincipalType" Usage="Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -146,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary.Uri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Uri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Uri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Uri : Uri" Usage="Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary.Uri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>

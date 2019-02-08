@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole" />
   <TypeSignature Language="VB.NET" Value="Public Enum ChatRoomRole" />
   <TypeSignature Language="C++ CLI" Value="public enum class ChatRoomRole" />
+  <TypeSignature Language="F#" Value="type ChatRoomRole = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole.Creator" />
       <MemberSignature Language="VB.NET" Value="Creator" />
       <MemberSignature Language="C++ CLI" Value="Creator" />
+      <MemberSignature Language="F#" Value="Creator = 3" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole.Creator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole.Manager" />
       <MemberSignature Language="VB.NET" Value="Manager" />
       <MemberSignature Language="C++ CLI" Value="Manager" />
+      <MemberSignature Language="F#" Value="Manager = 1" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole.Manager" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole.Member" />
       <MemberSignature Language="VB.NET" Value="Member" />
       <MemberSignature Language="C++ CLI" Value="Member" />
+      <MemberSignature Language="F#" Value="Member = 0" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole.Member" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole.Presenter" />
       <MemberSignature Language="VB.NET" Value="Presenter" />
       <MemberSignature Language="C++ CLI" Value="Presenter" />
+      <MemberSignature Language="F#" Value="Presenter = 2" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomRole.Presenter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>

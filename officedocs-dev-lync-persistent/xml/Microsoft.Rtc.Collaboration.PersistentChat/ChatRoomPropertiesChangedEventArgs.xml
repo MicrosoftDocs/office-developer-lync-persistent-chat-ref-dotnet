@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomPropertiesChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ChatRoomPropertiesChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChatRoomPropertiesChangedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ChatRoomPropertiesChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomPropertiesChangedEventArgs.ChatRoomUri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChatRoomUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ChatRoomUri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChatRoomUri : Uri" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomPropertiesChangedEventArgs.ChatRoomUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomPropertiesChangedEventArgs.NewChatRoomProperties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewChatRoomProperties As Dictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt; ^ NewChatRoomProperties { System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NewChatRoomProperties : System.Collections.Generic.Dictionary&lt;string, obj&gt;" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomPropertiesChangedEventArgs.NewChatRoomProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomPropertiesChangedEventArgs.OldChatRoomProperties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OldChatRoomProperties As Dictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt; ^ OldChatRoomProperties { System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OldChatRoomProperties : System.Collections.Generic.Dictionary&lt;string, obj&gt;" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomPropertiesChangedEventArgs.OldChatRoomProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartChatRoomLink" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MessagePartChatRoomLink&#xA;Inherits MessagePart" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessagePartChatRoomLink sealed : Microsoft::Rtc::Collaboration::PersistentChat::MessagePart" />
+  <TypeSignature Language="F#" Value="type MessagePartChatRoomLink = class&#xA;    inherit MessagePart" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartChatRoomLink.#ctor(System.String,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (displayText As String, chatRoomUri As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MessagePartChatRoomLink(System::String ^ displayText, Uri ^ chatRoomUri);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Rtc.Collaboration.PersistentChat.MessagePartChatRoomLink : string * Uri -&gt; Microsoft.Rtc.Collaboration.PersistentChat.MessagePartChatRoomLink" Usage="new Microsoft.Rtc.Collaboration.PersistentChat.MessagePartChatRoomLink (displayText, chatRoomUri)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartChatRoomLink.ChatRoomUri" />
       <MemberSignature Language="VB.NET" Value="Public Property ChatRoomUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ChatRoomUri { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ChatRoomUri : Uri with get, set" Usage="Microsoft.Rtc.Collaboration.PersistentChat.MessagePartChatRoomLink.ChatRoomUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartChatRoomLink.Equals(Microsoft.Rtc.Collaboration.PersistentChat.MessagePartChatRoomLink)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As MessagePartChatRoomLink) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(Microsoft::Rtc::Collaboration::PersistentChat::MessagePartChatRoomLink ^ other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : Microsoft.Rtc.Collaboration.PersistentChat.MessagePartChatRoomLink -&gt; bool" Usage="messagePartChatRoomLink.Equals other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartChatRoomLink.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="messagePartChatRoomLink.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -123,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.MessagePartChatRoomLink.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="messagePartChatRoomLink.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>

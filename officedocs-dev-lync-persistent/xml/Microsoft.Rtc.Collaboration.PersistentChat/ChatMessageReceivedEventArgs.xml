@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessageReceivedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ChatMessageReceivedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChatMessageReceivedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ChatMessageReceivedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatMessageReceivedEventArgs.Message" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Message As ChatMessage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::ChatMessage ^ Message { Microsoft::Rtc::Collaboration::PersistentChat::ChatMessage ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Message : Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatMessageReceivedEventArgs.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>

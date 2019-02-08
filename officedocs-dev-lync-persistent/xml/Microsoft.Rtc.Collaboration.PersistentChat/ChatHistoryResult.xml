@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryResult" />
   <TypeSignature Language="VB.NET" Value="Public Class ChatHistoryResult" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChatHistoryResult" />
+  <TypeSignature Language="F#" Value="type ChatHistoryResult = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryResult.ChatRoomName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChatRoomName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ChatRoomName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChatRoomName : string" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryResult.ChatRoomName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryResult.ChatRoomUri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChatRoomUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ChatRoomUri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChatRoomUri : Uri" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryResult.ChatRoomUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryResult.ExceededServerLimit" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExceededServerLimit As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExceededServerLimit { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExceededServerLimit : bool" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryResult.ExceededServerLimit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryResult.Messages" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Messages As ReadOnlyCollection(Of ChatMessage)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::ChatMessage ^&gt; ^ Messages { System::Collections::ObjectModel::ReadOnlyCollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::ChatMessage ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Messages : System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.ChatMessage&gt;" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryResult.Messages" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -119,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryResult.SearchResultsCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SearchResultsCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SearchResultsCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.SearchResultsCount : int" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatHistoryResult.SearchResultsCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>

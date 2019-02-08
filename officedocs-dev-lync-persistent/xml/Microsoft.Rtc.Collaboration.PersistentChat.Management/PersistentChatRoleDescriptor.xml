@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatRoleDescriptor" />
   <TypeSignature Language="VB.NET" Value="Public Class PersistentChatRoleDescriptor" />
   <TypeSignature Language="C++ CLI" Value="public ref class PersistentChatRoleDescriptor" />
+  <TypeSignature Language="F#" Value="type PersistentChatRoleDescriptor = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatRoleDescriptor.ChangeHistory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChangeHistory As AuditData" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::Management::AuditData ^ ChangeHistory { Microsoft::Rtc::Collaboration::PersistentChat::Management::AuditData ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChangeHistory : Microsoft.Rtc.Collaboration.PersistentChat.Management.AuditData" Usage="Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatRoleDescriptor.ChangeHistory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatRoleDescriptor.PrincipalWithRole" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrincipalWithRole As PersistentChatPrincipalSummary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::Management::PersistentChatPrincipalSummary ^ PrincipalWithRole { Microsoft::Rtc::Collaboration::PersistentChat::Management::PersistentChatPrincipalSummary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PrincipalWithRole : Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary" Usage="Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatRoleDescriptor.PrincipalWithRole" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>

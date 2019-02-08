@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.InheritedChatRoomInviteProperty" />
   <TypeSignature Language="VB.NET" Value="Public Class InheritedChatRoomInviteProperty" />
   <TypeSignature Language="C++ CLI" Value="public ref class InheritedChatRoomInviteProperty" />
+  <TypeSignature Language="F#" Value="type InheritedChatRoomInviteProperty = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.InheritedChatRoomInviteProperty.InheritedValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InheritedValue As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool InheritedValue { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.InheritedValue : bool" Usage="Microsoft.Rtc.Collaboration.PersistentChat.InheritedChatRoomInviteProperty.InheritedValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.InheritedChatRoomInviteProperty.LocalValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocalValue As ChatRoomInvitationSetting" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomInvitationSetting LocalValue { Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomInvitationSetting get(); };" />
+      <MemberSignature Language="F#" Value="member this.LocalValue : Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomInvitationSetting" Usage="Microsoft.Rtc.Collaboration.PersistentChat.InheritedChatRoomInviteProperty.LocalValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.InheritedChatRoomInviteProperty.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="inheritedChatRoomInviteProperty.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.InheritedChatRoomInviteProperty.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Value { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : bool" Usage="Microsoft.Rtc.Collaboration.PersistentChat.InheritedChatRoomInviteProperty.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>

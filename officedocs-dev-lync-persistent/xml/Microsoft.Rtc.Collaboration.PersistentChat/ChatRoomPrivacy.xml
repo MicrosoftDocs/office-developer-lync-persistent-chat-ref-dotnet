@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomPrivacy" />
   <TypeSignature Language="VB.NET" Value="Public Enum ChatRoomPrivacy" />
   <TypeSignature Language="C++ CLI" Value="public enum class ChatRoomPrivacy" />
+  <TypeSignature Language="F#" Value="type ChatRoomPrivacy = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomPrivacy.Closed" />
       <MemberSignature Language="VB.NET" Value="Closed" />
       <MemberSignature Language="C++ CLI" Value="Closed" />
+      <MemberSignature Language="F#" Value="Closed = 1" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomPrivacy.Closed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomPrivacy.Open" />
       <MemberSignature Language="VB.NET" Value="Open" />
       <MemberSignature Language="C++ CLI" Value="Open" />
+      <MemberSignature Language="F#" Value="Open = 0" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomPrivacy.Open" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomPrivacy.Secret" />
       <MemberSignature Language="VB.NET" Value="Secret" />
       <MemberSignature Language="C++ CLI" Value="Secret" />
+      <MemberSignature Language="F#" Value="Secret = 2" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomPrivacy.Secret" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>

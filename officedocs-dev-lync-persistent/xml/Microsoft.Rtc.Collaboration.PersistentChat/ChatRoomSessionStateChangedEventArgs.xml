@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionStateChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ChatRoomSessionStateChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChatRoomSessionStateChangedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ChatRoomSessionStateChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionStateChangedEventArgs.State" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As ChatRoomSessionState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomSessionState State { Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomSessionState get(); };" />
+      <MemberSignature Language="F#" Value="member this.State : Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionState" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSessionStateChangedEventArgs.State" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>

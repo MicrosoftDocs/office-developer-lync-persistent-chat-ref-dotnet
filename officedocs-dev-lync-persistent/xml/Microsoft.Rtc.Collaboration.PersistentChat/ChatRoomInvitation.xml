@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomInvitation" />
   <TypeSignature Language="VB.NET" Value="Public Class ChatRoomInvitation" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChatRoomInvitation" />
+  <TypeSignature Language="F#" Value="type ChatRoomInvitation = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomInvitation.ChatRoomSnapshot" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChatRoomSnapshot As ChatRoomSnapshot" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomSnapshot ^ ChatRoomSnapshot { Microsoft::Rtc::Collaboration::PersistentChat::ChatRoomSnapshot ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChatRoomSnapshot : Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomSnapshot" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomInvitation.ChatRoomSnapshot" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomInvitation.CreatedOn" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreatedOn As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime CreatedOn { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.CreatedOn : DateTime" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomInvitation.CreatedOn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomInvitation.InvId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InvId As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int InvId { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.InvId : int" Usage="Microsoft.Rtc.Collaboration.PersistentChat.ChatRoomInvitation.InvId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>

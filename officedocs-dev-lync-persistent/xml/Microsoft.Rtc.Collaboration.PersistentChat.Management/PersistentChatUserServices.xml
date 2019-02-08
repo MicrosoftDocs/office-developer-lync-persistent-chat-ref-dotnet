@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserServices" />
   <TypeSignature Language="VB.NET" Value="Public Class PersistentChatUserServices" />
   <TypeSignature Language="C++ CLI" Value="public ref class PersistentChatUserServices" />
+  <TypeSignature Language="F#" Value="type PersistentChatUserServices = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserServices.BeginFindUsers(System.String,System.String,System.String,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginFindUsers (searchLastName As String, searchFirstName As String, searchEmail As String, userCallback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginFindUsers(System::String ^ searchLastName, System::String ^ searchFirstName, System::String ^ searchEmail, AsyncCallback ^ userCallback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginFindUsers : string * string * string * AsyncCallback * obj -&gt; IAsyncResult" Usage="persistentChatUserServices.BeginFindUsers (searchLastName, searchFirstName, searchEmail, userCallback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserServices.BeginGetUser(System.Uri,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginGetUser (sipUri As Uri, userCallback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginGetUser(Uri ^ sipUri, AsyncCallback ^ userCallback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginGetUser : Uri * AsyncCallback * obj -&gt; IAsyncResult" Usage="persistentChatUserServices.BeginGetUser (sipUri, userCallback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserServices.BeginGetUserGroup(Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginGetUserGroup (group As PersistentChatPrincipalSummary, userCallback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginGetUserGroup(Microsoft::Rtc::Collaboration::PersistentChat::Management::PersistentChatPrincipalSummary ^ group, AsyncCallback ^ userCallback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginGetUserGroup : Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary * AsyncCallback * obj -&gt; IAsyncResult" Usage="persistentChatUserServices.BeginGetUserGroup (group, userCallback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -155,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserServices.EndFindUsers(System.IAsyncResult,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndFindUsers (asyncResult As IAsyncResult, ByRef moreAvailable As Boolean) As ReadOnlyCollection(Of PersistentChatPrincipalSummary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;Microsoft::Rtc::Collaboration::PersistentChat::Management::PersistentChatPrincipalSummary ^&gt; ^ EndFindUsers(IAsyncResult ^ asyncResult, [Runtime::InteropServices::Out] bool % moreAvailable);" />
+      <MemberSignature Language="F#" Value="member this.EndFindUsers : IAsyncResult *  -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatPrincipalSummary&gt;" Usage="persistentChatUserServices.EndFindUsers (asyncResult, moreAvailable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -165,7 +170,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="asyncResult" Type="System.IAsyncResult" />
-        <Parameter Name="moreAvailable" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="moreAvailable" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
         <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> that references this operation.</param>
@@ -191,6 +196,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserServices.EndGetUser(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndGetUser (asyncResult As IAsyncResult) As PersistentChatUser" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Rtc::Collaboration::PersistentChat::Management::PersistentChatUser ^ EndGetUser(IAsyncResult ^ asyncResult);" />
+      <MemberSignature Language="F#" Value="member this.EndGetUser : IAsyncResult -&gt; Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUser" Usage="persistentChatUserServices.EndGetUser asyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -222,6 +228,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserServices.EndGetUserGroup(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndGetUserGroup (asyncResult As IAsyncResult) As PersistentChatUserGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Rtc::Collaboration::PersistentChat::Management::PersistentChatUserGroup ^ EndGetUserGroup(IAsyncResult ^ asyncResult);" />
+      <MemberSignature Language="F#" Value="member this.EndGetUserGroup : IAsyncResult -&gt; Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserGroup" Usage="persistentChatUserServices.EndGetUserGroup asyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
@@ -253,6 +260,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserServices.Endpoint" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Endpoint As PersistentChatEndpoint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rtc::Collaboration::PersistentChat::PersistentChatEndpoint ^ Endpoint { Microsoft::Rtc::Collaboration::PersistentChat::PersistentChatEndpoint ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Endpoint : Microsoft.Rtc.Collaboration.PersistentChat.PersistentChatEndpoint" Usage="Microsoft.Rtc.Collaboration.PersistentChat.Management.PersistentChatUserServices.Endpoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Rtc.Collaboration.PersistentChat</AssemblyName>
