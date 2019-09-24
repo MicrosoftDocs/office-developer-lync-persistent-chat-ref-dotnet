@@ -39,7 +39,8 @@
         "SourceXmlFolder": "officedocs-dev-lync-persistent/xml",
         "OutputYamlFolder": "officedocs-dev-lync-persistent/api",
         "Flatten": true,
-        "id": "officedocs-dev-lync-persistent"
+        "id": "officedocs-dev-lync-persistent",
+        "SDPMode": true
       },
       "SplitTOC": [
         "officedocs-dev-lync-persistent/api/officedocs-dev-lync-persistent/toc.yml"
@@ -88,8 +89,5 @@
       "target_framework": "net45",
       "version": "latest"
     }
-  ],
-  "ECMA2Yaml": {
-    "SDPMode": "true"
-  }
+  ]
 }
